@@ -1,3 +1,8 @@
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -5,14 +10,12 @@ import plotly.graph_objects as go
 import numpy as np
 from xgboost import XGBRegressor
 from scipy import stats
-import shap
 
 st.set_page_config(page_title="Nigeria Teacher Deployment Urgency", layout="wide")
 
 data = pd.read_csv('education_data.csv')
 
 data['PupilClassroomRatio'] = data['Enrollment'] / data['Classrooms']
-
 features = ['StudentTeacherRatio', 'Classrooms', 'PupilClassroomRatio']
 model = XGBRegressor(n_estimators=100, random_state=42)
 model.fit(data[features], data['ActualPassRate'])
@@ -88,7 +91,7 @@ importance_df = pd.DataFrame({
     'Feature': features,
     'Importance': model.feature_importances_
 })
-fig3 = px.bar(importance_df, x='Importance', y='Feature', orientation='h', 
+fig3 = px.bar(importance_df, x='Importance', y='Feature', orientation='h',
               title="Feature Importance — XGBoost")
 st.plotly_chart(fig3, use_container_width=True)
 
@@ -100,8 +103,30 @@ st.download_button(
     file_name="urgent_lgas.csv",
     mime="text/csv"
 )
-st.subheader("LGA Diagnosis")
 
+def generate_policy_brief(row):
+    client = OpenAI(
+        base_url="https://openrouter.ai/api/v1",
+        api_key=os.getenv("OPENROUTER_API_KEY"),
+    )
+    prompt = f"""You are an education policy advisor in Nigeria.
+Analyze this LGA and provide exactly 3 bullet points as an action plan:
+- LGA: {row['LGA']}, {row['State']}
+- Student-Teacher Ratio: 1:{row['StudentTeacherRatio']:.0f}
+- Actual Pass Rate: {row['ActualPassRate']:.1f}%
+- Expected Pass Rate (ML Model): {row['PredictedPassRate']:.1f}%
+- Performance Gap: {abs(round(row['ActualPassRate'] - row['PredictedPassRate'], 1))} points below prediction
+- Urgency Tier: {row['UrgencyTier']}
+- Teachers Needed (1:40 benchmark): {int(row['TeachersNeeded'])}
+
+Provide 3 specific, actionable bullet points for the State Ministry of Education."""
+    response = client.chat.completions.create(
+        model="openrouter/auto",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
+
+st.subheader("LGA Diagnosis")
 selected_lga = st.selectbox("Select an LGA for detailed analysis", options=top_20['LGA'].tolist())
 
 if selected_lga:
@@ -114,9 +139,15 @@ if selected_lga:
     st.info(f"""
 **{row['LGA']}, {row['State']}**
 
-This LGA has **{row['StudentTeacherRatio']:.0f} students per teacher**  against Nigeria's national average of 1:40.
+This LGA has **{row['StudentTeacherRatio']:.0f} students per teacher** against Nigeria's national average of 1:40.
 The model predicted a pass rate of **{row['PredictedPassRate']:.1f}%** given its resources.
-Actual pass rate is **{row['ActualPassRate']:.1f}%**  a gap of **{abs(gap)} points**.
+Actual pass rate is **{row['ActualPassRate']:.1f}%** — a gap of **{abs(gap)} points**.
 Urgency tier: **{row['UrgencyTier']}**.
 {teachers_line}
     """)
+
+    if st.button("Generate AI Policy Brief"):
+        with st.spinner("Generating intervention plan..."):
+            brief = generate_policy_brief(row)
+        st.subheader("AI-Generated Intervention Plan")
+        st.markdown(brief)
