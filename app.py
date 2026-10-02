@@ -3,17 +3,22 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
-from sklearn.linear_model import LinearRegression
+from xgboost import XGBRegressor
+from scipy import stats
 import shap
 
 st.set_page_config(page_title="Nigeria Teacher Deployment Urgency", layout="wide")
 
 data = pd.read_csv('education_data.csv')
 
-model = LinearRegression()
-model.fit(data[['StudentTeacherRatio', 'Classrooms']], data['ActualPassRate'])
-data['PredictedPassRate'] = model.predict(data[['StudentTeacherRatio', 'Classrooms']])
+data['PupilClassroomRatio'] = data['Enrollment'] / data['Classrooms']
+
+features = ['StudentTeacherRatio', 'Classrooms', 'PupilClassroomRatio']
+model = XGBRegressor(n_estimators=100, random_state=42)
+model.fit(data[features], data['ActualPassRate'])
+data['PredictedPassRate'] = model.predict(data[features])
 data['Residual'] = data['ActualPassRate'] - data['PredictedPassRate']
+data['ResidualZScore'] = stats.zscore(data['Residual'])
 
 def get_urgency_tier(residual):
     if residual < -15:
@@ -34,7 +39,7 @@ state_filter = st.sidebar.multiselect("Filter by State", options=sorted(data['St
 tier_filter = st.sidebar.multiselect("Filter by Urgency Tier", options=['Critical', 'High', 'Medium', 'Low'], default=[])
 
 st.title("Nigeria Teacher Deployment Urgency Dashboard")
-st.markdown("Ranking 777 LGAs by urgency of teacher deployment using residual regression and SHAP analysis.")
+st.markdown("Ranking 777 LGAs by urgency of teacher deployment using XGBoost residual regression and feature importance analysis.")
 st.caption("Note: Data is synthetically generated to reflect realistic Nigerian education distributions. Methodology applies directly to real EMIS data.")
 
 filtered_data = data.copy()
@@ -78,12 +83,13 @@ top_20 = filtered_data.nsmallest(20, 'Residual')[
 ]
 st.dataframe(top_20.style.background_gradient(subset=['Residual'], cmap='RdYlGn'), use_container_width=True)
 
-st.subheader("Why Are These LGAs Urgent? (SHAP Explanation)")
-explainer = shap.LinearExplainer(model, data[['StudentTeacherRatio', 'Classrooms']])
-shap_values = explainer.shap_values(data[['StudentTeacherRatio', 'Classrooms']])
-shap_df = pd.DataFrame({'Feature': ['StudentTeacherRatio', 'Classrooms'],
-                         'MeanAbsSHAP': np.abs(shap_values).mean(axis=0)})
-fig3 = px.bar(shap_df, x='MeanAbsSHAP', y='Feature', orientation='h', title="Feature Importance via SHAP")
+st.subheader("Why Are These LGAs Urgent? (Feature Importance)")
+importance_df = pd.DataFrame({
+    'Feature': features,
+    'Importance': model.feature_importances_
+})
+fig3 = px.bar(importance_df, x='Importance', y='Feature', orientation='h', 
+              title="Feature Importance — XGBoost")
 st.plotly_chart(fig3, use_container_width=True)
 
 st.subheader("Export Data")
