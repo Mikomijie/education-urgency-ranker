@@ -122,7 +122,39 @@ st.download_button(
     file_name="urgent_lgas.csv",
     mime="text/csv"
 )
+st.subheader("What-If Simulator")
+st.markdown("Adjust resources and see how the predicted pass rate changes.")
 
+sim_lga = st.selectbox("Select LGA to simulate", options=data['LGA'].tolist(), key='sim_lga')
+sim_row = data[data['LGA'] == sim_lga].iloc[0]
+
+col_a, col_b, col_c = st.columns(3)
+with col_a:
+    extra_teachers = st.slider("Extra Teachers Deployed", 0, 200, 0, step=10)
+with col_b:
+    facility_boost = st.slider("Facility Score Improvement", 0.0, 0.5, 0.0, step=0.05)
+with col_c:
+    funding_boost = st.slider("Extra Funding Per Capita (₦)", 0, 5000, 0, step=500)
+
+new_teachers = sim_row['Teachers'] + extra_teachers
+new_ratio = sim_row['Enrollment'] / new_teachers
+new_facility = min(sim_row['facility_index'] + facility_boost, 1.0) if 'facility_index' in data.columns else sim_row['Classrooms']
+new_funding = sim_row['funding_per_capita'] + funding_boost if 'funding_per_capita' in data.columns else 0
+
+sim_input = pd.DataFrame([{
+    'StudentTeacherRatio': new_ratio,
+    'Classrooms': sim_row['Classrooms'],
+    'PupilClassroomRatio': sim_row['Enrollment'] / sim_row['Classrooms']
+}])
+
+new_predicted = model.predict(sim_input)[0]
+original_predicted = sim_row['PredictedPassRate']
+improvement = new_predicted - original_predicted
+
+col1s, col2s, col3s = st.columns(3)
+col1s.metric("Original Predicted Pass Rate", f"{original_predicted:.1f}%")
+col2s.metric("New Predicted Pass Rate", f"{new_predicted:.1f}%", delta=f"{improvement:+.1f}%")
+col3s.metric("Teachers After Deployment", int(new_teachers))
 def generate_policy_brief(row):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
