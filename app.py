@@ -78,7 +78,26 @@ fig2 = px.scatter(
     title="Each dot is one LGA"
 )
 st.plotly_chart(fig2, use_container_width=True)
+st.subheader("State-Level Urgency Ranking")
+state_summary = filtered_data.groupby('State').agg(
+    AvgResidual=('Residual', 'mean'),
+    TotalTeachersNeeded=('TeachersNeeded', 'sum'),
+    LGACount=('LGA', 'count')
+).reset_index().sort_values('AvgResidual')
 
+fig_state = px.bar(
+    state_summary,
+    x='AvgResidual',
+    y='State',
+    orientation='h',
+    color='AvgResidual',
+    color_continuous_scale='RdYlGn',
+    hover_data=['TotalTeachersNeeded', 'LGACount'],
+    title='Average Performance Gap by State (Red = Most Underperforming)',
+    height=800
+)
+fig_state.update_layout(yaxis={'categoryorder': 'total ascending'})
+st.plotly_chart(fig_state, use_container_width=True)
 st.subheader("Top 20 LGAs Requiring Urgent Teacher Deployment")
 top_20 = filtered_data.nsmallest(20, 'Residual')[
     ['State', 'LGA', 'Enrollment', 'Teachers', 'StudentTeacherRatio',
@@ -125,7 +144,7 @@ Provide 3 specific, actionable bullet points for the State Ministry of Education
         messages=[{"role": "user", "content": prompt}]
     )
     return response.choices[0].message.content
-
+ 
 st.subheader("LGA Diagnosis")
 selected_lga = st.selectbox("Select an LGA for detailed analysis", options=top_20['LGA'].tolist())
 
