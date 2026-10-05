@@ -15,7 +15,7 @@ st.set_page_config(page_title="EduGaps-AI", layout="wide")
 data = pd.read_csv('education_data.csv')
 
 data['PupilClassroomRatio'] = data['Enrollment'] / data['Classrooms']
-features = ['StudentTeacherRatio', 'Classrooms', 'PupilClassroomRatio']
+features = ['StudentTeacherRatio', 'PupilClassroomRatio']
 model = XGBRegressor(n_estimators=100, random_state=42)
 model.fit(data[features], data['ActualPassRate'])
 data['PredictedPassRate'] = model.predict(data[features])
@@ -210,7 +210,11 @@ Urgency tier: **{row['UrgencyTier']}**.
     """)
 
     if st.button("Generate AI Policy Brief"):
-        with st.spinner("Generating intervention plan..."):
-            brief = generate_policy_brief(row)
-        st.subheader("AI-Generated Intervention Plan")
-        st.markdown(brief)
+        api_key = os.getenv("OPENROUTER_API_KEY")
+        if not api_key:
+            st.warning("OpenRouter API key not configured. Add OPENROUTER_API_KEY to your .env file.")
+        else:
+            with st.spinner("Generating intervention plan..."):
+                brief = generate_policy_brief(row)
+            st.subheader("AI-Generated Intervention Plan")
+            st.markdown(brief)
