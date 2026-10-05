@@ -18,8 +18,7 @@ def load_and_train():
     from sklearn.model_selection import cross_val_predict
     df = pd.read_csv('education_data.csv')
     df['PupilClassroomRatio'] = df['Enrollment'] / df['Classrooms']
-    feats = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms']
-    m = XGBRegressor(n_estimators=100, random_state=42)
+    feats = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms', 'HasElectricity']
     df['PredictedPassRate'] = np.clip(cross_val_predict(m, df[feats], df['ActualPassRate'], cv=5), 0, 100)
     m.fit(df[feats], df['ActualPassRate'])
     df['Residual'] = df['ActualPassRate'] - df['PredictedPassRate']
