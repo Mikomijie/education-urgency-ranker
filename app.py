@@ -15,10 +15,12 @@ st.set_page_config(page_title="EduGaps-AI", layout="wide")
 data = pd.read_csv('education_data.csv')
 
 data['PupilClassroomRatio'] = data['Enrollment'] / data['Classrooms']
-features = ['StudentTeacherRatio', 'PupilClassroomRatio']
+features = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms']
+from sklearn.model_selection import cross_val_predict
 model = XGBRegressor(n_estimators=100, random_state=42)
+data['PredictedPassRate'] = cross_val_predict(model, data[features], data['ActualPassRate'], cv=5)
+data['PredictedPassRate'] = np.clip(data['PredictedPassRate'], 0, 100)
 model.fit(data[features], data['ActualPassRate'])
-data['PredictedPassRate'] = model.predict(data[features])
 data['Residual'] = data['ActualPassRate'] - data['PredictedPassRate']
 data['ResidualZScore'] = stats.zscore(data['Residual'])
 
@@ -137,18 +139,16 @@ other_lgas = data[data['UrgencyTier'] != 'Critical']['LGA'].tolist()
 sim_lga = st.selectbox("Select LGA to simulate (Critical LGAs listed first)", options=critical_lgas + other_lgas, key='sim_lga')
 sim_row = data[data['LGA'] == sim_lga].iloc[0]
 
-col_a, col_b, col_c = st.columns(3)
+col_a, col_b = st.columns(2)
 with col_a:
     extra_teachers = st.slider("Extra Teachers Deployed", 0, 200, 0, step=10)
 with col_b:
-    facility_boost = st.slider("Extra Classrooms Built", 0.0, 0.5, 0.0, step=0.05)
-with col_c:
-    funding_boost = st.slider("Extra Funding Per Capita (₦)", 0, 5000, 0, step=500)
+    facility_boost = st.slider("Extra Classrooms Built", 0, 50, 0, step=5)
 
 new_teachers = sim_row['Teachers'] + extra_teachers
 new_ratio = sim_row['Enrollment'] / new_teachers
 
-new_classrooms = sim_row['Classrooms'] + int(facility_boost * 100)
+new_classrooms = sim_row['Classrooms'] + facility_boost
 new_classrooms = max(new_classrooms, 1)
 
 sim_input = pd.DataFrame([{
