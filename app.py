@@ -163,11 +163,10 @@ new_zscore = (new_residual - data['Residual'].mean()) / data['Residual'].std()
 new_tier = get_urgency_tier(new_zscore)
 original_tier = sim_row['UrgencyTier']
 
-col1s, col2s, col3s, col4s = st.columns(4)
+col1s, col2s, col3s = st.columns(3)
 col1s.metric("Original Predicted Pass Rate", f"{original_predicted:.1f}%")
-col2s.metric("New Predicted Pass Rate", f"{new_predicted:.1f}%", delta=f"{improvement:+.1f}%")
+col2s.metric("Predicted Pass Rate (after intervention)", f"{new_predicted:.1f}%", delta=f"{improvement:+.1f}%")
 col3s.metric("Teachers After Deployment", int(new_teachers))
-col4s.metric("Urgency Tier Change", new_tier, delta=f"was {original_tier}" if new_tier != original_tier else "No change")
 def generate_policy_brief(row):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
