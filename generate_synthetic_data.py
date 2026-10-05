@@ -78,16 +78,26 @@ for state, lga_list in NIGERIA_LGAS.items():
         elif anomaly_type == 'overperform':
             base_pass += np.random.uniform(8, 20)   # High-efficiency star LGA
 
+        school_type = np.random.choice(['Primary', 'JSS', 'SSS'], p=[0.5, 0.3, 0.2])
+        has_electricity = np.random.choice([1, 0], p=[0.6, 0.4])
+
+        if has_electricity:
+            base_pass += np.random.uniform(2, 6)
+        if school_type == 'SSS':
+            base_pass -= np.random.uniform(3, 8)
+
         actual_pass_rate = round(np.clip(base_pass, 5, 98), 1)
 
         rows.append({
             'State': state,
-                        'LGA': lga_name,
+            'LGA': lga_name,
             'Enrollment': enrollment,
             'Teachers': teachers,
             'Classrooms': classrooms,
             'StudentTeacherRatio': student_teacher_ratio,
             'PupilClassroomRatio': pupil_classroom_ratio,
+            'SchoolType': school_type,
+            'HasElectricity': has_electricity,
             'ActualPassRate': actual_pass_rate
         })
 
