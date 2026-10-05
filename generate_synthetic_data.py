@@ -1,75 +1,68 @@
-import pandas as pd
 import numpy as np
+import pandas as pd
 
-# Set random seed for reproducibility
 np.random.seed(42)
 
-# List of Nigerian states
-states = [
-    'Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa',
-    'Benue', 'Borno', 'Cross River', 'Delta', 'Ebonyi', 'Edo',
-    'Ekiti', 'Enugu', 'Gombe', 'Imo', 'Jigawa', 'Kaduna',
-    'Kano', 'Katsina', 'Kebbi', 'Kogi', 'Kwara', 'Lagos',
-    'Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun', 'Oyo',
-    'Plateau', 'Rivers', 'Sokoto', 'Taraba', 'Yobe', 'Zamfara', 'FCT'
-]
+# Real Nigerian state names with realistic LGA counts
+states = {
+    'Abia': 17, 'Adamawa': 21, 'Akwa Ibom': 31, 'Anambra': 21, 'Bauchi': 20,
+    'Bayelsa': 8, 'Benue': 23, 'Borno': 27, 'Cross River': 18, 'Delta': 25,
+    'Ebonyi': 13, 'Edo': 18, 'Ekiti': 16, 'Enugu': 17, 'FCT': 6,
+    'Gombe': 11, 'Imo': 27, 'Jigawa': 27, 'Kaduna': 23, 'Kano': 44,
+    'Katsina': 34, 'Kebbi': 21, 'Kogi': 21, 'Kwara': 16, 'Lagos': 20,
+    'Nasarawa': 13, 'Niger': 25, 'Ogun': 20, 'Ondo': 18, 'Osun': 30,
+    'Oyo': 33, 'Plateau': 17, 'Rivers': 23, 'Sokoto': 23, 'Taraba': 16,
+    'Yobe': 17, 'Zamfara': 14
+}
 
-# Create LGAs
-lgas_per_state = 21
-lga_data = []
+rows = []
+for state, n_lgas in states.items():
+    for i in range(1, n_lgas + 1):
+        enrollment = np.random.randint(3000, 60000)
+        teachers = np.random.randint(80, 1500)
+        classrooms = np.random.randint(30, 800)
 
-for state in states:
-    for i in range(lgas_per_state):
-        lga_name = f"{state} LGA {i+1}"
-        lga_data.append({'State': state, 'LGA': lga_name})
+        student_teacher_ratio = round(enrollment / teachers, 2)
+        pupil_classroom_ratio = round(enrollment / classrooms, 2)
 
-print(f"✅ Created {len(lga_data)} LGAs")
+        # Pass rate generated INDEPENDENTLY from resources
+        # Only weak correlation — not a formula
+        base_pass = np.random.uniform(20, 75)
 
-# Step 1: Generate enrollment
-enrollment = np.random.normal(loc=5000, scale=2000, size=len(lga_data))
-enrollment = np.abs(enrollment).astype(int)
-enrollment = np.maximum(enrollment, 500)
-enrollment = np.minimum(enrollment, 25000)
+        # Small nudges from resources (realistic but not deterministic)
+        if student_teacher_ratio > 60:
+            base_pass -= np.random.uniform(2, 8)
+        if student_teacher_ratio < 30:
+            base_pass += np.random.uniform(1, 5)
+        if pupil_classroom_ratio > 80:
+            base_pass -= np.random.uniform(1, 5)
 
-# Step 2: Generate teachers
-actual_teachers = np.random.normal(loc=150, scale=60, size=len(lga_data))
-actual_teachers = np.abs(actual_teachers).astype(int)
-actual_teachers = np.maximum(actual_teachers, 20)
-actual_teachers = np.minimum(actual_teachers, 800)
+        # Inject real-world anomalies
+        anomaly_type = np.random.choice(
+            ['underperform_severe', 'underperform_mild', 'normal', 'overperform'],
+            p=[0.08, 0.18, 0.62, 0.12]
+        )
+        if anomaly_type == 'underperform_severe':
+            base_pass -= np.random.uniform(15, 30)  # Ghost teachers, resource diversion
+        elif anomaly_type == 'underperform_mild':
+            base_pass -= np.random.uniform(5, 15)
+        elif anomaly_type == 'overperform':
+            base_pass += np.random.uniform(8, 20)   # High-efficiency star LGA
 
-# Step 3: Calculate student-to-teacher ratio
-students_per_teacher = enrollment / actual_teachers
-students_per_teacher = np.round(students_per_teacher, 2)
+        actual_pass_rate = round(np.clip(base_pass, 5, 98), 1)
 
-# Step 4: Calculate base pass rate
-base_pass_rate = 50 - (students_per_teacher / 4)
+        rows.append({
+            'State': state,
+            'LGA': f'{state} LGA {i}',
+            'Enrollment': enrollment,
+            'Teachers': teachers,
+            'Classrooms': classrooms,
+            'StudentTeacherRatio': student_teacher_ratio,
+            'PupilClassroomRatio': pupil_classroom_ratio,
+            'ActualPassRate': actual_pass_rate
+        })
 
-# Step 5: Add noise for actual pass rates
-noise = np.random.normal(loc=0, scale=8, size=len(lga_data))
-actual_pass_rate = base_pass_rate + noise
-actual_pass_rate = np.clip(actual_pass_rate, 0, 100)
-actual_pass_rate = np.round(actual_pass_rate, 2)
-
-# Step 6: Generate classrooms
-classrooms = np.random.normal(loc=80, scale=30, size=len(lga_data))
-classrooms = np.abs(classrooms).astype(int)
-classrooms = np.maximum(classrooms, 10)
-classrooms = np.minimum(classrooms, 400)
-
-# Step 7: Combine into DataFrame
-data = pd.DataFrame({
-    'State': [item['State'] for item in lga_data],
-    'LGA': [item['LGA'] for item in lga_data],
-    'Enrollment': enrollment,
-    'Teachers': actual_teachers,
-    'Classrooms': classrooms,
-    'StudentTeacherRatio': students_per_teacher,
-    'BasePassRate': base_pass_rate,
-    'ActualPassRate': actual_pass_rate
-})
-
-# Step 8: Save to CSV
-data.to_csv('education_data.csv', index=False)
-print(f"✅ Data saved! Total LGAs: {len(data)}")
-print("\nFirst 5 rows:")
-print(data.head())
+df = pd.DataFrame(rows)
+df.to_csv('education_data.csv', index=False)
+print(f"Generated {len(df)} LGAs across {df['State'].nunique()} states")
+print(df[['StudentTeacherRatio', 'ActualPassRate']].corr())

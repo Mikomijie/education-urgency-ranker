@@ -11,8 +11,7 @@ import numpy as np
 from xgboost import XGBRegressor
 from scipy import stats
 
-st.set_page_config(page_title="Nigeria Teacher Deployment Urgency", layout="wide")
-
+st.set_page_config(page_title="EduGaps-AI", layout="wide")
 data = pd.read_csv('education_data.csv')
 
 data['PupilClassroomRatio'] = data['Enrollment'] / data['Classrooms']
@@ -23,17 +22,17 @@ data['PredictedPassRate'] = model.predict(data[features])
 data['Residual'] = data['ActualPassRate'] - data['PredictedPassRate']
 data['ResidualZScore'] = stats.zscore(data['Residual'])
 
-def get_urgency_tier(residual):
-    if residual < -15:
+def get_urgency_tier(z_score):
+    if z_score < -1.5:
         return 'Critical'
-    elif residual < -8:
+    elif z_score < -0.5:
         return 'High'
-    elif residual < 0:
+    elif z_score < 0:
         return 'Medium'
     else:
         return 'Low'
 
-data['UrgencyTier'] = data['Residual'].apply(get_urgency_tier)
+data['UrgencyTier'] = data['ResidualZScore'].apply(get_urgency_tier)
 data['TeachersNeeded'] = (data['Enrollment'] / 40) - data['Teachers']
 data['TeachersNeeded'] = data['TeachersNeeded'].apply(lambda x: max(0, round(x)))
 
@@ -41,8 +40,8 @@ st.sidebar.title("Filters")
 state_filter = st.sidebar.multiselect("Filter by State", options=sorted(data['State'].unique()), default=[])
 tier_filter = st.sidebar.multiselect("Filter by Urgency Tier", options=['Critical', 'High', 'Medium', 'Low'], default=[])
 
-st.title("Nigeria Teacher Deployment Urgency Dashboard")
-st.markdown("Ranking 777 LGAs by urgency of teacher deployment using XGBoost residual regression and feature importance analysis.")
+st.title("EduGaps-AI — Nigeria Education Resource Intelligence")
+st.markdown("Ranking all 777 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression and AI-powered policy synthesis.")
 st.caption("Note: Data is synthetically generated to reflect realistic Nigerian education distributions. Methodology applies directly to real EMIS data.")
 
 filtered_data = data.copy()
@@ -125,14 +124,16 @@ st.download_button(
 st.subheader("What-If Simulator")
 st.markdown("Adjust resources and see how the predicted pass rate changes.")
 
-sim_lga = st.selectbox("Select LGA to simulate", options=data['LGA'].tolist(), key='sim_lga')
+critical_lgas = data[data['UrgencyTier'] == 'Critical']['LGA'].tolist()
+other_lgas = data[data['UrgencyTier'] != 'Critical']['LGA'].tolist()
+sim_lga = st.selectbox("Select LGA to simulate (Critical LGAs listed first)", options=critical_lgas + other_lgas, key='sim_lga')
 sim_row = data[data['LGA'] == sim_lga].iloc[0]
 
 col_a, col_b, col_c = st.columns(3)
 with col_a:
     extra_teachers = st.slider("Extra Teachers Deployed", 0, 200, 0, step=10)
 with col_b:
-    facility_boost = st.slider("Facility Score Improvement", 0.0, 0.5, 0.0, step=0.05)
+    facility_boost = st.slider("Extra Classrooms Built", 0.0, 0.5, 0.0, step=0.05)
 with col_c:
     funding_boost = st.slider("Extra Funding Per Capita (₦)", 0, 5000, 0, step=500)
 
@@ -141,20 +142,29 @@ new_ratio = sim_row['Enrollment'] / new_teachers
 new_facility = min(sim_row['facility_index'] + facility_boost, 1.0) if 'facility_index' in data.columns else sim_row['Classrooms']
 new_funding = sim_row['funding_per_capita'] + funding_boost if 'funding_per_capita' in data.columns else 0
 
+new_classrooms = sim_row['Classrooms'] + int(facility_boost * 100)
+new_classrooms = max(new_classrooms, 1)
+
 sim_input = pd.DataFrame([{
     'StudentTeacherRatio': new_ratio,
-    'Classrooms': sim_row['Classrooms'],
-    'PupilClassroomRatio': sim_row['Enrollment'] / sim_row['Classrooms']
+    'Classrooms': new_classrooms,
+    'PupilClassroomRatio': sim_row['Enrollment'] / new_classrooms
 }])
 
 new_predicted = model.predict(sim_input)[0]
 original_predicted = sim_row['PredictedPassRate']
 improvement = new_predicted - original_predicted
 
-col1s, col2s, col3s = st.columns(3)
+new_residual = sim_row['ActualPassRate'] - new_predicted
+new_zscore = (new_residual - data['Residual'].mean()) / data['Residual'].std()
+new_tier = get_urgency_tier(new_zscore)
+original_tier = sim_row['UrgencyTier']
+
+col1s, col2s, col3s, col4s = st.columns(4)
 col1s.metric("Original Predicted Pass Rate", f"{original_predicted:.1f}%")
 col2s.metric("New Predicted Pass Rate", f"{new_predicted:.1f}%", delta=f"{improvement:+.1f}%")
 col3s.metric("Teachers After Deployment", int(new_teachers))
+col4s.metric("Urgency Tier Change", new_tier, delta=f"was {original_tier}" if new_tier != original_tier else "No change")
 def generate_policy_brief(row):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
