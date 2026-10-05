@@ -12,17 +12,21 @@ from xgboost import XGBRegressor
 from scipy import stats
 
 st.set_page_config(page_title="EduGaps-AI", layout="wide")
-data = pd.read_csv('education_data.csv')
 
-data['PupilClassroomRatio'] = data['Enrollment'] / data['Classrooms']
-features = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms']
-from sklearn.model_selection import cross_val_predict
-model = XGBRegressor(n_estimators=100, random_state=42)
-data['PredictedPassRate'] = cross_val_predict(model, data[features], data['ActualPassRate'], cv=5)
-data['PredictedPassRate'] = np.clip(data['PredictedPassRate'], 0, 100)
-model.fit(data[features], data['ActualPassRate'])
-data['Residual'] = data['ActualPassRate'] - data['PredictedPassRate']
-data['ResidualZScore'] = stats.zscore(data['Residual'])
+@st.cache_data
+def load_and_train():
+    from sklearn.model_selection import cross_val_predict
+    df = pd.read_csv('education_data.csv')
+    df['PupilClassroomRatio'] = df['Enrollment'] / df['Classrooms']
+    feats = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms']
+    m = XGBRegressor(n_estimators=100, random_state=42)
+    df['PredictedPassRate'] = np.clip(cross_val_predict(m, df[feats], df['ActualPassRate'], cv=5), 0, 100)
+    m.fit(df[feats], df['ActualPassRate'])
+    df['Residual'] = df['ActualPassRate'] - df['PredictedPassRate']
+    df['ResidualZScore'] = stats.zscore(df['Residual'])
+    return df, m, feats
+
+data, model, features = load_and_train()
 
 def get_urgency_tier(z_score):
     if z_score < -1.5:
@@ -167,10 +171,11 @@ new_zscore = (new_residual - data['Residual'].mean()) / data['Residual'].std()
 new_tier = get_urgency_tier(new_zscore)
 original_tier = sim_row['UrgencyTier']
 
-col1s, col2s, col3s = st.columns(3)
+col1s, col2s, col3s, col4s = st.columns(4)
 col1s.metric("Original Predicted Pass Rate", f"{original_predicted:.1f}%")
 col2s.metric("Predicted Pass Rate (after intervention)", f"{new_predicted:.1f}%", delta=f"{improvement:+.1f}%")
 col3s.metric("Teachers After Deployment", int(new_teachers))
+col4s.metric("Projected Urgency Tier", f"{original_tier} → {new_tier}" if new_tier != original_tier else original_tier)
 def generate_policy_brief(row):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
@@ -194,7 +199,7 @@ Provide 3 specific, actionable bullet points for the State Ministry of Education
     return response.choices[0].message.content
  
 st.subheader("LGA Diagnosis")
-selected_lga = st.selectbox("Select an LGA for detailed analysis", options=top_20['LGA'].tolist())
+selected_lga = st.selectbox("Select an LGA for detailed analysis", options=sorted(data['LGA'].tolist()))
 
 if selected_lga:
     row = data[data['LGA'] == selected_lga].iloc[0]
