@@ -113,6 +113,11 @@ fig3 = px.bar(importance_df, x='Importance', y='Feature', orientation='h',
               title="Feature Importance — XGBoost")
 st.plotly_chart(fig3, use_container_width=True)
 
+st.subheader("⭐ Star LGAs — High Efficiency Benchmarks")
+st.markdown("These LGAs outperform model predictions the most — study what they're doing right.")
+star_lgas = data.nlargest(10, 'Residual')[['LGA', 'State', 'ActualPassRate', 'PredictedPassRate', 'Residual', 'StudentTeacherRatio', 'UrgencyTier']]
+st.dataframe(star_lgas.style.background_gradient(subset=['Residual'], cmap='Greens'), use_container_width=True)
+
 st.subheader("Export Data")
 csv = filtered_data.to_csv(index=False).encode('utf-8')
 st.download_button(
@@ -139,8 +144,6 @@ with col_c:
 
 new_teachers = sim_row['Teachers'] + extra_teachers
 new_ratio = sim_row['Enrollment'] / new_teachers
-new_facility = min(sim_row['facility_index'] + facility_boost, 1.0) if 'facility_index' in data.columns else sim_row['Classrooms']
-new_funding = sim_row['funding_per_capita'] + funding_boost if 'funding_per_capita' in data.columns else 0
 
 new_classrooms = sim_row['Classrooms'] + int(facility_boost * 100)
 new_classrooms = max(new_classrooms, 1)
