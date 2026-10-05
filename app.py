@@ -42,8 +42,11 @@ tier_filter = st.sidebar.multiselect("Filter by Urgency Tier", options=['Critica
 
 st.title("EduGaps-AI — Nigeria Education Resource Intelligence")
 st.markdown("Ranking all 777 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression and AI-powered policy synthesis.")
-st.caption("Note: Data is synthetically generated to reflect realistic Nigerian education distributions. Methodology applies directly to real EMIS data.")
-
+st.info("""
+**Data Note:** This prototype uses synthetically generated data modelled on realistic Nigerian education distributions. 
+The methodology (XGBoost residual regression) applies directly to real EMIS/UBEC data when available. 
+LGA names are real; figures are illustrative.
+""")
 filtered_data = data.copy()
 
 if state_filter:
@@ -92,8 +95,8 @@ fig_state = px.bar(
     color='AvgResidual',
     color_continuous_scale='RdYlGn',
     hover_data=['TotalTeachersNeeded', 'LGACount'],
-    title='Average Performance Gap by State (Red = Most Underperforming)',
-    height=800
+    title='Avg. Gap Between Expected & Actual Pass Rate by State (Negative = Underperforming vs. Resources)',
+        height=800
 )
 fig_state.update_layout(yaxis={'categoryorder': 'total ascending'})
 st.plotly_chart(fig_state, use_container_width=True)
