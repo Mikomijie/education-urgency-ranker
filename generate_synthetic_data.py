@@ -27,8 +27,8 @@ for state, n_lgas in states.items():
 
         # Pass rate generated INDEPENDENTLY from resources
         # Only weak correlation — not a formula
-        base_pass = np.random.uniform(20, 75)
-
+        base_pass = 60 - (student_teacher_ratio * 0.4) - (pupil_classroom_ratio * 0.05) + np.random.normal(0, 12)
+        base_pass = np.clip(base_pass, 10, 95)
         # Small nudges from resources (realistic but not deterministic)
         if student_teacher_ratio > 60:
             base_pass -= np.random.uniform(2, 8)
