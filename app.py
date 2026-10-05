@@ -58,6 +58,7 @@ if tier_filter:
     filtered_data = filtered_data[filtered_data['UrgencyTier'].isin(tier_filter)]
 
 col1, col2, col3, col4 = st.columns(4)
+st.caption("📌 National benchmark: 1 teacher per 40 students (Federal Ministry of Education standard)")
 col1.metric("Total LGAs Analysed", len(filtered_data))
 col2.metric("Critical Urgency", len(filtered_data[filtered_data['UrgencyTier'] == 'Critical']))
 col3.metric("Total Teachers Needed", f"{filtered_data['TeachersNeeded'].sum():,}")
