@@ -166,7 +166,13 @@ sim_input = pd.DataFrame([{
 }])[features]
 
 new_predicted = model.predict(sim_input)[0]
-original_predicted = sim_row['PredictedPassRate']
+original_predicted = model.predict(pd.DataFrame([{
+    'StudentTeacherRatio': sim_row['StudentTeacherRatio'],
+    'PupilClassroomRatio': sim_row['PupilClassroomRatio'],
+    'Classrooms': sim_row['Classrooms'],
+    'HasElectricity': sim_row['HasElectricity'],
+    'SchoolType': sim_row['SchoolType']
+}])[features])[0]
 improvement = new_predicted - original_predicted
 
 new_residual = sim_row['ActualPassRate'] - new_predicted
