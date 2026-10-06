@@ -159,11 +159,11 @@ new_classrooms = max(new_classrooms, 1)
 
 sim_input = pd.DataFrame([{
     'StudentTeacherRatio': new_ratio,
-    'Classrooms': new_classrooms,
     'PupilClassroomRatio': sim_row['Enrollment'] / new_classrooms,
+    'Classrooms': new_classrooms,
     'HasElectricity': sim_row['HasElectricity'],
     'SchoolType': sim_row['SchoolType']
-}])
+}])[features]
 
 new_predicted = model.predict(sim_input)[0]
 original_predicted = sim_row['PredictedPassRate']
