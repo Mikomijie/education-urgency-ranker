@@ -48,7 +48,7 @@ state_filter = st.sidebar.multiselect("Filter by State", options=sorted(data['St
 tier_filter = st.sidebar.multiselect("Filter by Urgency Tier", options=['Critical', 'High', 'Medium', 'Low'], default=[])
 
 st.title("EduGaps-AI — Nigeria Education Resource Intelligence")
-st.markdown("Ranking all 774 Nigerian LGAsBoost residual regression and AI-powered policy synthesis.")
+st.markdown("Ranking all 774 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression and AI-powered policy synthesis.")
 st.info("""
 **Data Note:** This prototype uses synthetically generated data modelled on realistic Nigerian education distributions. 
 The methodology (XGBoost residual regression) applies directly to real EMIS/UBEC data when available. 

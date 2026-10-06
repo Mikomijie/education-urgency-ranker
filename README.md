@@ -91,6 +91,8 @@ The synthetic data generator (`generate_synthetic_data.py`) produces:
 
 The methodology applies directly to real EMIS/UBEC data when available.
 
+**Limitations & Real-World Validation Path:**
+On real EMIS data, we'd expect missing values in teacher counts, inconsistent LGA name spellings across datasets, and enrollment figures that don't match exam cohorts. The preprocessing pipeline would need to handle these before residuals are computed. The model architecture remains unchanged — only the input data changes. A pilot with one state's real data (e.g. Lagos or Kano SUBEB records) would be the natural next validation step.
 ---
 
 ## Project Structure
