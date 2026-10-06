@@ -18,8 +18,8 @@ def load_and_train():
     from sklearn.model_selection import cross_val_predict
     df = pd.read_csv('education_data.csv')
     df['PupilClassroomRatio'] = df['Enrollment'] / df['Classrooms']
-    feats = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms', 'HasElectricity']
-    df['PredictedPassRate'] = np.clip(cross_val_predict(m, df[feats], df['ActualPassRate'], cv=5), 0, 100)
+        df['SchoolType'] = df['SchoolType'].map({'Primary': 0, 'JSS': 1, 'SSS': 2})
+    feats = ['StudentTeacherRatio', 'PupilClassroomRatio', 'Classrooms', 'HasElectricity', 'SchoolType']    df['PredictedPassRate'] = np.clip(cross_val_predict(m, df[feats], df['ActualPassRate'], cv=5), 0, 100)
     m.fit(df[feats], df['ActualPassRate'])
     df['Residual'] = df['ActualPassRate'] - df['PredictedPassRate']
     df['ResidualZScore'] = stats.zscore(df['Residual'])
@@ -159,7 +159,8 @@ sim_input = pd.DataFrame([{
     'StudentTeacherRatio': new_ratio,
     'Classrooms': new_classrooms,
     'PupilClassroomRatio': sim_row['Enrollment'] / new_classrooms,
-    'HasElectricity': sim_row['HasElectricity']
+    'HasElectricity': sim_row['HasElectricity'],
+    'SchoolType': sim_row['SchoolType']
 }])
 
 new_predicted = model.predict(sim_input)[0]
