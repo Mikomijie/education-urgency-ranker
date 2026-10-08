@@ -358,7 +358,7 @@ sim_input = pd.DataFrame([{
     'PupilClassroomRatio': sim_row['Enrollment'] / new_classrooms,
     'FacilityScore': sim_row['FacilityScore'],
     'GradeDropoutRate': sim_row['GradeDropoutRate'],
-}])
+}])[features]
 
 new_predicted = model.predict(sim_input)[0]
 original_predicted = sim_row['PredictedPassRate']
