@@ -1,148 +1,193 @@
 # EduGaps-AI — Nigeria Education Resource Intelligence
 
-> Ranking all 774 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression and AI-powered policy synthesis.
+> Ranking all 777 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression, SHAP explainability, and AI-powered policy synthesis.
 
-🔗 **Live Demo:** https://mikomijie-education-urgency-ranker-app-n0efbq.streamlit.app/ 
-📁 **GitHub:** https://github.com/Mikomijie/education-urgency-ranker
-
----
-
-## What Problem Does This Solve?
-
-Nigeria has 774 Local Government Areas, each with schools that vary wildly in teacher availability, classroom capacity, and exam outcomes. The Federal Ministry of Education cannot deploy teachers everywhere at once — they need to know **where intervention is most urgent**.
-
-The standard approach is to rank LGAs by raw pass rate or teacher count. But this is misleading: an LGA with few teachers but good outcomes doesn't need urgent help, while an LGA with adequate resources but terrible outcomes is a crisis hiding in plain sight.
-
-**EduGaps-AI solves this differently.** It asks: *given the resources an LGA has, what pass rate should it be achieving?* LGAs that fall far below their expected performance are flagged as urgent — because the problem there is systemic, not just a matter of adding more resources.
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red) ![XGBoost](https://img.shields.io/badge/XGBoost-ML-green) ![Track](https://img.shields.io/badge/Track-Education-orange)
 
 ---
 
-## How It Works — The ML Methodology
+## The Problem
 
-### Step 1: Learn What "Expected" Performance Looks Like
-An XGBoost regression model is trained on 5 features per LGA:
-- `StudentTeacherRatio` — students per teacher
-- `PupilClassroomRatio` — students per classroom
-- `Classrooms` — total classroom count
-- `HasElectricity` — whether the school zone has electricity (0/1)
-- `SchoolType` — encoded: Primary=0, JSS=1, SSS=2
+Nigeria publishes education data — enrollment figures, teacher numbers, facility conditions, exam outcomes — but it's scattered across UBEC, state ministries, WAEC/NECO, and NBS. No single tool brings it together to show, at a glance, where the system is actually failing.
 
-The model learns what pass rate a given set of resources *should* produce, using **5-fold cross-validation with out-of-fold predictions** to prevent data leakage. Residuals are computed on held-out folds only.
+Two LGAs can look identical on paper — same enrollment, same reported funding — yet produce wildly different learning outcomes. A policymaker today has no simple way to spot that gap and act on it early.
 
-### Step 2: Compute the Performance Gap (Residual)
-Residual = ActualPassRate − PredictedPassRate
-A **negative residual** means the LGA is underperforming vs. its resources — a red flag.
+**EduGaps-AI solves this.** It doesn't just show who has fewer teachers. It shows who is underperforming *relative to the resources they already have* — and that distinction changes everything about how you intervene.
 
-### Step 3: Z-Score Urgency Tiering
-Residuals are standardised into Z-scores and bucketed into 4 tiers:
+---
 
-| Tier | Z-Score | Meaning |
-|------|---------|---------|
-| 🔴 Critical | < −1.5 | Severely underperforming — immediate intervention needed |
-| 🟠 High | < −0.5 | Underperforming — high priority |
-| 🟡 Medium | < 0 | Slightly below expectation |
-| 🟢 Low | ≥ 0 | Meeting or exceeding expectations |
+## How It Works
+
+### The Core Model: Expected vs. Actual
+
+We train an XGBoost regression model on five features per LGA:
+
+| Feature | What it captures |
+|---|---|
+| `StudentTeacherRatio` | Teacher availability |
+| `PupilClassroomRatio` | Physical space per student |
+| `Classrooms` | Raw infrastructure count |
+| `FacilityScore` | Overall school condition (0–1) |
+| `GradeDropoutRate` | Fraction of pupils who drop before JSS3 |
+
+The model predicts what a LGA's **exam pass rate should be** given its resources. We then compute the **residual** (Actual − Predicted). A large negative residual means the LGA is performing far below what its resources would predict — and that's the real signal.
+
+### Urgency Tiers
+
+Each LGA is assigned an urgency tier based on its residual Z-score:
+
+| Tier | Z-score | Meaning |
+|---|---|---|
+| 🔴 Critical | < −1.5 | Severely underperforming vs. resources |
+| 🟠 High | −1.5 to −0.5 | Meaningfully behind predictions |
+| 🟡 Medium | −0.5 to 0 | Slightly below expectations |
+| 🟢 Low | ≥ 0 | Meeting or exceeding predicted outcomes |
+
+### Anomaly Typing
+
+Not all underperformance has the same root cause. EduGaps-AI classifies each flagged LGA into one of five anomaly types:
+
+- **Staffing Gap** — teacher ratio is the dominant problem
+- **Infrastructure Gap** — classrooms and facility score are the bottleneck
+- **Staffing + Infrastructure Gap** — both are failing simultaneously
+- **High Dropout Risk** — dropout rate is the primary driver of underperformance
+- **Unexplained Underperformance** — resources are adequate but results are still poor (governance/accountability issue — flag for SUBEB audit)
+
+This matters because deploying teachers to an "Unexplained Underperformance" LGA won't help. That LGA needs an audit, not a deployment.
 
 ---
 
 ## Features
 
-### 📊 National Dashboard
-- KPI cards: Total LGAs, Critical count, Teachers Needed, Avg Pass Rate
-- Urgency distribution bar chart
-- Student-Teacher Ratio vs Pass Rate scatter plot (coloured by urgency tier)
-- State-level average performance gap ranked chart
-- Top 20 most urgent LGAs table with colour gradient
-
-### ⭐ Star LGAs — Efficiency Benchmarks
-Top 10 LGAs that outperform their predicted pass rate the most. These are high-efficiency outliers — studying what they do differently is as valuable as fixing the worst performers.
-
-### 🔬 What-If Simulator
-Select any LGA and adjust:
-- **Extra Teachers Deployed** (0–200)
-- **Extra Classrooms Built** (0–50)
-
-The model re-predicts in real time, showing the new expected pass rate and projected urgency tier change. Built for policymakers to run scenarios before committing resources.
-
-### 🩺 LGA Diagnosis
-Select any of the 774 LGAs for a plain-language breakdown:
-- Current student-teacher ratio vs national 1:40 benchmark
-- Actual vs predicted pass rate gap
-- Exact number of teachers needed to reach benchmark
-
-### 🤖 AI Policy Brief Generator
-Powered by OpenRouter LLM. For any selected LGA, generates 3 specific, actionable intervention recommendations for the State Ministry of Education — tailored to that LGA's exact data profile.
-
-### 📥 Export
-Download filtered LGA data as CSV for offline analysis.
+- **National map** — Nigeria scatter_geo bubble map coloured by urgency tier, sized by enrollment
+- **State-level ranking** — horizontal bar chart showing average resource-outcome gap per state
+- **Top 20 LGA table** — sortable, colour-coded, with teachers needed to reach the 1:40 federal benchmark
+- **Zone-level summary** — aggregated view across Nigeria's 6 geopolitical zones
+- **⭐ Star LGAs** — LGAs outperforming predictions the most (benchmarks for what good looks like)
+- **What-If Simulator** — adjust teacher deployment and classroom construction, see the predicted pass rate change and tier shift in real time
+- **SHAP waterfall chart** — per-LGA breakdown of exactly which features are driving the model's prediction (no black box)
+- **LGA Diagnosis** — plain-language summary of each LGA's situation and what it would take to reach benchmark
+- **AI Policy Brief** — one-click generation of a 3-point intervention plan for the State Ministry of Education, powered by OpenRouter
+- **CSV export** — download the full filtered dataset for offline use
 
 ---
 
 ## Data
 
-This prototype uses **synthetically generated data** modelled on realistic Nigerian education distributions. Real LGA names are used (all 774 across 36 states + FCT). Figures are illustrative.
+### Synthetic Data (Current Prototype)
 
-The synthetic data generator (`generate_synthetic_data.py`) produces:
-- Realistic resource distributions (enrollment, teachers, classrooms)
-- Pass rates with meaningful signal from resources plus real-world noise
-- Anomaly injection: 8% severe underperformers (ghost teachers, resource diversion), 18% mild underperformers, 12% high-efficiency star LGAs
-- School type distribution: 50% Primary, 30% JSS, 20% SSS
-- Electricity access: 60% have electricity
+This prototype uses synthetically generated data modelled on realistic Nigerian education distributions. LGA names are real (all 777 LGAs across 36 states + FCT). Figures are illustrative.
 
-The methodology applies directly to real EMIS/UBEC data when available.
+The synthetic data is calibrated to:
+- **Real NECO 2024 state-level pass rates** for 20 states (Kano, Lagos, Ogun, Rivers, Kaduna, etc.)
+- **UBEC national benchmarks**: 194,876 teachers needed nationally; 1,107,854 classrooms needed
+- **Zone-aware profiles**: North West and North East zones modelled with higher dropout and weaker facility scores; South West and South East with stronger baselines — reflecting documented regional disparities
+- **Teacher absenteeism**: ~25% national average factored into effective teacher counts
 
-**Limitations & Real-World Validation Path:**
-On real EMIS data, we'd expect missing values in teacher counts, inconsistent LGA name spellings across datasets, and enrollment figures that don't match exam cohorts. The preprocessing pipeline would need to handle these before residuals are computed. The model architecture remains unchanged — only the input data changes. A pilot with one state's real data (e.g. Lagos or Kano SUBEB records) would be the natural next validation step.
----
+### Real Data (Next Step)
 
-## Project Structure
-education-urgency-ranker/
-├── app.py                      # Main Streamlit application
-├── generate_synthetic_data.py  # Data generation script
-├── education_data.csv          # Generated dataset (774 LGAs)
-├── requirements.txt            # Python dependencies
-└── README.md
+The methodology applies directly to real EMIS/UBEC data. Swap `education_data.csv` for real data with the same column schema and the entire pipeline runs unchanged.
+
+Suggested real data sources:
+- UBEC Education Data (ubec.gov.ng)
+- NBS Education Statistics
+- WAEC/NECO public result summaries
+- State ministry of education open datasets
 
 ---
 
-## Tech Stack
+## Geopolitical Zone Profiles
 
-| Component | Technology |
-|-----------|-----------|
-| ML Model | XGBoost (XGBRegressor) |
-| Validation | 5-fold cross-validation (sklearn) |
-| Dashboard | Streamlit |
-| Charts | Plotly Express |
-| AI Briefs | OpenRouter API (LLM) |
-| Data | Pandas, NumPy |
-| Statistics | SciPy (Z-score) |
+| Zone | States | Baseline Profile |
+|---|---|---|
+| North West | Kano, Kaduna, Sokoto, Zamfara, Kebbi, Katsina, Jigawa | Weakest — highest dropout, lowest facility score |
+| North East | Borno, Yobe, Gombe, Adamawa, Taraba, Bauchi | Very weak — conflict impact on infrastructure |
+| North Central | Niger, Kogi, Benue, Plateau, Nassarawa, Kwara, FCT | Moderate |
+| South West | Lagos, Ogun, Oyo, Osun, Ondo, Ekiti | Strongest — best facility scores, lowest dropout |
+| South East | Anambra, Imo, Enugu, Ebonyi, Abia | Strong |
+| South South | Rivers, Delta, Edo, Akwa Ibom, Cross River, Bayelsa | Moderate-strong |
 
 ---
 
-## Running Locally
+## Installation
 
 ```bash
-git clone https://github.com/Mikomijie/education-urgency-ranker
+git clone https://github.com/Mikomijie/education-urgency-ranker.git
 cd education-urgency-ranker
+
 pip install -r requirements.txt
 
-# Add your OpenRouter API key
-echo "OPENROUTER_API_KEY=your-key-here" > .env
+# Optional: regenerate the synthetic dataset
+python generate_synthetic_data.py
 
+# Run the app
 streamlit run app.py
 ```
 
+### Environment Variables
+
+Create a `.env` file in the project root:
+OPENROUTER_API_KEY=your_key_here
+
+The AI Policy Brief feature requires an OpenRouter API key. All other features work without it.
+
 ---
 
-## National Benchmark
-
-All teacher deployment calculations use the **Federal Ministry of Education standard of 1 teacher per 40 students** as the national benchmark. `TeachersNeeded = (Enrollment ÷ 40) − CurrentTeachers`
+## Requirements
+streamlit
+pandas
+numpy
+plotly
+xgboost
+scikit-learn
+scipy
+shap
+openai
+python-dotenv
 
 ---
 
-## Datathon Context
+## Judging Rubric Alignment
 
-Built for the **YDP Datathon Nigeria — Education Track (Track 02)**.  
-The residual regression approach was chosen specifically because it identifies *systemic underperformance* rather than just resource poverty — an important distinction for policy targeting.
+| Criterion | How EduGaps-AI addresses it |
+|---|---|
+| **Problem relevance & clarity** | Sharply scoped: "which LGAs are underperforming relative to their resources, and why" — not just "AI for education" |
+| **Technical execution** | XGBoost residual regression + SHAP explainability + anomaly typing; runs on real-labelled synthetic data; handles all 777 LGAs |
+| **Impact potential** | Anomaly typing means interventions are targeted, not generic; Unexplained Underperformance flag creates a direct path to SUBEB audit referral |
+| **Presentation & clarity** | Non-technical judges can read urgency tiers and the LGA Diagnosis section without knowing what XGBoost is |
+| **Creativity** | Residual-based scoring (not raw ratios) + anomaly typing as a policy routing mechanism is a fresh framing |
 
-> *"Rather than ranking LGAs by raw pass rate, EduGaps-AI uses XGBoost to learn what pass rate a given set of resources should produce. LGAs where actual results fall significantly below this prediction (negative residual, Z-score < −1.5) are flagged as Critical — these are places where resources exist but outcomes still disappoint, suggesting systemic issues beyond mere underfunding."*
+---
+
+## What's Working vs. What's Next
+
+### Working now
+- Full pipeline: synthetic data → model → dashboard → AI brief
+- All 777 LGAs scored, tiered, and anomaly-typed
+- SHAP explainability per LGA
+- What-If Simulator with tier-shift indicator
+- Zone and state filters
+
+### Placeholders
+- Data is synthetic (real UBEC/NECO data would plug straight in)
+- Map uses state centroids, not true LGA polygons
+- AI brief uses OpenRouter auto-routing (not a fine-tuned model)
+
+### What we'd build next
+- Integrate real EMIS/UBEC data via API
+- True LGA-level choropleth with GADM shapefiles
+- Time-series tracking (flag LGAs getting worse year-on-year)
+- SUBEB referral workflow integration
+- Mobile-friendly field officer view
+
+---
+
+## Team
+
+Built by **Mikomijie** for the YDP Community Datathon 2026 — Education Track.
+
+---
+
+## License
+
+MIT
