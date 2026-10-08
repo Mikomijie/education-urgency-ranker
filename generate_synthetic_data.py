@@ -3,7 +3,6 @@ import pandas as pd
 
 np.random.seed(42)
 
-# Real Nigerian state names with realistic LGA counts
 NIGERIA_LGAS = {
     'Abia': ['Aba North','Aba South','Arochukwu','Bende','Ikwuano','Isiala Ngwa North','Isiala Ngwa South','Isuikwuato','Obi Ngwa','Ohafia','Osisioma Ngwa','Ugwunagbo','Ukwa East','Ukwa West','Umuahia North','Umuahia South','Umu Nneochi'],
     'Adamawa': ['Demsa','Fufore','Ganye','Girei','Gombi','Guyuk','Hong','Jada','Lamurde','Madagali','Maiha','Mayo-Belwa','Michika','Mubi North','Mubi South','Numan','Shelleng','Song','Toungo','Yola North','Yola South'],
@@ -44,8 +43,37 @@ NIGERIA_LGAS = {
     'Zamfara': ['Anka','Bakura','Birnin Magaji','Bukkuyum','Bungudu','Gummi','Gusau','Kauran Namoda','Maradun','Maru','Shinkafi','Talatan Mafara','Tsafe','Zurmi'],
 }
 
+# Geopolitical zones — used for zone-level analysis in the app
+ZONE_MAP = {
+    'Kano': 'North West', 'Katsina': 'North West', 'Sokoto': 'North West',
+    'Kebbi': 'North West', 'Zamfara': 'North West', 'Kaduna': 'North West', 'Jigawa': 'North West',
+    'Borno': 'North East', 'Yobe': 'North East', 'Adamawa': 'North East',
+    'Gombe': 'North East', 'Bauchi': 'North East', 'Taraba': 'North East',
+    'Niger': 'North Central', 'Kogi': 'North Central', 'Kwara': 'North Central',
+    'Nasarawa': 'North Central', 'Benue': 'North Central', 'Plateau': 'North Central', 'FCT': 'North Central',
+    'Lagos': 'South West', 'Ogun': 'South West', 'Oyo': 'South West',
+    'Osun': 'South West', 'Ondo': 'South West', 'Ekiti': 'South West',
+    'Rivers': 'South South', 'Delta': 'South South', 'Edo': 'South South',
+    'Bayelsa': 'South South', 'Cross River': 'South South', 'Akwa Ibom': 'South South',
+    'Enugu': 'South East', 'Anambra': 'South East', 'Imo': 'South East',
+    'Abia': 'South East', 'Ebonyi': 'South East',
+}
+
+# North tends to have worse infrastructure and higher dropout
+ZONE_PROFILES = {
+    'North West':  {'facility_base': 0.35, 'dropout_base': 0.28},
+    'North East':  {'facility_base': 0.30, 'dropout_base': 0.32},
+    'North Central': {'facility_base': 0.50, 'dropout_base': 0.18},
+    'South West':  {'facility_base': 0.72, 'dropout_base': 0.08},
+    'South South': {'facility_base': 0.65, 'dropout_base': 0.12},
+    'South East':  {'facility_base': 0.68, 'dropout_base': 0.10},
+}
+
 rows = []
 for state, lga_list in NIGERIA_LGAS.items():
+    zone = ZONE_MAP.get(state, 'North Central')
+    profile = ZONE_PROFILES[zone]
+
     for lga_name in lga_list:
         enrollment = np.random.randint(3000, 60000)
         teachers = np.random.randint(80, 1500)
@@ -54,17 +82,46 @@ for state, lga_list in NIGERIA_LGAS.items():
         student_teacher_ratio = round(enrollment / teachers, 2)
         pupil_classroom_ratio = round(enrollment / classrooms, 2)
 
-        # Pass rate generated INDEPENDENTLY from resources
-        # Only weak correlation — not a formula
-        base_pass = 60 - (student_teacher_ratio * 0.4) - (pupil_classroom_ratio * 0.05) + np.random.normal(0, 12)
+        # ── Facility Score (0-1): electricity, water, toilets, building condition ──
+        facility_score = round(
+            np.clip(
+                np.random.beta(
+                    a=max(0.5, profile['facility_base'] * 5),
+                    b=max(0.5, (1 - profile['facility_base']) * 5)
+                ) + np.random.normal(0, 0.05),
+                0.05, 0.99
+            ), 2
+        )
+
+        # ── Grade Dropout Rate: fraction of enrolled pupils who drop before JSS3 ──
+        dropout_rate = round(
+            np.clip(
+                profile['dropout_base'] + np.random.normal(0, 0.06)
+                + (0.05 if student_teacher_ratio > 55 else 0)
+                + (0.04 if facility_score < 0.4 else 0),
+                0.02, 0.65
+            ), 3
+        )
+
+        # ── Pass rate: weakly correlated with resources + noise ──
+        base_pass = (
+            60
+            - (student_teacher_ratio * 0.4)
+            - (pupil_classroom_ratio * 0.05)
+            + (facility_score * 10)        # better facilities → modest boost
+            - (dropout_rate * 20)          # high dropout → lower pass rate
+            + np.random.normal(0, 12)
+        )
         base_pass = np.clip(base_pass, 10, 95)
-        # Small nudges from resources (realistic but not deterministic)
+
         if student_teacher_ratio > 60:
             base_pass -= np.random.uniform(2, 8)
         if student_teacher_ratio < 30:
             base_pass += np.random.uniform(1, 5)
         if pupil_classroom_ratio > 80:
             base_pass -= np.random.uniform(1, 5)
+        if facility_score < 0.3:
+            base_pass -= np.random.uniform(3, 10)
 
         # Inject real-world anomalies
         anomaly_type = np.random.choice(
@@ -72,36 +129,30 @@ for state, lga_list in NIGERIA_LGAS.items():
             p=[0.08, 0.18, 0.62, 0.12]
         )
         if anomaly_type == 'underperform_severe':
-            base_pass -= np.random.uniform(15, 30)  # Ghost teachers, resource diversion
+            base_pass -= np.random.uniform(15, 30)  # ghost teachers, resource diversion
         elif anomaly_type == 'underperform_mild':
             base_pass -= np.random.uniform(5, 15)
         elif anomaly_type == 'overperform':
-            base_pass += np.random.uniform(8, 20)   # High-efficiency star LGA
-
-        school_type = np.random.choice(['Primary', 'JSS', 'SSS'], p=[0.5, 0.3, 0.2])
-        has_electricity = np.random.choice([1, 0], p=[0.6, 0.4])
-
-        if has_electricity:
-            base_pass += np.random.uniform(2, 6)
-        if school_type == 'SSS':
-            base_pass -= np.random.uniform(3, 8)
+            base_pass += np.random.uniform(8, 20)   # high-efficiency star LGA
 
         actual_pass_rate = round(np.clip(base_pass, 5, 98), 1)
 
         rows.append({
             'State': state,
+            'Zone': zone,
             'LGA': lga_name,
             'Enrollment': enrollment,
             'Teachers': teachers,
             'Classrooms': classrooms,
             'StudentTeacherRatio': student_teacher_ratio,
             'PupilClassroomRatio': pupil_classroom_ratio,
-            'SchoolType': school_type,
-            'HasElectricity': has_electricity,
-            'ActualPassRate': actual_pass_rate
+            'FacilityScore': facility_score,
+            'GradeDropoutRate': dropout_rate,
+            'ActualPassRate': actual_pass_rate,
         })
 
 df = pd.DataFrame(rows)
 df.to_csv('education_data.csv', index=False)
-print(f"Generated {len(df)} LGAs across {df['State'].nunique()} states")
-print(df[['StudentTeacherRatio', 'ActualPassRate']].corr())
+print(f"Generated {len(df)} LGAs across {df['State'].nunique()} states and {df['Zone'].nunique()} zones")
+print(f"New columns: FacilityScore (mean={df['FacilityScore'].mean():.2f}), GradeDropoutRate (mean={df['GradeDropoutRate'].mean():.2f})")
+print(df[['StudentTeacherRatio', 'FacilityScore', 'GradeDropoutRate', 'ActualPassRate']].corr())

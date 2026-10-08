@@ -8,3 +8,4 @@ scipy
 matplotlib
 openai
 python-dotenv
+shap
