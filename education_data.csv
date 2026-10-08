@@ -1,775 +1,775 @@
-State,LGA,Enrollment,Teachers,Classrooms,StudentTeacherRatio,PupilClassroomRatio,SchoolType,HasElectricity,ActualPassRate
-Abia,Aba North,59422,940,300,63.21,198.07,JSS,0,5.0
-Abia,Aba South,4685,1412,799,3.32,5.86,SSS,0,82.5
-Abia,Arochukwu,9396,827,590,11.36,15.93,Primary,0,37.4
-Abia,Bende,4899,1347,534,3.64,9.17,Primary,1,72.3
-Abia,Ikwuano,46323,93,271,498.1,170.93,JSS,0,5.0
-Abia,Isiala Ngwa North,43994,285,110,154.36,399.95,JSS,1,5.5
-Abia,Isiala Ngwa South,48758,481,759,101.37,64.24,Primary,1,6.5
-Abia,Isuikwuato,27253,375,754,72.67,36.14,SSS,1,9.7
-Abia,Obi Ngwa,42976,1260,44,34.11,976.73,JSS,0,5.0
-Abia,Ohafia,15666,310,70,50.54,223.8,Primary,1,11.0
-Abia,Osisioma Ngwa,14837,884,128,16.78,115.91,JSS,1,50.5
-Abia,Ugwunagbo,59090,472,236,125.19,250.38,JSS,1,5.0
-Abia,Ukwa East,21141,564,436,37.48,48.49,JSS,0,38.6
-Abia,Ukwa West,25299,657,711,38.51,35.58,JSS,0,70.3
-Abia,Umuahia North,32723,1443,360,22.68,90.9,JSS,1,38.3
-Abia,Umuahia South,12474,1462,739,8.53,16.88,Primary,1,57.8
-Abia,Umu Nneochi,37766,1477,701,25.57,53.87,Primary,1,94.9
-Adamawa,Demsa,23080,1031,110,22.39,209.82,Primary,1,44.3
-Adamawa,Fufore,49717,1233,82,40.32,606.3,JSS,1,20.6
-Adamawa,Ganye,5327,963,639,5.53,8.34,Primary,0,60.8
-Adamawa,Girei,45107,266,355,169.58,127.06,SSS,1,5.0
-Adamawa,Gombi,21343,630,367,33.88,58.16,JSS,0,48.7
-Adamawa,Guyuk,50025,230,444,217.5,112.67,JSS,1,5.0
-Adamawa,Hong,23932,1140,189,20.99,126.62,JSS,0,53.1
-Adamawa,Jada,9295,133,149,69.89,62.38,Primary,1,58.6
-Adamawa,Lamurde,53108,240,609,221.28,87.21,JSS,0,5.0
-Adamawa,Madagali,23880,719,62,33.21,385.16,SSS,1,21.1
-Adamawa,Maiha,51404,877,638,58.61,80.57,Primary,0,66.0
-Adamawa,Mayo-Belwa,48714,626,221,77.82,220.43,Primary,0,10.0
-Adamawa,Michika,34216,381,210,89.81,162.93,Primary,1,5.0
-Adamawa,Mubi North,29641,645,599,45.96,49.48,Primary,1,50.1
-Adamawa,Mubi South,30751,1496,275,20.56,111.82,SSS,0,25.9
-Adamawa,Numan,25009,982,65,25.47,384.75,Primary,1,53.4
-Adamawa,Shelleng,36621,130,694,281.7,52.77,SSS,1,22.8
-Adamawa,Song,18338,523,642,35.06,28.56,Primary,1,56.2
-Adamawa,Toungo,7142,946,685,7.55,10.43,Primary,0,62.9
-Adamawa,Yola North,20214,1161,375,17.41,53.9,Primary,1,57.3
-Adamawa,Yola South,48543,1340,301,36.23,161.27,Primary,0,44.8
-Akwa Ibom,Abak,11130,1179,183,9.44,60.82,Primary,0,64.0
-Akwa Ibom,Eastern Obolo,32124,1307,247,24.58,130.06,Primary,0,35.0
-Akwa Ibom,Eket,41649,601,787,69.3,52.92,JSS,0,20.1
-Akwa Ibom,Esit Eket,12540,595,45,21.08,278.67,SSS,1,10.5
-Akwa Ibom,Essien Udim,7000,1036,720,6.76,9.72,Primary,1,69.3
-Akwa Ibom,Etim Ekpo,6373,1356,528,4.7,12.07,JSS,1,79.4
-Akwa Ibom,Etinan,14261,497,144,28.69,99.03,JSS,0,36.4
-Akwa Ibom,Ibeno,30384,755,423,40.24,71.83,JSS,1,41.0
-Akwa Ibom,Ibesikpo Asutan,20955,1057,125,19.82,167.64,JSS,1,57.6
-Akwa Ibom,Ibiono Ibom,17397,675,758,25.77,22.95,Primary,0,61.1
-Akwa Ibom,Ika,39939,344,484,116.1,82.52,JSS,1,5.0
-Akwa Ibom,Ikono,55788,1254,173,44.49,322.47,Primary,1,19.0
-Akwa Ibom,Ikot Abasi,41102,812,264,50.62,155.69,Primary,1,41.8
-Akwa Ibom,Ikot Ekpene,26322,713,223,36.92,118.04,Primary,1,34.3
-Akwa Ibom,Ini,43262,296,330,146.16,131.1,Primary,0,5.0
-Akwa Ibom,Itu,31710,1229,480,25.8,66.06,JSS,0,64.7
-Akwa Ibom,Mbo,16116,974,390,16.55,41.32,Primary,1,67.5
-Akwa Ibom,Mkpat Enin,49196,213,87,230.97,565.47,JSS,0,5.0
-Akwa Ibom,Nsit Atai,24732,1330,688,18.6,35.95,Primary,0,54.6
-Akwa Ibom,Nsit Ibom,43821,1362,685,32.17,63.97,SSS,0,46.6
-Akwa Ibom,Nsit Ubium,27933,1051,437,26.58,63.92,Primary,1,32.8
-Akwa Ibom,Obot Akara,7835,581,174,13.49,45.03,JSS,1,66.4
-Akwa Ibom,Okobo,59866,1356,419,44.15,142.88,Primary,1,18.1
-Akwa Ibom,Onna,30712,225,253,136.5,121.39,Primary,0,10.9
-Akwa Ibom,Oron,24168,184,128,131.35,188.81,JSS,0,15.8
-Akwa Ibom,Oruk Anam,56330,1248,114,45.14,494.12,JSS,1,5.0
-Akwa Ibom,Udung Uko,45783,113,377,405.16,121.44,SSS,1,5.0
-Akwa Ibom,Ukanafun,22198,1406,236,15.79,94.06,SSS,0,38.4
-Akwa Ibom,Uruan,45289,177,364,255.87,124.42,Primary,0,5.0
-Akwa Ibom,Urue-Offong/Oruko,59882,160,162,374.26,369.64,JSS,1,5.0
-Akwa Ibom,Uyo,10941,132,479,82.89,22.84,Primary,1,21.4
-Anambra,Aguata,27071,979,389,27.65,69.59,SSS,1,31.8
-Anambra,Anambra East,14314,1108,495,12.92,28.92,Primary,1,39.4
-Anambra,Anambra West,49892,1176,278,42.43,179.47,JSS,1,27.9
-Anambra,Anaocha,7432,1129,286,6.58,25.99,SSS,1,62.6
-Anambra,Awka North,51513,444,695,116.02,74.12,SSS,1,5.0
-Anambra,Awka South,43441,885,768,49.09,56.56,Primary,1,32.4
-Anambra,Ayamelum,9229,205,566,45.02,16.31,JSS,0,53.6
-Anambra,Dunukofia,29734,307,140,96.85,212.39,Primary,0,6.7
-Anambra,Ekwusigo,51447,394,770,130.58,66.81,Primary,1,5.0
-Anambra,Idemili North,55669,429,636,129.76,87.53,JSS,0,15.4
-Anambra,Idemili South,56441,926,744,60.95,75.86,JSS,1,40.6
-Anambra,Ihiala,29386,803,254,36.6,115.69,Primary,1,44.1
-Anambra,Njikoka,42756,338,702,126.5,60.91,JSS,1,25.5
-Anambra,Nnewi North,8287,400,348,20.72,23.81,Primary,1,72.9
-Anambra,Nnewi South,34037,315,363,108.05,93.77,SSS,0,5.0
-Anambra,Ogbaru,24852,952,258,26.11,96.33,JSS,1,41.8
-Anambra,Onitsha North,21520,481,325,44.74,66.22,JSS,0,33.6
-Anambra,Onitsha South,10804,501,52,21.56,207.77,Primary,1,69.0
-Anambra,Orumba North,44157,658,420,67.11,105.14,Primary,0,5.0
-Anambra,Orumba South,3922,499,186,7.86,21.09,Primary,1,57.3
-Anambra,Oyi,49714,944,147,52.66,338.19,Primary,1,5.0
-Bauchi,Alkaleri,17382,403,714,43.13,24.34,JSS,1,55.3
-Bauchi,Bauchi,15298,1357,579,11.27,26.42,Primary,0,72.3
-Bauchi,Bogoro,13457,220,645,61.17,20.86,SSS,1,58.9
-Bauchi,Damban,41727,206,135,202.56,309.09,Primary,0,5.0
-Bauchi,Darazo,50882,893,642,56.98,79.26,Primary,1,37.3
-Bauchi,Dass,55659,392,146,141.99,381.23,SSS,0,5.0
-Bauchi,Gamawa,11666,497,376,23.47,31.03,Primary,1,32.7
-Bauchi,Ganjuwa,58472,364,92,160.64,635.57,SSS,1,5.0
-Bauchi,Giade,24566,1463,590,16.79,41.64,JSS,1,44.9
-Bauchi,Itas/Gadau,30952,508,506,60.93,61.17,Primary,0,14.3
-Bauchi,Jama'are,51302,1089,223,47.11,230.05,Primary,1,10.6
-Bauchi,Katagum,51770,879,487,58.9,106.3,SSS,0,52.9
-Bauchi,Kirfi,22846,1452,37,15.73,617.46,Primary,0,31.2
-Bauchi,Misau,38822,1367,447,28.4,86.85,SSS,0,22.3
-Bauchi,Ningi,58764,989,764,59.42,76.92,JSS,0,25.1
-Bauchi,Shira,23079,1484,577,15.55,40.0,SSS,0,47.6
-Bauchi,Tafawa Balewa,18358,1489,736,12.33,24.94,JSS,1,41.8
-Bauchi,Toro,57771,933,393,61.92,147.0,SSS,0,22.7
-Bauchi,Warji,38954,1312,555,29.69,70.19,Primary,1,51.8
-Bauchi,Zaki,11996,154,175,77.9,68.55,Primary,1,36.5
-Bayelsa,Brass,59293,1481,617,40.04,96.1,Primary,0,38.8
-Bayelsa,Ekeremor,38737,1060,505,36.54,76.71,Primary,1,59.2
-Bayelsa,Kolokuma/Opokuma,22250,772,321,28.82,69.31,JSS,0,47.0
-Bayelsa,Nembe,56302,702,693,80.2,81.24,Primary,1,23.7
-Bayelsa,Ogbia,59253,444,511,133.45,115.95,JSS,1,7.4
-Bayelsa,Sagbama,27354,210,527,130.26,51.91,Primary,1,29.5
-Bayelsa,Southern Ijaw,52082,896,46,58.13,1132.22,SSS,0,5.0
-Bayelsa,Yenagoa,4750,453,739,10.49,6.43,JSS,1,88.3
-Benue,Ado,30935,857,45,36.1,687.44,Primary,0,19.9
-Benue,Agatu,20905,906,756,23.07,27.65,Primary,1,59.3
-Benue,Apa,3614,1376,555,2.63,6.51,Primary,0,17.8
-Benue,Buruku,15651,118,556,132.64,28.15,JSS,0,5.0
-Benue,Gboko,51288,95,522,539.87,98.25,JSS,0,5.0
-Benue,Guma,6810,1142,58,5.96,117.41,JSS,0,60.2
-Benue,Gwer East,13616,345,388,39.47,35.09,Primary,0,41.3
-Benue,Gwer West,35913,372,694,96.54,51.75,Primary,1,28.2
-Benue,Katsina-Ala,46194,140,409,329.96,112.94,Primary,0,5.0
-Benue,Konshisha,57842,1413,272,40.94,212.65,Primary,1,25.7
-Benue,Kwande,55997,133,76,421.03,736.8,JSS,1,7.3
-Benue,Logo,27578,239,768,115.39,35.91,JSS,1,5.0
-Benue,Makurdi,21024,1031,352,20.39,59.73,Primary,1,53.6
-Benue,Obi,53106,1329,153,39.96,347.1,Primary,1,5.0
-Benue,Ogbadibo,6020,875,622,6.88,9.68,JSS,0,70.9
-Benue,Ohimini,37080,1365,245,27.16,151.35,SSS,0,35.4
-Benue,Oju,35088,1273,385,27.56,91.14,Primary,0,58.1
-Benue,Okpokwu,43329,751,392,57.7,110.53,JSS,0,45.3
-Benue,Otukpo,29123,374,253,77.87,115.11,Primary,0,13.3
-Benue,Tarka,4007,1429,496,2.8,8.08,SSS,1,52.3
-Benue,Ukum,8084,357,225,22.64,35.93,JSS,1,49.7
-Benue,Ushongo,14383,289,335,49.77,42.93,Primary,0,46.6
-Benue,Vandeikya,24427,460,489,53.1,49.95,JSS,1,37.8
-Borno,Abadam,39124,595,128,65.75,305.66,JSS,1,6.0
-Borno,Askira/Uba,16261,1187,51,13.7,318.84,Primary,1,46.6
-Borno,Bama,53085,1265,192,41.96,276.48,Primary,0,31.2
-Borno,Bayo,21639,1163,459,18.61,47.14,Primary,0,24.5
-Borno,Biu,56625,978,587,57.9,96.47,JSS,1,5.0
-Borno,Chibok,12208,1035,755,11.8,16.17,Primary,1,41.9
-Borno,Damboa,33015,417,395,79.17,83.58,JSS,0,19.2
-Borno,Dikwa,55648,1495,243,37.22,229.0,Primary,1,27.6
-Borno,Gubio,38488,793,271,48.53,142.02,Primary,1,38.6
-Borno,Guzamala,50219,997,132,50.37,380.45,Primary,1,21.8
-Borno,Gwoza,9090,396,664,22.95,13.69,JSS,0,47.1
-Borno,Hawul,57535,1421,113,40.49,509.16,SSS,1,43.1
-Borno,Jere,32545,93,41,349.95,793.78,Primary,0,5.0
-Borno,Kaga,55579,764,762,72.75,72.94,JSS,1,35.7
-Borno,Kala/Balge,5920,1162,672,5.09,8.81,Primary,1,75.2
-Borno,Konduga,33027,941,754,35.1,43.8,Primary,1,60.9
-Borno,Kukawa,42063,1026,637,41.0,66.03,Primary,1,55.2
-Borno,Kwaya Kusar,29958,1011,324,29.63,92.46,JSS,0,54.2
-Borno,Mafa,30490,873,549,34.93,55.54,JSS,0,24.3
-Borno,Magumeri,3525,413,31,8.54,113.71,Primary,1,59.2
-Borno,Maiduguri,44089,917,174,48.08,253.39,JSS,1,38.2
-Borno,Marte,35419,380,332,93.21,106.68,JSS,1,19.4
-Borno,Mobbar,41663,1051,542,39.64,76.87,Primary,0,28.1
-Borno,Monguno,54886,1307,194,41.99,282.92,JSS,1,36.9
-Borno,Ngala,19001,1048,540,18.13,35.19,Primary,1,42.3
-Borno,Nganzai,32856,1088,720,30.2,45.63,JSS,1,61.3
-Borno,Shani,15115,230,413,65.72,36.6,JSS,1,21.6
-Cross River,Abi,44974,748,381,60.13,118.04,SSS,0,5.0
-Cross River,Akamkpa,53138,424,30,125.33,1771.27,JSS,1,7.7
-Cross River,Akpabuyo,40873,783,604,52.2,67.67,JSS,1,39.9
-Cross River,Bakassi,28923,1484,131,19.49,220.79,JSS,0,43.7
-Cross River,Bekwarra,28426,1468,360,19.36,78.96,JSS,0,34.3
-Cross River,Biase,37958,996,634,38.11,59.87,Primary,1,33.9
-Cross River,Boki,47298,946,651,50.0,72.65,JSS,0,51.6
-Cross River,Calabar Municipal,46461,708,250,65.62,185.84,JSS,1,30.7
-Cross River,Calabar South,28519,422,355,67.58,80.34,SSS,1,29.3
-Cross River,Etung,39914,403,170,99.04,234.79,Primary,1,18.1
-Cross River,Ikom,9894,1259,320,7.86,30.92,SSS,0,43.6
-Cross River,Obanliku,37054,1454,137,25.48,270.47,Primary,1,39.9
-Cross River,Obubra,27611,1187,481,23.26,57.4,JSS,1,35.6
-Cross River,Obudu,19393,1063,407,18.24,47.65,JSS,1,45.9
-Cross River,Odukpani,42575,610,641,69.8,66.42,Primary,1,50.7
-Cross River,Ogoja,52634,1211,255,43.46,206.41,Primary,1,22.4
-Cross River,Yakurr,43390,1263,552,34.35,78.61,Primary,0,35.6
-Cross River,Yala,49882,342,626,145.85,79.68,Primary,0,5.0
-Delta,Aniocha North,58754,1078,309,54.5,190.14,SSS,1,16.3
-Delta,Aniocha South,5472,1078,737,5.08,7.42,JSS,1,84.5
-Delta,Bomadi,59549,146,410,407.87,145.24,SSS,1,5.0
-Delta,Burutu,33137,532,506,62.29,65.49,Primary,1,18.1
-Delta,Ethiope East,32328,1059,544,30.53,59.43,JSS,0,50.8
-Delta,Ethiope West,35916,1187,435,30.26,82.57,Primary,0,38.6
-Delta,Ika North East,12715,817,538,15.56,23.63,Primary,1,62.9
-Delta,Ika South,39035,390,291,100.09,134.14,Primary,0,17.7
-Delta,Isoko North,15329,757,623,20.25,24.61,Primary,1,76.8
-Delta,Isoko South,15686,657,159,23.88,98.65,SSS,1,54.9
-Delta,Ndokwa East,11286,912,139,12.38,81.19,JSS,1,47.6
-Delta,Ndokwa West,26563,207,637,128.32,41.7,Primary,0,22.9
-Delta,Okpe,54871,122,283,449.76,193.89,Primary,0,5.0
-Delta,Oshimili North,29526,1159,492,25.48,60.01,Primary,1,62.8
-Delta,Oshimili South,34823,479,793,72.7,43.91,Primary,0,36.4
-Delta,Patani,40285,1334,719,30.2,56.03,Primary,1,50.9
-Delta,Sapele,29715,1061,555,28.01,53.54,Primary,0,39.8
-Delta,Udu,46668,729,500,64.02,93.34,Primary,0,5.0
-Delta,Ughelli North,38153,252,701,151.4,54.43,SSS,1,5.0
-Delta,Ughelli South,40487,673,773,60.16,52.38,SSS,1,28.2
-Delta,Ukwuani,33911,96,149,353.24,227.59,Primary,0,5.0
-Delta,Uvwie,28364,1387,744,20.45,38.12,Primary,1,45.0
-Delta,Warri North,56078,935,202,59.98,277.61,Primary,1,29.5
-Delta,Warri South,10788,487,512,22.15,21.07,Primary,1,63.3
-Delta,Warri South West,48454,1314,420,36.88,115.37,SSS,1,29.8
-Ebonyi,Abakaliki,42279,1323,366,31.96,115.52,JSS,1,56.4
-Ebonyi,Afikpo North,14824,1485,619,9.98,23.95,Primary,1,64.6
-Ebonyi,Afikpo South,6983,1391,317,5.02,22.03,SSS,1,49.8
-Ebonyi,Ebonyi,58419,1064,655,54.91,89.19,Primary,0,26.4
-Ebonyi,Ezza North,51758,118,526,438.63,98.4,Primary,0,5.0
-Ebonyi,Ezza South,36069,1463,267,24.65,135.09,Primary,1,71.6
-Ebonyi,Ikwo,56710,515,312,110.12,181.76,Primary,0,5.0
-Ebonyi,Ishielu,4376,775,544,5.65,8.04,JSS,0,67.9
-Ebonyi,Ivo,32806,215,391,152.59,83.9,SSS,1,5.0
-Ebonyi,Izzi,47522,552,39,86.09,1218.51,JSS,1,6.0
-Ebonyi,Ohaukwu,13805,1115,238,12.38,58.0,JSS,0,60.2
-Ebonyi,Ohaozara,39751,1094,99,36.34,401.53,Primary,1,31.6
-Ebonyi,Onicha,17537,117,217,149.89,80.82,Primary,0,5.0
-Edo,Akoko-Edo,19087,415,727,45.99,26.25,JSS,0,62.6
-Edo,Egor,31731,994,348,31.92,91.18,JSS,0,44.0
-Edo,Esan Central,46934,947,733,49.56,64.03,Primary,1,5.0
-Edo,Esan North-East,28051,842,332,33.31,84.49,Primary,0,57.6
-Edo,Esan South-East,33447,1150,428,29.08,78.15,JSS,1,64.2
-Edo,Esan West,37865,1052,648,35.99,58.43,Primary,1,14.8
-Edo,Etsako Central,26284,626,331,41.99,79.41,Primary,1,38.0
-Edo,Etsako East,46363,1363,667,34.02,69.51,Primary,1,32.2
-Edo,Etsako West,45821,888,211,51.6,217.16,Primary,1,36.2
-Edo,Igueben,12557,1323,192,9.49,65.4,SSS,1,47.4
-Edo,Ikpoba-Okha,52733,920,257,57.32,205.19,JSS,0,15.9
-Edo,Oredo,14918,1023,228,14.58,65.43,JSS,0,64.1
-Edo,Orhionmwon,23644,393,50,60.16,472.88,SSS,0,10.6
-Edo,Ovia North-East,28000,240,207,116.67,135.27,JSS,0,5.0
-Edo,Ovia South-West,36340,1457,57,24.94,637.54,Primary,1,11.5
-Edo,Owan East,49136,1169,127,42.03,386.9,JSS,1,26.4
-Edo,Owan West,57565,650,679,88.56,84.78,JSS,1,5.0
-Edo,Uhunmwonde,33798,707,633,47.8,53.39,JSS,0,23.3
-Ekiti,Ado-Ekiti,57128,526,95,108.61,601.35,Primary,0,5.0
-Ekiti,Efon,26128,458,207,57.05,126.22,Primary,1,23.0
-Ekiti,Ekiti East,54707,555,326,98.57,167.81,Primary,0,39.7
-Ekiti,Ekiti South West,14531,465,416,31.25,34.93,SSS,1,56.8
-Ekiti,Ekiti West,57262,1103,549,51.91,104.3,JSS,1,41.5
-Ekiti,Emure,18149,1119,158,16.22,114.87,JSS,1,60.2
-Ekiti,Gbonyin,29170,326,669,89.48,43.6,SSS,1,18.2
-Ekiti,Ido-Osi,35220,344,401,102.38,87.83,SSS,0,5.0
-Ekiti,Ijero,21888,804,757,27.22,28.91,SSS,1,52.7
-Ekiti,Ikere,48096,386,367,124.6,131.05,Primary,0,5.0
-Ekiti,Ikole,21058,941,318,22.38,66.22,Primary,1,59.9
-Ekiti,Ilejemeje,31795,80,788,397.44,40.35,JSS,1,9.5
-Ekiti,Irepodun/Ifelodun,59510,612,256,97.24,232.46,Primary,0,5.0
-Ekiti,Ise/Orun,53290,725,280,73.5,190.32,Primary,1,38.3
-Ekiti,Moba,18037,675,310,26.72,58.18,SSS,0,27.8
-Ekiti,Oye,8075,252,356,32.04,22.68,JSS,0,45.2
-Enugu,Aninri,32304,866,427,37.3,75.65,Primary,1,20.9
-Enugu,Awgu,49733,1306,768,38.08,64.76,JSS,1,31.4
-Enugu,Enugu East,17849,1230,284,14.51,62.85,SSS,0,24.6
-Enugu,Enugu North,53500,1407,305,38.02,175.41,JSS,1,34.2
-Enugu,Enugu South,28634,1056,511,27.12,56.04,Primary,1,56.8
-Enugu,Ezeagu,45856,738,55,62.14,833.75,JSS,0,18.7
-Enugu,Igbo-Etiti,21230,427,569,49.72,37.31,Primary,1,64.1
-Enugu,Igbo-Eze North,35327,1190,291,29.69,121.4,SSS,1,12.1
-Enugu,Igbo-Eze South,45604,832,453,54.81,100.67,JSS,0,7.1
-Enugu,Isi-Uzo,57128,1293,165,44.18,346.23,SSS,1,5.0
-Enugu,Nkanu East,30005,312,373,96.17,80.44,SSS,1,11.8
-Enugu,Nkanu West,20740,206,587,100.68,35.33,JSS,0,7.0
-Enugu,Nsukka,58284,1212,297,48.09,196.24,SSS,1,27.1
-Enugu,Oji-River,6760,929,687,7.28,9.84,Primary,1,72.9
-Enugu,Udenu,13651,1015,113,13.45,120.81,JSS,0,44.4
-Enugu,Udi,37610,1369,239,27.47,157.36,JSS,0,44.8
-Enugu,Uzo-Uwani,37396,466,379,80.25,98.67,JSS,1,5.0
-FCT,Abaji,41392,1397,306,29.63,135.27,Primary,1,39.8
-FCT,Abuja Municipal,39027,1467,480,26.6,81.31,Primary,1,85.9
-FCT,Bwari,45903,758,319,60.56,143.9,Primary,1,5.0
-FCT,Gwagwalada,43379,993,448,43.68,96.83,JSS,0,28.3
-FCT,Kuje,3929,1307,515,3.01,7.63,Primary,1,60.8
-FCT,Kwali,36210,154,586,235.13,61.79,Primary,1,12.8
-Gombe,Akko,53062,324,571,163.77,92.93,Primary,1,6.7
-Gombe,Balanga,3785,280,398,13.52,9.51,JSS,0,28.6
-Gombe,Billiri,18848,384,703,49.08,26.81,SSS,1,21.0
-Gombe,Dukku,7857,420,412,18.71,19.07,JSS,1,25.3
-Gombe,Funakaye,58568,1202,793,48.73,73.86,Primary,0,45.8
-Gombe,Gombe,22218,244,549,91.06,40.47,SSS,0,5.0
-Gombe,Kaltungo,22595,325,690,69.52,32.75,Primary,0,17.3
-Gombe,Kwami,4960,637,553,7.79,8.97,Primary,1,53.6
-Gombe,Nafada,16527,486,428,34.01,38.61,SSS,1,42.2
-Gombe,Shongom,6802,161,633,42.25,10.75,SSS,1,44.0
-Gombe,Yamaltu/Deba,11016,416,766,26.48,14.38,Primary,1,37.3
-Imo,Aboh Mbaise,29910,799,143,37.43,209.16,Primary,1,57.6
-Imo,Ahiazu Mbaise,42105,775,315,54.33,133.67,JSS,0,5.0
-Imo,Ehime Mbano,14590,621,676,23.49,21.58,SSS,0,29.4
-Imo,Ezinihitte Mbaise,44216,626,223,70.63,198.28,Primary,0,12.3
-Imo,Ideato North,37782,1461,104,25.86,363.29,JSS,1,5.0
-Imo,Ideato South,15449,1483,685,10.42,22.55,JSS,1,47.3
-Imo,Ihitte/Uboma,5951,1318,661,4.52,9.0,Primary,0,70.0
-Imo,Ikeduru,36204,860,562,42.1,64.42,JSS,1,33.3
-Imo,Isiala Mbano,26071,1177,39,22.15,668.49,Primary,1,23.9
-Imo,Isu,49109,782,289,62.8,169.93,Primary,1,37.4
-Imo,Mbaitoli,48409,1178,745,41.09,64.98,JSS,1,22.6
-Imo,Ngor Okpala,17087,469,354,36.43,48.27,SSS,0,45.8
-Imo,Njaba,56384,507,481,111.21,117.22,SSS,1,5.0
-Imo,Nkwerre,47859,711,204,67.31,234.6,SSS,0,9.1
-Imo,Nwangele,48486,872,635,55.6,76.36,SSS,1,30.8
-Imo,Obowo,28599,1458,332,19.62,86.14,Primary,0,24.9
-Imo,Oguta,16324,289,770,56.48,21.2,Primary,0,28.7
-Imo,Ohaji/Egbema,54168,1203,650,45.03,83.34,SSS,1,13.6
-Imo,Okigwe,22604,619,517,36.52,43.72,JSS,0,67.4
-Imo,Onuimo,13293,644,73,20.64,182.1,SSS,0,6.5
-Imo,Orlu,20058,466,140,43.04,143.27,SSS,1,38.2
-Imo,Orsu,39982,1259,716,31.76,55.84,SSS,1,32.3
-Imo,Oru East,54944,1237,420,44.42,130.82,Primary,1,39.1
-Imo,Oru West,55870,1331,652,41.98,85.69,SSS,0,49.4
-Imo,Owerri Municipal,14308,1317,88,10.86,162.59,JSS,1,44.9
-Imo,Owerri North,49681,1207,422,41.16,117.73,JSS,0,33.5
-Imo,Owerri West,58835,357,262,164.8,224.56,Primary,1,5.6
-Jigawa,Auyo,58751,1463,97,40.16,605.68,Primary,1,13.1
-Jigawa,Babura,35983,638,188,56.4,191.4,Primary,1,5.0
-Jigawa,Biriniwa,54098,94,765,575.51,70.72,Primary,1,10.2
-Jigawa,Birnin Kudu,42121,793,331,53.12,127.25,Primary,1,29.3
-Jigawa,Buji,31399,410,362,76.58,86.74,Primary,0,16.3
-Jigawa,Dutse,28851,639,725,45.15,39.79,JSS,1,25.3
-Jigawa,Gagarawa,33873,1493,289,22.69,117.21,JSS,1,56.8
-Jigawa,Garki,53081,1350,549,39.32,96.69,JSS,1,27.4
-Jigawa,Gumel,25357,172,115,147.42,220.5,Primary,1,5.3
-Jigawa,Guri,27532,249,793,110.57,34.72,Primary,0,5.0
-Jigawa,Gwaram,4196,89,769,47.15,5.46,Primary,0,25.0
-Jigawa,Gwiwa,5176,680,634,7.61,8.16,Primary,1,73.6
-Jigawa,Hadejia,48740,195,722,249.95,67.51,Primary,1,11.5
-Jigawa,Jahun,55851,1369,344,40.8,162.36,Primary,1,29.9
-Jigawa,Kafin Hausa,13521,482,138,28.05,97.98,Primary,0,68.7
-Jigawa,Kaugama,12065,163,428,74.02,28.19,JSS,1,13.0
-Jigawa,Kazaure,23954,915,300,26.18,79.85,Primary,0,52.6
-Jigawa,Kiri Kasama,17270,268,193,64.44,89.48,JSS,1,38.4
-Jigawa,Kiyawa,19964,942,283,21.19,70.54,JSS,1,63.5
-Jigawa,Maigatari,45633,759,420,60.12,108.65,JSS,0,38.4
-Jigawa,Malam Madori,22624,1446,335,15.65,67.53,Primary,1,55.5
-Jigawa,Miga,23975,1482,76,16.18,315.46,JSS,1,12.3
-Jigawa,Ringim,11712,1056,680,11.09,17.22,Primary,0,75.3
-Jigawa,Roni,16422,232,664,70.78,24.73,Primary,0,20.8
-Jigawa,Sule Tankarkar,32783,1297,133,25.28,246.49,Primary,1,46.3
-Jigawa,Taura,39432,842,710,46.83,55.54,SSS,0,25.3
-Jigawa,Yankwashi,28675,254,138,112.89,207.79,Primary,0,5.0
-Kaduna,Birnin Gwari,36919,448,72,82.41,512.76,SSS,1,5.0
-Kaduna,Chikun,3389,1079,554,3.14,6.12,SSS,1,57.5
-Kaduna,Giwa,59414,531,457,111.89,130.01,JSS,0,5.0
-Kaduna,Igabi,24074,1282,239,18.78,100.73,Primary,1,41.5
-Kaduna,Ikara,55101,1200,546,45.92,100.92,Primary,1,32.5
-Kaduna,Jaba,58492,638,708,91.68,82.62,JSS,1,30.0
-Kaduna,Jema'a,41709,839,433,49.71,96.33,JSS,1,35.7
-Kaduna,Kachia,33020,1421,710,23.24,46.51,Primary,1,44.4
-Kaduna,Kaduna North,42930,466,127,92.12,338.03,Primary,1,23.7
-Kaduna,Kaduna South,19346,632,177,30.61,109.3,JSS,1,39.4
-Kaduna,Kagarko,19194,1237,748,15.52,25.66,JSS,1,38.3
-Kaduna,Kajuru,43387,1168,624,37.15,69.53,SSS,0,53.3
-Kaduna,Kaura,50994,1351,639,37.75,79.8,Primary,0,34.9
-Kaduna,Kauru,59456,1267,112,46.93,530.86,SSS,1,5.0
-Kaduna,Kubau,46664,921,399,50.67,116.95,SSS,0,5.0
-Kaduna,Kudan,27473,994,277,27.64,99.18,JSS,1,61.4
-Kaduna,Lere,46764,230,140,203.32,334.03,JSS,0,5.0
-Kaduna,Makarfi,23810,417,635,57.1,37.5,SSS,0,37.4
-Kaduna,Sabon Gari,17924,583,715,30.74,25.07,Primary,0,35.5
-Kaduna,Sanga,26248,1176,538,22.32,48.79,Primary,1,27.7
-Kaduna,Soba,24128,647,216,37.29,111.7,Primary,1,67.8
-Kaduna,Zangon Kataf,8668,1438,121,6.03,71.64,JSS,1,50.5
-Kaduna,Zaria,34957,335,164,104.35,213.15,Primary,0,5.0
-Kano,Ajingi,59704,1141,370,52.33,161.36,JSS,0,5.0
-Kano,Albasu,38436,382,625,100.62,61.5,JSS,1,49.2
-Kano,Bagwai,29489,131,182,225.11,162.03,JSS,0,5.0
-Kano,Bebeji,4200,1465,343,2.87,12.24,Primary,0,58.7
-Kano,Bichi,35854,544,105,65.91,341.47,JSS,1,5.0
-Kano,Bunkure,38468,751,587,51.22,65.53,JSS,0,33.6
-Kano,Dala,44605,699,47,63.81,949.04,Primary,0,5.0
-Kano,Dambatta,44458,1053,663,42.22,67.06,JSS,1,22.4
-Kano,Dawakin Kudu,50861,1230,176,41.35,288.98,JSS,0,23.2
-Kano,Dawakin Tofa,11328,1278,318,8.86,35.62,Primary,1,78.2
-Kano,Doguwa,59053,1009,122,58.53,484.04,Primary,1,5.0
-Kano,Fagge,51409,96,100,535.51,514.09,JSS,0,17.2
-Kano,Gabasawa,53940,1490,236,36.2,228.56,SSS,0,5.8
-Kano,Garko,56056,1196,534,46.87,104.97,JSS,1,36.6
-Kano,Garun Mallam,56160,508,168,110.55,334.29,SSS,1,5.0
-Kano,Gaya,5763,830,214,6.94,26.93,JSS,0,80.4
-Kano,Gezawa,52683,300,664,175.61,79.34,Primary,0,7.7
-Kano,Gwale,48095,138,603,348.51,79.76,SSS,1,5.8
-Kano,Gwarzo,51008,427,700,119.46,72.87,JSS,1,8.2
-Kano,Kabo,19633,393,397,49.96,49.45,Primary,0,46.6
-Kano,Kano Municipal,27255,123,570,221.59,47.82,Primary,1,8.3
-Kano,Karaye,31047,806,605,38.52,51.32,JSS,1,52.0
-Kano,Kibiya,42178,133,557,317.13,75.72,Primary,1,10.5
-Kano,Kiru,9859,729,329,13.52,29.97,Primary,0,51.5
-Kano,Kumbotso,49448,463,91,106.8,543.38,Primary,1,20.2
-Kano,Kunchi,51908,1002,615,51.8,84.4,Primary,1,48.3
-Kano,Kura,3203,240,569,13.35,5.63,Primary,1,68.2
-Kano,Madobi,8710,907,149,9.6,58.46,JSS,1,55.0
-Kano,Makoda,58185,1361,293,42.75,198.58,Primary,1,42.6
-Kano,Minjibir,44258,1036,120,42.72,368.82,Primary,1,20.6
-Kano,Nassarawa,55116,578,537,95.36,102.64,JSS,0,5.0
-Kano,Rano,58199,286,797,203.49,73.02,JSS,1,10.2
-Kano,Rimin Gado,7478,98,712,76.31,10.5,JSS,0,36.3
-Kano,Rogo,36418,1073,724,33.94,50.3,Primary,1,67.6
-Kano,Shanono,5217,1117,744,4.67,7.01,Primary,0,78.8
-Kano,Sumaila,10031,550,104,18.24,96.45,Primary,1,52.4
-Kano,Takai,59579,272,684,219.04,87.1,Primary,0,5.6
-Kano,Tarauni,55657,513,141,108.49,394.73,SSS,0,5.0
-Kano,Tofa,28520,821,467,34.74,61.07,JSS,1,20.7
-Kano,Tsanyawa,26559,1132,325,23.46,81.72,JSS,1,55.9
-Kano,Tudun Wada,57199,1023,184,55.91,310.86,SSS,0,13.7
-Kano,Ungogo,53409,544,780,98.18,68.47,Primary,1,32.9
-Kano,Warawa,51395,1024,93,50.19,552.63,JSS,0,24.6
-Kano,Wudil,20478,443,599,46.23,34.19,Primary,1,40.3
-Katsina,Bakori,39738,663,325,59.94,122.27,JSS,1,5.3
-Katsina,Batagarawa,20033,118,569,169.77,35.21,Primary,1,5.0
-Katsina,Batsari,15158,1479,500,10.25,30.32,JSS,0,42.1
-Katsina,Baure,26741,532,221,50.27,121.0,Primary,1,36.8
-Katsina,Bindawa,22702,814,519,27.89,43.74,Primary,0,62.0
-Katsina,Charanchi,36455,609,400,59.86,91.14,JSS,1,42.3
-Katsina,Dan Musa,39683,1141,240,34.78,165.35,Primary,0,8.7
-Katsina,Dandume,35954,424,253,84.8,142.11,JSS,1,11.2
-Katsina,Danja,25523,1175,701,21.72,36.41,Primary,0,34.5
-Katsina,Daura,53818,1340,787,40.16,68.38,JSS,1,57.1
-Katsina,Dutsi,14874,985,416,15.1,35.75,JSS,1,70.1
-Katsina,Dutsin-Ma,52459,1448,156,36.23,336.28,Primary,0,8.4
-Katsina,Faskari,35369,355,529,99.63,66.86,Primary,1,5.0
-Katsina,Funtua,41897,188,308,222.86,136.03,Primary,0,5.0
-Katsina,Ingawa,55495,966,31,57.45,1790.16,JSS,0,6.0
-Katsina,Jibia,52649,317,123,166.09,428.04,Primary,0,5.0
-Katsina,Kafur,34923,793,393,44.04,88.86,JSS,1,21.4
-Katsina,Kaita,22456,1147,768,19.58,29.24,JSS,0,43.7
-Katsina,Kankara,30527,151,696,202.17,43.86,SSS,1,8.3
-Katsina,Kankia,25800,495,535,52.12,48.22,Primary,1,62.9
-Katsina,Katsina,7917,1336,256,5.93,30.93,Primary,1,83.1
-Katsina,Kurfi,44830,747,302,60.01,148.44,JSS,1,13.8
-Katsina,Kusada,14939,137,298,109.04,50.13,JSS,0,18.4
-Katsina,Mai'Adua,53669,162,215,331.29,249.62,JSS,0,5.0
-Katsina,Malumfashi,7567,449,521,16.85,14.52,Primary,1,40.6
-Katsina,Mani,43446,881,608,49.31,71.46,JSS,0,34.5
-Katsina,Mashi,47041,1314,181,35.8,259.9,Primary,1,11.7
-Katsina,Matazu,47724,1385,716,34.46,66.65,Primary,0,73.0
-Katsina,Musawa,52280,1349,630,38.75,82.98,SSS,0,45.0
-Katsina,Rimi,37812,963,323,39.26,117.07,JSS,1,44.3
-Katsina,Sabuwa,38440,954,141,40.29,272.62,Primary,0,6.2
-Katsina,Safana,48927,271,581,180.54,84.21,Primary,1,7.5
-Katsina,Sandamu,50159,522,266,96.09,188.57,JSS,0,20.0
-Katsina,Zango,8898,187,631,47.58,14.1,Primary,1,53.6
-Kebbi,Aleiro,44574,777,725,57.37,61.48,Primary,1,48.2
-Kebbi,Arewa Dandi,57710,357,581,161.65,99.33,Primary,0,20.4
-Kebbi,Argungu,50111,781,716,64.16,69.99,Primary,0,30.9
-Kebbi,Augie,56743,669,458,84.82,123.89,Primary,1,9.2
-Kebbi,Bagudo,12275,85,738,144.41,16.63,JSS,1,6.3
-Kebbi,Birnin Kebbi,14795,469,739,31.55,20.02,SSS,0,56.5
-Kebbi,Bunza,32227,966,428,33.36,75.3,SSS,0,57.9
-Kebbi,Dandi,29514,201,461,146.84,64.02,Primary,0,24.9
-Kebbi,Fakai,50929,1231,427,41.37,119.27,JSS,1,29.6
-Kebbi,Gwandu,16699,508,313,32.87,53.35,SSS,1,54.3
-Kebbi,Jega,58878,955,400,61.65,147.19,Primary,1,25.5
-Kebbi,Kalgo,19244,812,452,23.7,42.58,JSS,0,59.3
-Kebbi,Koko/Besse,54693,699,33,78.24,1657.36,Primary,1,5.0
-Kebbi,Maiyama,12417,1315,35,9.44,354.77,Primary,0,56.4
-Kebbi,Ngaski,52028,495,755,105.11,68.91,Primary,1,11.0
-Kebbi,Sakaba,53124,842,544,63.09,97.65,Primary,1,5.0
-Kebbi,Shanga,38739,1340,277,28.91,139.85,Primary,1,34.8
-Kebbi,Suru,28933,1458,145,19.84,199.54,Primary,1,47.5
-Kebbi,Wasagu/Danko,50224,889,83,56.49,605.11,Primary,0,8.1
-Kebbi,Yauri,11378,735,291,15.48,39.1,Primary,1,47.6
-Kebbi,Zuru,51601,906,312,56.95,165.39,Primary,1,41.0
-Kogi,Adavi,48947,91,170,537.88,287.92,SSS,1,5.0
-Kogi,Ajaokuta,31747,1005,692,31.59,45.88,Primary,1,42.0
-Kogi,Ankpa,23674,307,460,77.11,51.47,JSS,1,8.9
-Kogi,Bassa,7933,910,193,8.72,41.1,SSS,1,48.0
-Kogi,Dekina,44789,300,563,149.3,79.55,SSS,0,5.0
-Kogi,Ibaji,20695,467,79,44.31,261.96,Primary,0,5.0
-Kogi,Idah,47331,668,678,70.85,69.81,Primary,0,31.7
-Kogi,Igalamela-Odolu,54059,1241,159,43.56,339.99,JSS,0,44.1
-Kogi,Ijumu,17758,324,136,54.81,130.57,JSS,1,26.1
-Kogi,Kabba/Bunu,20755,1071,350,19.38,59.3,JSS,0,48.2
-Kogi,Kogi,51899,1211,560,42.86,92.68,JSS,0,46.7
-Kogi,Lokoja,32327,1419,723,22.78,44.71,JSS,1,61.6
-Kogi,Mopa-Muro,48863,924,390,52.88,125.29,JSS,1,13.7
-Kogi,Ofu,51287,1425,41,35.99,1250.9,Primary,1,10.7
-Kogi,Ogori/Magongo,24267,1142,89,21.25,272.66,SSS,1,46.3
-Kogi,Okehi,35083,204,309,171.98,113.54,Primary,0,5.0
-Kogi,Okene,13553,411,179,32.98,75.72,JSS,0,48.3
-Kogi,Olamaboro,49435,519,758,95.25,65.22,JSS,1,9.2
-Kogi,Omala,11044,202,429,54.67,25.74,JSS,1,49.6
-Kogi,Yagba East,49416,1084,628,45.59,78.69,Primary,1,26.6
-Kogi,Yagba West,28256,1413,524,20.0,53.92,Primary,1,35.3
-Kwara,Asa,37036,1390,384,26.64,96.45,SSS,0,15.9
-Kwara,Baruten,51328,405,540,126.74,95.05,Primary,1,5.0
-Kwara,Edu,7078,645,373,10.97,18.98,SSS,1,60.0
-Kwara,Ekiti,27704,785,355,35.29,78.04,JSS,0,61.9
-Kwara,Ifelodun,43299,1307,241,33.13,179.66,SSS,1,42.2
-Kwara,Ilorin East,44612,267,470,167.09,94.92,SSS,1,5.0
-Kwara,Ilorin South,36691,216,49,169.87,748.8,Primary,1,16.6
-Kwara,Ilorin West,18882,885,639,21.34,29.55,JSS,0,75.6
-Kwara,Irepodun,16543,407,472,40.65,35.05,Primary,0,27.8
-Kwara,Isin,45904,731,592,62.8,77.54,Primary,0,19.9
-Kwara,Kaiama,12290,384,36,32.01,341.39,SSS,1,22.0
-Kwara,Moro,34086,392,567,86.95,60.12,Primary,1,14.9
-Kwara,Offa,38315,1196,714,32.04,53.66,Primary,1,51.4
-Kwara,Oke Ero,9719,1349,273,7.2,35.6,Primary,1,49.1
-Kwara,Oyun,20848,470,525,44.36,39.71,Primary,1,15.9
-Kwara,Patigi,18284,1291,545,14.16,33.55,JSS,0,43.8
-Lagos,Agege,7386,999,321,7.39,23.01,SSS,1,43.2
-Lagos,Ajeromi-Ifelodun,11750,1290,60,9.11,195.83,SSS,1,36.0
-Lagos,Alimosho,42133,1193,722,35.32,58.36,Primary,0,33.2
-Lagos,Amuwo-Odofin,8209,469,611,17.5,13.44,SSS,1,72.3
-Lagos,Apapa,29123,941,184,30.95,158.28,Primary,1,46.8
-Lagos,Badagry,47148,350,799,134.71,59.01,SSS,1,5.3
-Lagos,Epe,35698,457,552,78.11,64.67,Primary,0,36.9
-Lagos,Eti-Osa,20857,1275,412,16.36,50.62,SSS,1,69.5
-Lagos,Ibeju-Lekki,45614,512,294,89.09,155.15,JSS,1,22.4
-Lagos,Ifako-Ijaiye,15070,969,152,15.55,99.14,JSS,1,26.0
-Lagos,Ikeja,23470,201,369,116.77,63.6,JSS,1,5.0
-Lagos,Ikorodu,56051,413,362,135.72,154.84,Primary,1,5.0
-Lagos,Kosofe,55592,385,41,144.39,1355.9,JSS,1,5.0
-Lagos,Lagos Island,31805,1044,456,30.46,69.75,Primary,1,44.5
-Lagos,Lagos Mainland,49751,190,166,261.85,299.7,Primary,1,10.2
-Lagos,Mushin,44863,685,458,65.49,97.95,JSS,1,23.4
-Lagos,Ojo,52646,1052,143,50.04,368.15,SSS,1,12.4
-Lagos,Oshodi-Isolo,17892,312,734,57.35,24.38,Primary,0,26.7
-Lagos,Somolu,58131,778,318,74.72,182.8,Primary,0,9.0
-Lagos,Surulere,16921,206,512,82.14,33.05,Primary,0,43.4
-Nasarawa,Akwanga,23923,764,587,31.31,40.75,JSS,1,16.6
-Nasarawa,Awe,55712,144,675,386.89,82.54,JSS,1,5.1
-Nasarawa,Doma,34334,998,495,34.4,69.36,Primary,1,5.0
-Nasarawa,Karu,38461,1450,678,26.52,56.73,Primary,1,45.1
-Nasarawa,Keana,15021,708,633,21.22,23.73,Primary,1,76.0
-Nasarawa,Keffi,54448,1100,579,49.5,94.04,Primary,1,24.9
-Nasarawa,Kokona,10036,423,778,23.73,12.9,Primary,1,47.0
-Nasarawa,Lafia,22937,424,767,54.1,29.9,Primary,1,54.3
-Nasarawa,Nasarawa,40344,1009,777,39.98,51.92,Primary,1,51.6
-Nasarawa,Nasarawa Eggon,37836,1173,77,32.26,491.38,JSS,1,28.6
-Nasarawa,Obi,52630,94,545,559.89,96.57,SSS,1,5.0
-Nasarawa,Toto,33966,1364,108,24.9,314.5,Primary,0,49.2
-Nasarawa,Wamba,51623,270,395,191.2,130.69,Primary,1,5.0
-Niger,Agaie,19932,1177,537,16.93,37.12,Primary,0,63.1
-Niger,Agwara,16798,1254,698,13.4,24.07,JSS,0,65.1
-Niger,Bida,10601,867,777,12.23,13.64,Primary,1,59.9
-Niger,Borgu,18187,1295,354,14.04,51.38,Primary,1,64.7
-Niger,Bosso,54415,1464,353,37.17,154.15,JSS,1,19.4
-Niger,Chanchaga,20551,190,261,108.16,78.74,Primary,1,13.2
-Niger,Edati,36798,1258,551,29.25,66.78,Primary,1,62.7
-Niger,Gbako,51665,1486,144,34.77,358.78,Primary,1,15.7
-Niger,Gurara,24045,1287,251,18.68,95.8,Primary,0,58.4
-Niger,Katcha,47066,458,416,102.76,113.14,Primary,0,5.8
-Niger,Kontagora,23651,1190,582,19.87,40.64,JSS,1,63.9
-Niger,Lapai,14695,1492,589,9.85,24.95,Primary,0,70.9
-Niger,Lavun,36214,1471,282,24.62,128.42,Primary,1,41.0
-Niger,Magama,46254,466,731,99.26,63.27,JSS,1,7.0
-Niger,Mariga,18581,832,30,22.33,619.37,Primary,1,5.0
-Niger,Mashegu,34105,1312,386,25.99,88.35,Primary,0,46.8
-Niger,Mokwa,17626,385,663,45.78,26.59,Primary,0,30.2
-Niger,Munya,9054,941,419,9.62,21.61,Primary,1,65.7
-Niger,Paikoro,30812,788,455,39.1,67.72,JSS,0,26.7
-Niger,Rafi,42008,592,245,70.96,171.46,JSS,1,5.0
-Niger,Rijau,43635,397,493,109.91,88.51,JSS,0,5.0
-Niger,Shiroro,40052,505,108,79.31,370.85,Primary,0,5.0
-Niger,Suleja,3145,1399,611,2.25,5.15,Primary,0,66.8
-Niger,Tafa,54720,1401,464,39.06,117.93,Primary,0,5.0
-Niger,Wushishi,51821,320,398,161.94,130.2,SSS,0,5.0
-Ogun,Abeokuta North,9568,633,639,15.12,14.97,JSS,0,41.7
-Ogun,Abeokuta South,37085,477,500,77.75,74.17,Primary,1,33.7
-Ogun,Ado-Odo/Ota,21300,976,506,21.82,42.09,JSS,1,38.0
-Ogun,Ewekoro,12269,617,94,19.88,130.52,JSS,0,57.7
-Ogun,Ifo,12196,531,235,22.97,51.9,Primary,1,58.6
-Ogun,Ijebu East,37629,1253,369,30.03,101.98,Primary,1,36.6
-Ogun,Ijebu North,58756,470,73,125.01,804.88,SSS,1,5.0
-Ogun,Ijebu North East,17201,927,628,18.56,27.39,JSS,0,48.9
-Ogun,Ijebu Ode,49688,248,710,200.35,69.98,SSS,1,16.8
-Ogun,Ikenne,45719,597,132,76.58,346.36,SSS,0,5.0
-Ogun,Imeko Afon,19075,135,749,141.3,25.47,SSS,1,5.0
-Ogun,Ipokia,24118,1395,143,17.29,168.66,Primary,1,47.8
-Ogun,Obafemi Owode,23906,1220,195,19.6,122.59,Primary,0,43.8
-Ogun,Odeda,41239,968,347,42.6,118.84,JSS,0,29.1
-Ogun,Odogbolu,4364,740,724,5.9,6.03,JSS,1,62.9
-Ogun,Ogun Waterside,4552,152,43,29.95,105.86,SSS,1,32.4
-Ogun,Remo North,20380,326,560,62.52,36.39,JSS,1,49.4
-Ogun,Sagamu,41367,1234,479,33.52,86.36,Primary,0,41.3
-Ogun,Yewa North,26600,646,695,41.18,38.27,JSS,0,51.5
-Ogun,Yewa South,49854,1149,331,43.39,150.62,Primary,1,27.9
-Ondo,Akoko North-East,10367,1260,516,8.23,20.09,Primary,0,58.8
-Ondo,Akoko North-West,50914,745,119,68.34,427.85,Primary,0,5.0
-Ondo,Akoko South-East,14549,1243,759,11.7,19.17,Primary,1,90.2
-Ondo,Akoko South-West,10067,1075,607,9.36,16.58,Primary,0,57.4
-Ondo,Akure North,4299,637,212,6.75,20.28,SSS,1,56.1
-Ondo,Akure South,24637,1295,385,19.02,63.99,Primary,1,54.7
-Ondo,Ese Odo,37565,163,184,230.46,204.16,JSS,1,6.9
-Ondo,Idanre,3534,1396,38,2.53,93.0,JSS,0,41.0
-Ondo,Ifedore,52623,972,576,54.14,91.36,JSS,1,40.2
-Ondo,Ilaje,52697,1272,551,41.43,95.64,JSS,0,29.1
-Ondo,Ile Oluji/Okeigbo,49476,945,135,52.36,366.49,Primary,1,41.1
-Ondo,Irele,36541,471,666,77.58,54.87,JSS,1,38.1
-Ondo,Odigbo,4545,548,241,8.29,18.86,Primary,1,81.3
-Ondo,Okitipupa,26508,933,690,28.41,38.42,SSS,0,41.3
-Ondo,Ondo East,41729,1478,475,28.23,87.85,Primary,1,58.4
-Ondo,Ondo West,24751,149,86,166.11,287.8,Primary,1,5.0
-Ondo,Ose,43115,623,775,69.21,55.63,Primary,0,5.0
-Ondo,Owo,32148,655,484,49.08,66.42,Primary,1,55.0
-Osun,Aiyedaade,32553,1100,787,29.59,41.36,JSS,0,47.2
-Osun,Aiyedire,19692,985,372,19.99,52.94,Primary,1,75.7
-Osun,Atakunmosa East,55533,912,169,60.89,328.6,SSS,0,14.3
-Osun,Atakunmosa West,18372,1442,288,12.74,63.79,SSS,1,52.9
-Osun,Boluwaduro,40860,361,117,113.19,349.23,SSS,1,6.0
-Osun,Boripe,51947,924,198,56.22,262.36,JSS,1,37.7
-Osun,Ede North,54028,789,606,68.48,89.16,Primary,1,35.6
-Osun,Ede South,45470,540,692,84.2,65.71,SSS,1,10.6
-Osun,Egbedore,27831,1087,382,25.6,72.86,SSS,1,53.8
-Osun,Ejigbo,3877,1329,644,2.92,6.02,Primary,0,74.3
-Osun,Ife Central,53375,1204,797,44.33,66.97,Primary,1,55.9
-Osun,Ife East,40045,386,551,103.74,72.68,SSS,1,24.8
-Osun,Ife North,39770,1166,662,34.11,60.08,JSS,1,58.4
-Osun,Ife South,40292,513,236,78.54,170.73,JSS,1,25.4
-Osun,Ifedayo,7951,1273,787,6.25,10.1,JSS,1,60.9
-Osun,Ifelodun,49024,915,228,53.58,215.02,JSS,0,27.7
-Osun,Ila,5607,1154,639,4.86,8.77,Primary,1,66.1
-Osun,Ilesa East,27090,1039,507,26.07,53.43,Primary,1,45.9
-Osun,Ilesa West,21231,787,73,26.98,290.84,Primary,0,31.0
-Osun,Irepodun,52316,996,174,52.53,300.67,Primary,0,29.2
-Osun,Irewole,36132,1403,36,25.75,1003.67,SSS,1,8.9
-Osun,Isokan,31902,532,423,59.97,75.42,JSS,1,28.8
-Osun,Iwo,6149,164,59,37.49,104.22,Primary,1,5.0
-Osun,Obokun,33373,1274,604,26.2,55.25,JSS,0,54.4
-Osun,Odo Otin,39643,1481,649,26.77,61.08,Primary,0,46.6
-Osun,Ola Oluwa,56374,159,267,354.55,211.14,Primary,1,5.0
-Osun,Olorunda,50340,1490,455,33.79,110.64,Primary,1,41.0
-Osun,Oriade,24939,763,138,32.69,180.72,Primary,1,38.2
-Osun,Orolu,13748,1425,304,9.65,45.22,SSS,1,62.9
-Osun,Osogbo,36342,653,641,55.65,56.7,SSS,1,27.4
-Oyo,Afijio,55611,283,225,196.51,247.16,JSS,1,8.4
-Oyo,Akinyele,49289,608,373,81.07,132.14,Primary,0,14.0
-Oyo,Atiba,20929,1150,408,18.2,51.3,JSS,1,31.9
-Oyo,Atisbo,10194,609,708,16.74,14.4,Primary,1,70.0
-Oyo,Egbeda,38208,792,523,48.24,73.06,JSS,1,37.1
-Oyo,Ibadan North,9310,1039,438,8.96,21.26,SSS,1,46.0
-Oyo,Ibadan North-East,17953,212,649,84.68,27.66,SSS,1,10.3
-Oyo,Ibadan North-West,17457,96,225,181.84,77.59,SSS,1,5.0
-Oyo,Ibadan South-East,23805,1460,445,16.3,53.49,Primary,1,54.0
-Oyo,Ibadan South-West,49598,1372,405,36.15,122.46,Primary,1,26.0
-Oyo,Ibarapa Central,6557,231,512,28.39,12.81,Primary,1,61.8
-Oyo,Ibarapa East,14559,540,353,26.96,41.24,SSS,0,31.8
-Oyo,Ibarapa North,15458,553,563,27.95,27.46,Primary,1,60.5
-Oyo,Ido,17419,1116,722,15.61,24.13,Primary,1,71.1
-Oyo,Irepo,56111,596,759,94.15,73.93,JSS,1,60.2
-Oyo,Iseyin,43522,1340,95,32.48,458.13,Primary,1,18.6
-Oyo,Itesiwaju,6990,1194,779,5.85,8.97,JSS,1,67.7
-Oyo,Iwajowa,23316,128,81,182.16,287.85,Primary,1,5.0
-Oyo,Kajola,18994,767,329,24.76,57.73,Primary,0,37.9
-Oyo,Lagelu,29973,760,493,39.44,60.8,SSS,0,41.4
-Oyo,Ogbomosho North,6385,572,157,11.16,40.67,Primary,0,56.6
-Oyo,Ogbomosho South,39404,303,183,130.05,215.32,Primary,0,9.0
-Oyo,Ogo Oluwa,15316,451,552,33.96,27.75,JSS,0,22.8
-Oyo,Olorunsogo,59030,1205,75,48.99,787.07,Primary,0,7.0
-Oyo,Oluyole,42978,675,732,63.67,58.71,JSS,1,33.9
-Oyo,Ona Ara,4211,309,218,13.63,19.32,JSS,0,83.8
-Oyo,Orelope,17292,1084,375,15.95,46.11,Primary,1,57.9
-Oyo,Ori Ire,12472,338,76,36.9,164.11,SSS,1,5.0
-Oyo,Oyo East,7551,855,638,8.83,11.84,SSS,0,57.9
-Oyo,Oyo West,5311,1161,331,4.57,16.05,JSS,1,27.5
-Oyo,Saki East,44508,1445,436,30.8,102.08,Primary,1,26.6
-Oyo,Saki West,51632,1176,278,43.9,185.73,JSS,1,18.4
-Oyo,Surulere,9697,1145,705,8.47,13.75,Primary,0,66.0
-Plateau,Barkin Ladi,55122,1232,628,44.74,87.77,JSS,0,22.5
-Plateau,Bassa,28401,585,111,48.55,255.86,SSS,1,5.0
-Plateau,Bokkos,41784,196,657,213.18,63.6,Primary,1,8.8
-Plateau,Jos East,8577,619,513,13.86,16.72,Primary,1,59.8
-Plateau,Jos North,49858,784,759,63.59,65.69,Primary,1,36.5
-Plateau,Jos South,17650,1142,288,15.46,61.28,Primary,0,30.5
-Plateau,Kanke,42937,1080,484,39.76,88.71,Primary,1,34.0
-Plateau,Kanam,21467,518,758,41.44,28.32,JSS,1,27.7
-Plateau,Langtang North,23183,698,138,33.21,167.99,JSS,0,28.8
-Plateau,Langtang South,49694,118,314,421.14,158.26,SSS,0,16.0
-Plateau,Mangu,25259,255,267,99.05,94.6,Primary,0,45.4
-Plateau,Mikang,27207,1491,169,18.25,160.99,Primary,1,23.8
-Plateau,Pankshin,16100,441,678,36.51,23.75,Primary,1,41.1
-Plateau,Qua'an Pan,24400,1246,419,19.58,58.23,JSS,1,65.3
-Plateau,Riyom,3719,154,299,24.15,12.44,Primary,1,38.9
-Plateau,Shendam,53227,599,127,88.86,419.11,Primary,1,23.7
-Plateau,Wase,21635,1132,672,19.11,32.19,Primary,1,49.1
-Rivers,Abua-Odual,18078,1403,704,12.89,25.68,Primary,1,50.6
-Rivers,Ahoada East,19363,126,159,153.67,121.78,SSS,1,5.0
-Rivers,Ahoada West,21174,965,596,21.94,35.53,SSS,1,10.5
-Rivers,Akuku-Toru,46723,529,552,88.32,84.64,Primary,1,5.0
-Rivers,Andoni,40755,621,293,65.63,139.1,JSS,1,26.5
-Rivers,Asari-Toru,13450,806,581,16.69,23.15,JSS,1,36.6
-Rivers,Bonny,43544,446,557,97.63,78.18,Primary,1,38.5
-Rivers,Degema,10856,1385,162,7.84,67.01,Primary,1,68.9
-Rivers,Eleme,38983,630,695,61.88,56.09,SSS,0,12.1
-Rivers,Emohua,24137,1175,788,20.54,30.63,Primary,0,46.1
-Rivers,Etche,6981,1381,592,5.06,11.79,Primary,0,49.3
-Rivers,Gokana,25760,1497,530,17.21,48.6,SSS,0,46.9
-Rivers,Ikwerre,21562,1102,661,19.57,32.62,JSS,0,53.6
-Rivers,Khana,22665,694,358,32.66,63.31,JSS,0,37.4
-Rivers,Obio-Akpor,57846,108,751,535.61,77.03,Primary,1,10.3
-Rivers,Ogba-Egbema-Ndoni,36123,218,532,165.7,67.9,SSS,1,5.0
-Rivers,Ogu-Bolo,20138,849,693,23.72,29.06,SSS,1,50.4
-Rivers,Okrika,18128,1407,466,12.88,38.9,SSS,1,38.2
-Rivers,Omuma,6071,635,385,9.56,15.77,JSS,1,71.1
-Rivers,Opobo-Nkoro,23710,1041,277,22.78,85.6,Primary,0,38.7
-Rivers,Oyigbo,58718,1277,706,45.98,83.17,JSS,1,37.9
-Rivers,Port Harcourt,5786,1105,130,5.24,44.51,JSS,0,9.0
-Rivers,Tai,3453,1426,766,2.42,4.51,Primary,0,87.3
-Sokoto,Binji,24304,450,320,54.01,75.95,Primary,0,25.1
-Sokoto,Bodinga,54586,900,497,60.65,109.83,Primary,1,27.0
-Sokoto,Dange/Shuni,49577,963,361,51.48,137.33,JSS,0,23.1
-Sokoto,Gada,26519,1089,556,24.35,47.7,Primary,0,50.8
-Sokoto,Goronyo,26831,1057,334,25.38,80.33,Primary,1,34.6
-Sokoto,Gudu,32774,512,182,64.01,180.08,Primary,1,8.3
-Sokoto,Gwadabawa,10860,1462,469,7.43,23.16,Primary,1,51.1
-Sokoto,Illela,17352,810,355,21.42,48.88,Primary,1,18.0
-Sokoto,Isa,8972,938,429,9.57,20.91,JSS,1,39.1
-Sokoto,Kebbe,31400,100,719,314.0,43.67,Primary,1,9.1
-Sokoto,Kware,35408,1169,678,30.29,52.22,JSS,1,67.4
-Sokoto,Rabah,13702,316,55,43.36,249.13,Primary,0,20.9
-Sokoto,Sabon Birni,27094,1418,647,19.11,41.88,JSS,0,47.7
-Sokoto,Shagari,34007,417,66,81.55,515.26,JSS,1,13.8
-Sokoto,Silame,55066,1338,462,41.16,119.19,Primary,0,28.1
-Sokoto,Sokoto North,21033,1467,159,14.34,132.28,Primary,0,65.5
-Sokoto,Sokoto South,46890,922,533,50.86,87.97,SSS,1,17.5
-Sokoto,Tambuwal,44894,1181,441,38.01,101.8,SSS,0,12.3
-Sokoto,Tangaza,11563,897,180,12.89,64.24,SSS,1,37.5
-Sokoto,Tureta,11434,832,541,13.74,21.13,Primary,0,33.5
-Sokoto,Wamakko,38851,1340,799,28.99,48.62,Primary,1,44.3
-Sokoto,Wurno,41231,1365,312,30.21,132.15,JSS,0,61.3
-Sokoto,Yabo,53222,1054,744,50.5,71.53,SSS,0,30.9
-Taraba,Ardo Kola,45964,825,704,55.71,65.29,SSS,1,35.2
-Taraba,Bali,35391,697,147,50.78,240.76,SSS,1,20.8
-Taraba,Donga,57712,1396,767,41.34,75.24,Primary,0,28.1
-Taraba,Gashaka,49950,555,540,90.0,92.5,JSS,0,5.0
-Taraba,Gassol,32506,955,764,34.04,42.55,SSS,1,46.2
-Taraba,Ibi,35214,854,730,41.23,48.24,JSS,1,35.8
-Taraba,Jalingo,54372,313,619,173.71,87.84,Primary,1,5.0
-Taraba,Karim Lamido,35980,1008,781,35.69,46.07,Primary,0,52.6
-Taraba,Kurmi,6293,1361,742,4.62,8.48,SSS,0,69.3
-Taraba,Lau,19117,523,652,36.55,29.32,JSS,1,49.1
-Taraba,Sardauna,49631,788,598,62.98,82.99,SSS,0,32.1
-Taraba,Takum,21161,1384,352,15.29,60.12,JSS,1,50.8
-Taraba,Ussa,7656,1405,67,5.45,114.27,JSS,0,29.1
-Taraba,Wukari,6232,387,403,16.1,15.46,JSS,0,46.4
-Taraba,Yorro,14017,194,150,72.25,93.45,Primary,0,9.4
-Taraba,Zing,11424,274,41,41.69,278.63,Primary,1,22.6
-Yobe,Bade,20207,1463,414,13.81,48.81,Primary,1,64.4
-Yobe,Bursari,8534,1338,737,6.38,11.58,Primary,0,61.9
-Yobe,Damaturu,49182,475,36,103.54,1366.17,JSS,1,29.9
-Yobe,Fika,48494,1478,321,32.81,151.07,JSS,1,65.6
-Yobe,Fune,49761,1243,386,40.03,128.91,Primary,1,67.5
-Yobe,Geidam,20438,319,392,64.07,52.14,JSS,0,36.9
-Yobe,Gujba,45662,1222,627,37.37,72.83,JSS,0,48.6
-Yobe,Gulani,52961,1307,267,40.52,198.36,JSS,0,7.2
-Yobe,Jakusko,22932,1217,49,18.84,468.0,Primary,1,33.2
-Yobe,Karasuwa,58907,1435,532,41.05,110.73,SSS,0,14.6
-Yobe,Machina,58929,315,456,187.08,129.23,Primary,0,5.0
-Yobe,Nangere,39495,1495,125,26.42,315.96,Primary,0,19.5
-Yobe,Nguru,45899,212,678,216.5,67.7,JSS,0,5.0
-Yobe,Potiskum,29119,1482,720,19.65,40.44,Primary,1,54.7
-Yobe,Tarmuwa,13481,1046,142,12.89,94.94,Primary,0,44.2
-Yobe,Yunusari,14258,1315,447,10.84,31.9,Primary,0,81.2
-Yobe,Yusufari,4726,346,408,13.66,11.58,JSS,0,55.7
-Zamfara,Anka,44831,283,242,158.41,185.25,Primary,1,17.9
-Zamfara,Bakura,45495,768,425,59.24,107.05,Primary,1,50.2
-Zamfara,Birnin Magaji,12843,615,340,20.88,37.77,Primary,1,48.5
-Zamfara,Bukkuyum,21147,1323,470,15.98,44.99,SSS,1,63.1
-Zamfara,Bungudu,47874,1068,157,44.83,304.93,JSS,0,41.2
-Zamfara,Gummi,19412,785,45,24.73,431.38,JSS,1,39.6
-Zamfara,Gusau,9372,1041,326,9.0,28.75,JSS,1,74.3
-Zamfara,Kauran Namoda,56412,877,484,64.32,116.55,Primary,0,5.0
-Zamfara,Maradun,56386,560,478,100.69,117.96,Primary,1,43.4
-Zamfara,Maru,26524,1001,686,26.5,38.66,Primary,1,51.6
-Zamfara,Shinkafi,52868,1221,514,43.3,102.86,Primary,0,49.1
-Zamfara,Talatan Mafara,36837,1247,779,29.54,47.29,Primary,1,46.6
-Zamfara,Tsafe,50456,1169,108,43.16,467.19,JSS,1,19.7
-Zamfara,Zurmi,15664,1487,181,10.53,86.54,Primary,0,64.7
+State,Zone,LGA,Enrollment,Teachers,Classrooms,StudentTeacherRatio,PupilClassroomRatio,FacilityScore,GradeDropoutRate,ActualPassRate
+Abia,South East,Aba North,59422,940,1467,63.21,40.51,0.43,0.12,37.0
+Abia,South East,Aba South,59101,465,1460,127.1,40.48,0.43,0.199,7.2
+Abia,South East,Arochukwu,3189,1037,54,3.08,59.06,0.87,0.123,58.6
+Abia,South East,Bende,51555,588,859,87.68,60.02,0.86,0.067,5.0
+Abia,South East,Ikwuano,8675,241,185,36.0,46.89,0.7,0.102,53.9
+Abia,South East,Isiala Ngwa North,24271,296,558,82.0,43.5,0.7,0.185,32.6
+Abia,South East,Isiala Ngwa South,41660,310,763,134.39,54.6,0.65,0.254,24.3
+Abia,South East,Isuikwuato,20412,1321,485,15.45,42.09,0.42,0.096,68.8
+Abia,South East,Obi Ngwa,17820,310,376,57.48,47.39,0.47,0.219,24.1
+Abia,South East,Ohafia,24834,1451,543,17.12,45.73,0.53,0.02,45.2
+Abia,South East,Osisioma Ngwa,56565,1328,1465,42.59,38.61,0.74,0.184,44.5
+Abia,South East,Ugwunagbo,23080,1031,639,22.39,36.12,0.6,0.088,58.7
+Abia,South East,Ukwa East,41559,326,753,127.48,55.19,0.52,0.234,5.0
+Abia,South East,Ukwa West,47357,543,1307,87.21,36.23,0.94,0.182,23.4
+Abia,South East,Umuahia North,11155,552,270,20.21,41.31,0.81,0.123,53.0
+Abia,South East,Umuahia South,45642,895,755,51.0,60.45,0.6,0.151,61.0
+Abia,South East,Umu Nneochi,41360,178,644,232.36,64.22,0.81,0.127,5.0
+Adamawa,North East,Demsa,7735,1136,150,6.81,51.57,0.23,0.359,53.4
+Adamawa,North East,Fufore,35352,363,641,97.39,55.15,0.16,0.421,5.0
+Adamawa,North East,Ganye,3301,260,63,12.7,52.4,0.2,0.353,23.0
+Adamawa,North East,Girei,41210,765,1086,53.87,37.95,0.5,0.383,17.4
+Adamawa,North East,Gombi,41754,1000,782,41.75,53.39,0.15,0.364,23.9
+Adamawa,North East,Guyuk,56298,654,873,86.08,64.49,0.3,0.297,40.9
+Adamawa,North East,Hong,57021,956,1396,59.65,40.85,0.28,0.404,16.9
+Adamawa,North East,Jada,28945,820,714,35.3,40.54,0.34,0.41,20.9
+Adamawa,North East,Lamurde,48952,1375,969,35.6,50.52,0.1,0.289,37.4
+Adamawa,North East,Madagali,12435,1172,328,10.61,37.91,0.3,0.368,52.7
+Adamawa,North East,Maiha,30663,871,484,35.2,63.35,0.41,0.365,48.1
+Adamawa,North East,Mayo-Belwa,31074,1371,667,22.67,46.59,0.38,0.411,52.0
+Adamawa,North East,Michika,43355,808,733,53.66,59.15,0.08,0.359,25.0
+Adamawa,North East,Mubi North,26190,1293,505,20.26,51.86,0.62,0.185,19.0
+Adamawa,North East,Mubi South,10400,155,227,67.1,45.81,0.38,0.477,64.9
+Adamawa,North East,Numan,4062,188,64,21.61,63.47,0.34,0.274,53.8
+Adamawa,North East,Shelleng,25556,1268,608,20.15,42.03,0.44,0.37,65.7
+Adamawa,North East,Song,29790,170,701,175.24,42.5,0.25,0.505,5.0
+Adamawa,North East,Toungo,42298,427,662,99.06,63.89,0.1,0.469,5.0
+Adamawa,North East,Yola North,55638,1476,995,37.7,55.92,0.25,0.351,26.6
+Adamawa,North East,Yola South,12337,1451,226,8.5,54.59,0.08,0.26,39.2
+Akwa Ibom,South South,Abak,59178,335,1128,176.65,52.46,0.73,0.164,5.0
+Akwa Ibom,South South,Eastern Obolo,26833,142,573,188.96,46.83,0.51,0.141,5.0
+Akwa Ibom,South South,Eket,6636,756,114,8.78,58.21,0.79,0.068,56.6
+Akwa Ibom,South South,Esit Eket,29657,1451,688,20.44,43.11,0.8,0.086,63.8
+Akwa Ibom,South South,Essien Udim,4252,932,78,4.56,54.51,0.81,0.217,65.5
+Akwa Ibom,South South,Etim Ekpo,31920,245,657,130.29,48.58,0.53,0.255,5.0
+Akwa Ibom,South South,Etinan,8569,284,207,30.17,41.4,0.56,0.02,69.1
+Akwa Ibom,South South,Ibeno,48415,979,1067,49.45,45.37,0.47,0.072,31.3
+Akwa Ibom,South South,Ibesikpo Asutan,29329,1176,776,24.94,37.8,0.58,0.131,65.7
+Akwa Ibom,South South,Ibiono Ibom,31699,157,648,201.9,48.92,0.85,0.175,6.5
+Akwa Ibom,South South,Ika,48540,107,1363,453.64,35.61,0.29,0.223,5.0
+Akwa Ibom,South South,Ikono,29734,307,581,96.85,51.18,0.7,0.087,46.2
+Akwa Ibom,South South,Ikot Abasi,53612,741,1283,72.35,41.79,0.69,0.218,45.1
+Akwa Ibom,South South,Ikot Ekpene,50077,1026,839,48.81,59.69,0.37,0.198,39.8
+Akwa Ibom,South South,Ini,15941,399,423,39.95,37.69,0.88,0.075,23.8
+Akwa Ibom,South South,Itu,12865,251,313,51.25,41.1,0.53,0.059,43.5
+Akwa Ibom,South South,Mbo,15219,315,322,48.31,47.26,0.61,0.152,49.7
+Akwa Ibom,South South,Mkpat Enin,24204,1268,407,19.09,59.47,0.44,0.096,30.3
+Akwa Ibom,South South,Nsit Atai,24526,654,489,37.5,50.16,0.61,0.134,40.8
+Akwa Ibom,South South,Nsit Ibom,34110,1282,757,26.61,45.06,0.79,0.135,48.8
+Akwa Ibom,South South,Nsit Ubium,41141,275,789,149.6,52.14,0.66,0.154,5.0
+Akwa Ibom,South South,Obot Akara,38659,209,1093,184.97,35.37,0.46,0.129,14.0
+Akwa Ibom,South South,Okobo,47241,1064,1106,44.4,42.71,0.78,0.192,52.1
+Akwa Ibom,South South,Onna,58176,1093,1558,53.23,37.34,0.62,0.054,48.4
+Akwa Ibom,South South,Oron,12524,1240,304,10.1,41.2,0.68,0.027,31.4
+Akwa Ibom,South South,Oruk Anam,44914,955,719,47.03,62.47,0.99,0.078,25.4
+Akwa Ibom,South South,Udung Uko,7944,1187,162,6.69,49.04,0.6,0.056,48.9
+Akwa Ibom,South South,Ukanafun,36719,802,807,45.78,45.5,0.83,0.162,47.3
+Akwa Ibom,South South,Uruan,41000,193,821,212.44,49.94,0.83,0.12,5.0
+Akwa Ibom,South South,Urue-Offong/Oruko,50190,134,1264,374.55,39.71,0.61,0.102,5.0
+Akwa Ibom,South South,Uyo,37911,1191,669,31.83,56.67,0.85,0.081,48.2
+Anambra,South East,Aguata,19032,230,314,82.75,60.61,0.75,0.12,18.0
+Anambra,South East,Anambra East,4279,984,88,4.35,48.62,0.52,0.078,60.9
+Anambra,South East,Anambra West,44196,1384,1034,31.93,42.74,0.73,0.053,53.7
+Anambra,South East,Anaocha,42952,1256,860,34.2,49.94,0.72,0.143,32.2
+Anambra,South East,Awka North,30529,1001,647,30.5,47.19,0.38,0.212,47.8
+Anambra,South East,Awka South,53485,177,1140,302.18,46.92,0.71,0.076,5.0
+Anambra,South East,Ayamelum,27058,444,682,60.94,39.67,0.36,0.148,5.5
+Anambra,South East,Dunukofia,12650,181,240,69.89,52.71,0.96,0.173,36.0
+Anambra,South East,Ekwusigo,5421,1055,89,5.14,60.91,0.63,0.149,61.0
+Anambra,South East,Idemili North,7232,962,115,7.52,62.89,0.75,0.13,30.4
+Anambra,South East,Idemili South,9640,1452,175,6.64,55.09,0.73,0.099,53.1
+Anambra,South East,Ihiala,54184,556,1499,97.45,36.15,0.97,0.134,13.1
+Anambra,South East,Njikoka,23144,82,472,282.24,49.03,0.87,0.135,5.0
+Anambra,South East,Nnewi North,48028,1018,912,47.18,52.66,0.67,0.091,35.5
+Anambra,South East,Nnewi South,41197,964,687,42.74,59.97,0.7,0.172,44.6
+Anambra,South East,Ogbaru,33448,498,579,67.16,57.77,0.38,0.202,6.3
+Anambra,South East,Onitsha North,47641,1370,776,34.77,61.39,0.72,0.12,46.6
+Anambra,South East,Onitsha South,36742,117,858,314.03,42.82,0.94,0.119,5.0
+Anambra,South East,Orumba North,50327,397,953,126.77,52.81,0.48,0.128,8.9
+Anambra,South East,Orumba South,21088,860,350,24.52,60.25,0.74,0.09,56.9
+Anambra,South East,Oyi,39766,161,667,246.99,59.62,0.49,0.153,5.0
+Bauchi,North East,Alkaleri,4007,1429,92,2.8,43.55,0.26,0.393,42.9
+Bauchi,North East,Bauchi,10491,810,262,12.95,40.04,0.39,0.316,31.2
+Bauchi,North East,Bogoro,34598,158,580,218.97,59.65,0.43,0.375,5.0
+Bauchi,North East,Damban,53975,1233,927,43.78,58.23,0.13,0.326,26.4
+Bauchi,North East,Darazo,20175,1374,410,14.68,49.21,0.12,0.35,31.6
+Bauchi,North East,Dass,41827,772,670,54.18,62.43,0.35,0.332,16.1
+Bauchi,North East,Gamawa,19967,474,309,42.12,64.62,0.25,0.433,49.7
+Bauchi,North East,Ganjuwa,6762,1191,171,5.68,39.54,0.4,0.251,46.8
+Bauchi,North East,Giade,59985,997,1343,60.17,44.66,0.05,0.416,26.1
+Bauchi,North East,Itas/Gadau,55296,1462,1035,37.82,53.43,0.39,0.438,62.7
+Bauchi,North East,Jama'are,14653,1417,250,10.34,58.61,0.09,0.342,71.1
+Bauchi,North East,Katagum,7780,388,142,20.05,54.79,0.43,0.305,31.9
+Bauchi,North East,Kirfi,3956,103,82,38.41,48.24,0.1,0.354,61.5
+Bauchi,North East,Misau,15201,834,288,18.23,52.78,0.39,0.376,31.2
+Bauchi,North East,Ningi,7648,397,201,19.26,38.05,0.17,0.376,32.5
+Bauchi,North East,Shira,56508,539,1451,104.84,38.94,0.22,0.333,14.3
+Bauchi,North East,Tafawa Balewa,26040,392,650,66.43,40.06,0.32,0.432,28.2
+Bauchi,North East,Toro,23337,413,635,56.51,36.75,0.43,0.365,16.3
+Bauchi,North East,Warji,54892,321,858,171.0,63.98,0.05,0.47,5.0
+Bauchi,North East,Zaki,35556,387,633,91.88,56.17,0.51,0.485,7.4
+Bayelsa,South South,Brass,18577,506,334,36.71,55.62,0.55,0.186,47.0
+Bayelsa,South South,Ekeremor,22508,1407,412,16.0,54.63,0.83,0.14,63.5
+Bayelsa,South South,Kolokuma/Opokuma,28923,1484,499,19.49,57.96,0.56,0.167,49.4
+Bayelsa,South South,Nembe,52606,804,1175,65.43,44.77,0.77,0.152,18.3
+Bayelsa,South South,Ogbia,59269,921,1025,64.35,57.82,0.47,0.072,31.8
+Bayelsa,South South,Sagbama,29966,1429,521,20.97,57.52,0.41,0.143,31.6
+Bayelsa,South South,Southern Ijaw,53115,1087,1047,48.86,50.73,0.63,0.135,35.8
+Bayelsa,South South,Yenagoa,46596,723,780,64.45,59.74,0.46,0.116,19.2
+Benue,North Central,Ado,15149,1488,327,10.18,46.33,0.66,0.215,71.5
+Benue,North Central,Agatu,34401,663,592,51.89,58.11,0.19,0.274,35.8
+Benue,North Central,Apa,29160,562,477,51.89,61.13,0.82,0.138,33.9
+Benue,North Central,Buruku,12160,669,225,18.18,54.04,0.93,0.155,80.5
+Benue,North Central,Gboko,15323,823,281,18.62,54.53,0.83,0.119,85.0
+Benue,North Central,Guma,5475,239,106,22.91,51.65,0.49,0.107,50.5
+Benue,North Central,Gwer East,50556,366,877,138.13,57.65,0.74,0.229,5.0
+Benue,North Central,Gwer West,32301,1351,630,23.91,51.27,0.31,0.242,36.5
+Benue,North Central,Katsina-Ala,25641,828,559,30.97,45.87,0.61,0.114,23.3
+Benue,North Central,Konshisha,40174,341,641,117.81,62.67,0.52,0.3,5.0
+Benue,North Central,Kwande,9721,938,174,10.36,55.87,0.59,0.178,68.6
+Benue,North Central,Logo,17716,978,278,18.11,63.73,0.35,0.222,56.3
+Benue,North Central,Makurdi,55188,526,1017,104.92,54.27,0.22,0.229,5.0
+Benue,North Central,Obi,28032,1062,664,26.4,42.22,0.45,0.18,55.7
+Benue,North Central,Ogbadibo,15411,501,322,30.76,47.86,0.74,0.11,28.9
+Benue,North Central,Ohimini,12956,677,202,19.14,64.14,0.55,0.228,57.9
+Benue,North Central,Oju,50596,1316,1235,38.45,40.97,0.28,0.219,56.5
+Benue,North Central,Okpokwu,28121,703,492,40.0,57.16,0.15,0.232,32.2
+Benue,North Central,Otukpo,23281,311,476,74.86,48.91,0.22,0.232,18.0
+Benue,North Central,Tarka,25614,180,703,142.3,36.44,0.45,0.241,19.6
+Benue,North Central,Ukum,31138,521,820,59.77,37.97,0.68,0.29,26.1
+Benue,North Central,Ushongo,55161,542,1339,101.77,41.2,0.68,0.232,30.4
+Benue,North Central,Vandeikya,32921,602,906,54.69,36.34,0.85,0.05,47.8
+Borno,North East,Abadam,17291,1275,422,13.56,40.97,0.23,0.377,40.6
+Borno,North East,Askira/Uba,17571,282,393,62.31,44.71,0.43,0.389,32.5
+Borno,North East,Bama,49486,167,1093,296.32,45.28,0.61,0.319,7.0
+Borno,North East,Bayo,25656,1364,417,18.81,61.53,0.41,0.386,39.7
+Borno,North East,Biu,14329,1016,309,14.1,46.37,0.32,0.408,65.0
+Borno,North East,Chibok,26762,1204,690,22.23,38.79,0.31,0.384,29.8
+Borno,North East,Damboa,41659,267,708,156.03,58.84,0.43,0.329,9.1
+Borno,North East,Dikwa,52745,238,1477,221.62,35.71,0.75,0.403,5.0
+Borno,North East,Gubio,8469,262,148,32.32,57.22,0.35,0.413,28.9
+Borno,North East,Guzamala,52811,1150,1369,45.92,38.58,0.26,0.285,35.3
+Borno,North East,Gwoza,57220,333,1087,171.83,52.64,0.3,0.442,5.1
+Borno,North East,Hawul,28279,340,503,83.17,56.22,0.05,0.394,5.0
+Borno,North East,Jere,40481,493,1121,82.11,36.11,0.14,0.294,5.0
+Borno,North East,Kaga,53026,275,1192,192.82,44.48,0.41,0.306,5.0
+Borno,North East,Kala/Balge,14929,571,254,26.15,58.78,0.06,0.397,13.8
+Borno,North East,Konduga,32300,974,759,33.16,42.56,0.19,0.386,43.6
+Borno,North East,Kukawa,24008,1045,574,22.97,41.83,0.13,0.351,40.5
+Borno,North East,Kwaya Kusar,57565,650,1180,88.56,48.78,0.6,0.341,5.0
+Borno,North East,Mafa,9519,823,155,11.57,61.41,0.48,0.315,50.1
+Borno,North East,Magumeri,26128,458,562,57.05,46.49,0.09,0.442,17.4
+Borno,North East,Maiduguri,14531,465,326,31.25,44.57,0.29,0.34,48.1
+Borno,North East,Marte,23074,692,478,33.34,48.27,0.16,0.36,34.2
+Borno,North East,Mobbar,4283,1003,69,4.27,62.07,0.29,0.312,54.7
+Borno,North East,Monguno,33930,1480,690,22.93,49.17,0.12,0.42,41.9
+Borno,North East,Ngala,48096,386,991,124.6,48.53,0.15,0.404,5.0
+Borno,North East,Nganzai,4089,562,73,7.28,56.01,0.23,0.421,23.6
+Borno,North East,Shani,47333,539,1127,87.82,42.0,0.23,0.387,5.0
+Cross River,South South,Abi,18037,675,507,26.72,35.58,0.66,0.173,66.2
+Cross River,South South,Akamkpa,16074,1022,331,15.73,48.56,0.99,0.159,77.6
+Cross River,South South,Akpabuyo,17849,1230,331,14.51,53.92,0.82,0.079,72.6
+Cross River,South South,Bakassi,10156,1304,163,7.79,62.31,0.8,0.081,42.3
+Cross River,South South,Bekwarra,29649,899,613,32.98,48.37,0.65,0.024,47.5
+Cross River,South South,Biase,14093,273,326,51.62,43.23,0.37,0.166,42.8
+Cross River,South South,Boki,32033,520,712,61.6,44.99,0.46,0.083,25.5
+Cross River,South South,Calabar Municipal,15605,697,356,22.39,43.83,0.72,0.101,47.5
+Cross River,South South,Calabar South,7492,858,206,8.73,36.37,0.8,0.141,49.4
+Cross River,South South,Etung,58398,1067,979,54.73,59.65,0.84,0.129,33.6
+Cross River,South South,Ikom,7033,1427,151,4.93,46.58,0.43,0.125,59.6
+Cross River,South South,Obanliku,23584,281,514,83.93,45.88,0.57,0.133,5.0
+Cross River,South South,Obubra,9439,337,267,28.01,35.35,0.43,0.164,62.7
+Cross River,South South,Obudu,58715,690,1572,85.09,37.35,0.82,0.114,5.0
+Cross River,South South,Odukpani,54222,439,878,123.51,61.76,0.75,0.108,5.9
+Cross River,South South,Ogoja,53594,1086,1442,49.35,37.17,0.48,0.046,48.6
+Cross River,South South,Yakurr,51515,916,1230,56.24,41.88,0.51,0.083,28.8
+Cross River,South South,Yala,56161,564,935,99.58,60.07,0.59,0.171,19.0
+Delta,South South,Aniocha North,17973,188,280,95.6,64.19,0.96,0.231,27.0
+Delta,South South,Aniocha South,19766,1083,470,18.25,42.06,0.93,0.089,69.0
+Delta,South South,Bomadi,37919,1317,728,28.79,52.09,0.51,0.03,56.6
+Delta,South South,Burutu,31308,474,608,66.05,51.49,0.88,0.115,31.3
+Delta,South South,Ethiope East,15982,1331,366,12.01,43.67,0.99,0.104,79.2
+Delta,South South,Ethiope West,36132,242,880,149.31,41.06,0.72,0.162,9.2
+Delta,South South,Ika North East,29910,799,516,37.43,57.97,0.47,0.181,45.7
+Delta,South South,Ika South,30810,98,751,314.39,41.03,0.75,0.199,7.4
+Delta,South South,Isoko North,24281,1021,559,23.78,43.44,0.46,0.077,50.0
+Delta,South South,Isoko South,42233,529,750,79.84,56.31,0.34,0.182,28.2
+Delta,South South,Ndokwa East,59722,1156,1257,51.66,47.51,0.56,0.198,36.4
+Delta,South South,Ndokwa West,28235,239,555,118.14,50.87,0.4,0.18,5.0
+Delta,South South,Okpe,10927,433,192,25.24,56.91,0.85,0.162,81.9
+Delta,South South,Oshimili North,17087,469,402,36.43,42.5,0.38,0.131,70.0
+Delta,South South,Oshimili South,5224,277,112,18.86,46.64,0.49,0.214,21.1
+Delta,South South,Patani,15180,314,276,48.34,55.0,0.68,0.192,53.2
+Delta,South South,Sapele,25056,1458,514,17.19,48.75,0.8,0.093,78.5
+Delta,South South,Udu,18887,728,345,25.94,54.74,0.71,0.169,59.1
+Delta,South South,Ughelli North,52131,1019,1112,51.16,46.88,0.49,0.087,28.2
+Delta,South South,Ughelli South,5100,637,120,8.01,42.5,0.71,0.103,54.2
+Delta,South South,Ukwuani,47864,198,822,241.74,58.23,0.44,0.156,5.0
+Delta,South South,Uvwie,43992,134,870,328.3,50.57,0.82,0.173,5.0
+Delta,South South,Warri North,47245,1162,1071,40.66,44.11,0.79,0.109,37.8
+Delta,South South,Warri South,27968,710,477,39.39,58.63,0.57,0.083,40.9
+Delta,South South,Warri South West,49473,586,945,84.42,52.35,0.59,0.1,45.1
+Ebonyi,South East,Abakaliki,12915,638,350,20.24,36.9,0.56,0.057,66.4
+Ebonyi,South East,Afikpo North,47605,677,823,70.32,57.84,0.78,0.147,39.9
+Ebonyi,South East,Afikpo South,27272,410,463,66.52,58.9,0.46,0.178,53.3
+Ebonyi,South East,Ebonyi,33873,1493,832,22.69,40.71,0.52,0.062,61.6
+Ebonyi,South East,Ezza North,48550,912,995,53.23,48.79,0.67,0.176,28.7
+Ebonyi,South East,Ezza South,7967,401,157,19.87,50.75,0.83,0.31,37.0
+Ebonyi,South East,Ikwo,38219,708,1062,53.98,35.99,0.73,0.197,40.1
+Ebonyi,South East,Ishielu,37540,812,783,46.23,47.94,0.99,0.089,49.3
+Ebonyi,South East,Ivo,45998,406,761,113.3,60.44,0.82,0.163,5.0
+Ebonyi,South East,Izzi,23954,915,546,26.18,43.87,0.76,0.061,72.6
+Ebonyi,South East,Ohaukwu,30056,550,826,54.65,36.39,0.9,0.151,40.2
+Ebonyi,South East,Ohaozara,25918,1188,587,21.82,44.15,0.45,0.02,47.3
+Ebonyi,South East,Onicha,33106,285,854,116.16,38.77,0.58,0.088,31.5
+Edo,South South,Akoko-Edo,15541,600,360,25.9,43.17,0.67,0.056,76.7
+Edo,South South,Egor,59513,183,1472,325.21,40.43,0.83,0.145,5.0
+Edo,South South,Esan Central,40125,1443,623,27.81,64.41,0.59,0.16,39.4
+Edo,South South,Esan North-East,9033,448,252,20.16,35.85,0.65,0.173,71.9
+Edo,South South,Esan South-East,21624,362,437,59.73,49.48,0.7,0.231,16.4
+Edo,South South,Esan West,44334,530,732,83.65,60.57,0.98,0.096,34.9
+Edo,South South,Etsako Central,41811,925,786,45.2,53.19,0.81,0.133,56.1
+Edo,South South,Etsako East,54590,294,1332,185.68,40.98,0.58,0.14,5.0
+Edo,South South,Etsako West,58312,401,909,145.42,64.15,0.72,0.114,6.8
+Edo,South South,Igueben,44167,665,793,66.42,55.7,0.84,0.163,20.9
+Edo,South South,Ikpoba-Okha,39322,446,762,88.17,51.6,0.77,0.136,15.4
+Edo,South South,Oredo,5642,1257,116,4.49,48.64,0.99,0.037,88.2
+Edo,South South,Orhionmwon,3082,1176,51,2.62,60.43,0.88,0.11,69.9
+Edo,South South,Ovia North-East,32315,458,569,70.56,56.79,0.4,0.218,5.0
+Edo,South South,Ovia South-West,33131,1150,923,28.81,35.89,0.83,0.196,62.8
+Edo,South South,Owan East,46326,668,790,69.35,58.64,0.59,0.258,33.2
+Edo,South South,Owan West,22296,628,405,35.5,55.05,0.22,0.124,57.3
+Edo,South South,Uhunmwonde,8668,1438,234,6.03,37.04,0.44,0.02,51.6
+Ekiti,South West,Ado-Ekiti,16261,1013,297,16.05,54.75,0.72,0.113,47.8
+Ekiti,South West,Efon,18954,882,320,21.49,59.23,0.97,0.114,66.1
+Ekiti,South West,Ekiti East,22238,927,362,23.99,61.43,0.53,0.102,50.5
+Ekiti,South West,Ekiti South West,27527,493,571,55.84,48.21,0.48,0.175,32.1
+Ekiti,South West,Ekiti West,44680,717,1117,62.32,40.0,0.88,0.136,9.6
+Ekiti,South West,Emure,50861,1230,1210,41.35,42.03,0.62,0.103,35.1
+Ekiti,South West,Gbonyin,8618,220,141,39.17,61.12,0.93,0.06,28.0
+Ekiti,South West,Ido-Osi,57540,1428,993,40.29,57.95,0.79,0.099,46.7
+Ekiti,South West,Ijero,50897,1483,828,34.32,61.47,0.78,0.064,45.9
+Ekiti,South West,Ikere,32894,797,653,41.27,50.37,0.57,0.02,30.2
+Ekiti,South West,Ikole,55558,811,1081,68.51,51.4,0.45,0.126,22.7
+Ekiti,South West,Ilejemeje,48095,138,855,348.51,56.25,0.87,0.169,5.8
+Ekiti,South West,Irepodun/Ifelodun,20889,396,548,52.75,38.12,0.99,0.02,50.1
+Ekiti,South West,Ise/Orun,14763,1458,267,10.13,55.29,0.78,0.108,64.6
+Ekiti,South West,Moba,3489,1017,78,3.43,44.73,0.97,0.103,53.7
+Ekiti,South West,Oye,44609,379,777,117.7,57.41,0.75,0.126,28.4
+Enugu,South East,Aninri,15226,1325,364,11.49,41.83,0.42,0.162,61.5
+Enugu,South East,Awgu,36998,467,757,79.22,48.87,0.57,0.134,33.2
+Enugu,South East,Enugu East,53989,769,922,70.21,58.56,0.6,0.264,18.5
+Enugu,South East,Enugu North,53357,972,1441,54.89,37.03,0.9,0.07,58.4
+Enugu,South East,Enugu South,17334,587,317,29.53,54.68,0.41,0.123,63.4
+Enugu,South East,Ezeagu,35596,1228,676,28.99,52.66,0.68,0.192,71.5
+Enugu,South East,Igbo-Etiti,6262,1418,127,4.42,49.31,0.28,0.14,60.3
+Enugu,South East,Igbo-Eze North,42605,967,673,44.06,63.31,0.84,0.152,49.4
+Enugu,South East,Igbo-Eze South,21062,695,375,30.31,56.17,0.4,0.193,55.5
+Enugu,South East,Isi-Uzo,4141,611,64,6.78,64.7,0.08,0.172,35.6
+Enugu,South East,Nkanu East,48351,1065,1288,45.4,37.54,0.96,0.09,50.3
+Enugu,South East,Nkanu West,25615,1359,433,18.85,59.16,0.57,0.088,45.0
+Enugu,South East,Nsukka,29899,129,694,231.78,43.08,0.65,0.048,5.0
+Enugu,South East,Oji-River,28479,1196,678,23.81,42.0,0.75,0.12,55.8
+Enugu,South East,Udenu,26926,90,518,299.18,51.98,0.56,0.171,6.4
+Enugu,South East,Udi,55368,1168,1134,47.4,48.83,0.96,0.081,68.6
+Enugu,South East,Uzo-Uwani,24902,185,560,134.61,44.47,0.87,0.252,5.0
+FCT,North Central,Abaji,20618,523,449,39.42,45.92,0.28,0.241,36.0
+FCT,North Central,Abuja Municipal,4630,389,110,11.9,42.09,0.08,0.143,38.9
+FCT,North Central,Bwari,11597,687,184,16.88,63.03,0.41,0.252,54.9
+FCT,North Central,Gwagwalada,52459,1448,1467,36.23,35.76,0.24,0.26,29.5
+FCT,North Central,Kuje,3336,1011,68,3.3,49.06,0.38,0.176,58.5
+FCT,North Central,Kwali,55495,966,1118,57.45,49.64,0.79,0.194,25.2
+Gombe,North East,Akko,9771,222,156,44.01,62.63,0.05,0.463,23.9
+Gombe,North East,Balanga,28864,219,508,131.8,56.82,0.6,0.443,5.6
+Gombe,North East,Billiri,50966,352,1233,144.79,41.33,0.38,0.347,7.5
+Gombe,North East,Dukku,16682,218,381,76.52,43.78,0.48,0.333,8.6
+Gombe,North East,Funakaye,59563,1321,954,45.09,62.44,0.42,0.204,22.9
+Gombe,North East,Gombe,7891,976,209,8.09,37.76,0.39,0.277,40.2
+Gombe,North East,Kaltungo,6358,551,140,11.54,45.41,0.37,0.411,60.8
+Gombe,North East,Kwami,20570,539,337,38.16,61.04,0.11,0.312,34.2
+Gombe,North East,Nafada,29177,749,461,38.95,63.29,0.36,0.358,29.2
+Gombe,North East,Shongom,26576,868,506,30.62,52.52,0.34,0.363,24.5
+Gombe,North East,Yamaltu/Deba,48927,271,789,180.54,62.01,0.07,0.416,5.0
+Imo,South East,Aboh Mbaise,33209,439,923,75.65,35.98,0.96,0.045,36.0
+Imo,South East,Ahiazu Mbaise,6961,685,162,10.16,42.97,0.62,0.082,32.8
+Imo,South East,Ehime Mbano,9837,484,171,20.32,57.53,0.66,0.105,47.5
+Imo,South East,Ezinihitte Mbaise,56743,669,909,84.82,62.42,0.49,0.192,11.5
+Imo,South East,Ideato North,3406,1320,64,2.58,53.22,0.8,0.02,81.7
+Imo,South East,Ideato South,17719,635,460,27.9,38.52,0.78,0.02,72.5
+Imo,South East,Ihitte/Uboma,50466,1153,1321,43.77,38.2,0.32,0.13,26.5
+Imo,South East,Ikeduru,7827,1293,197,6.05,39.73,0.89,0.033,39.0
+Imo,South East,Isiala Mbano,22229,1333,436,16.68,50.98,0.31,0.154,51.0
+Imo,South East,Isu,54693,699,1179,78.24,46.39,0.53,0.159,7.8
+Imo,South East,Mbaitoli,6722,890,104,7.55,64.63,0.51,0.163,67.4
+Imo,South East,Ngor Okpala,17191,838,399,20.51,43.09,0.64,0.134,54.7
+Imo,South East,Njaba,38183,574,661,66.52,57.77,0.4,0.082,6.1
+Imo,South East,Nkwerre,24164,982,618,24.61,39.1,0.72,0.179,53.7
+Imo,South East,Nwangele,28006,318,773,88.07,36.23,0.58,0.207,21.2
+Imo,South East,Obowo,15205,654,416,23.25,36.55,0.88,0.067,29.9
+Imo,South East,Oguta,53121,1174,1453,45.25,36.56,0.92,0.026,50.1
+Imo,South East,Ohaji/Egbema,56311,244,974,230.78,57.81,0.8,0.098,6.8
+Imo,South East,Okigwe,9364,613,207,15.28,45.24,0.43,0.109,16.8
+Imo,South East,Onuimo,51714,357,937,144.86,55.19,0.73,0.217,11.2
+Imo,South East,Orlu,25337,266,535,95.25,47.36,0.51,0.206,21.7
+Imo,South East,Orsu,49489,385,1161,128.54,42.63,0.48,0.107,5.0
+Imo,South East,Oru East,43130,91,1090,473.96,39.57,0.72,0.196,7.3
+Imo,South East,Oru West,32978,415,728,79.47,45.3,0.83,0.086,42.2
+Imo,South East,Owerri Municipal,29270,648,457,45.17,64.05,0.59,0.052,51.1
+Imo,South East,Owerri North,9135,115,141,79.43,64.79,0.98,0.228,48.8
+Imo,South East,Owerri West,12615,778,201,16.21,62.76,0.71,0.117,62.3
+Jigawa,North West,Auyo,40419,689,907,58.66,44.56,0.54,0.365,5.0
+Jigawa,North West,Babura,3935,330,65,11.92,60.54,0.22,0.239,41.4
+Jigawa,North West,Biriniwa,17389,607,268,28.65,64.88,0.45,0.381,34.6
+Jigawa,North West,Birnin Kudu,5994,210,104,28.54,57.63,0.14,0.4,46.2
+Jigawa,North West,Buji,57314,290,1371,197.63,41.8,0.81,0.385,5.0
+Jigawa,North West,Dutse,42346,859,860,49.3,49.24,0.5,0.183,42.1
+Jigawa,North West,Gagarawa,33771,455,906,74.22,37.27,0.57,0.434,38.6
+Jigawa,North West,Garki,39405,195,712,202.08,55.34,0.67,0.271,7.6
+Jigawa,North West,Gumel,51291,861,1286,59.57,39.88,0.49,0.317,44.3
+Jigawa,North West,Guri,33254,1284,689,25.9,48.26,0.23,0.328,38.4
+Jigawa,North West,Gwaram,48875,752,1259,64.99,38.82,0.06,0.375,5.0
+Jigawa,North West,Gwiwa,31412,999,531,31.44,59.16,0.1,0.272,33.1
+Jigawa,North West,Hadejia,16840,383,377,43.97,44.67,0.55,0.196,17.8
+Jigawa,North West,Jahun,46390,521,717,89.04,64.7,0.24,0.311,5.0
+Jigawa,North West,Kafin Hausa,37493,1220,777,30.73,48.25,0.62,0.266,46.4
+Jigawa,North West,Kaugama,35698,457,740,78.11,48.24,0.19,0.279,13.7
+Jigawa,North West,Kazaure,44913,508,753,88.41,59.65,0.5,0.199,8.7
+Jigawa,North West,Kiri Kasama,38163,108,818,353.36,46.65,0.44,0.307,5.0
+Jigawa,North West,Kiyawa,41220,1298,671,31.76,61.43,0.05,0.291,38.9
+Jigawa,North West,Maigatari,37457,1471,675,25.46,55.49,0.39,0.29,34.8
+Jigawa,North West,Malam Madori,49751,190,1049,261.85,47.43,0.47,0.362,7.3
+Jigawa,North West,Miga,43644,227,1081,192.26,40.37,0.27,0.291,5.0
+Jigawa,North West,Ringim,24042,1018,373,23.62,64.46,0.4,0.383,27.0
+Jigawa,North West,Roni,55349,1280,868,43.24,63.77,0.35,0.438,36.2
+Jigawa,North West,Sule Tankarkar,11876,919,298,12.92,39.85,0.07,0.21,23.4
+Jigawa,North West,Taura,24398,892,584,27.35,41.78,0.63,0.231,26.7
+Jigawa,North West,Yankwashi,50204,708,1363,70.91,36.83,0.28,0.358,15.2
+Kaduna,North West,Birnin Gwari,4378,1328,115,3.3,38.07,0.24,0.323,58.7
+Kaduna,North West,Chikun,56775,1285,909,44.18,62.46,0.41,0.231,25.9
+Kaduna,North West,Giwa,43581,100,911,435.81,47.84,0.11,0.376,5.0
+Kaduna,North West,Igabi,35264,700,598,50.38,58.97,0.13,0.396,51.2
+Kaduna,North West,Ikara,24598,696,400,35.34,61.49,0.23,0.389,15.4
+Kaduna,North West,Jaba,30777,651,745,47.28,41.31,0.4,0.322,45.4
+Kaduna,North West,Jema'a,10601,867,226,12.23,46.91,0.53,0.192,49.6
+Kaduna,North West,Kachia,8074,1035,187,7.8,43.18,0.06,0.345,64.2
+Kaduna,North West,Kaduna North,34186,384,927,89.03,36.88,0.17,0.383,5.0
+Kaduna,North West,Kaduna South,9358,213,168,43.93,55.7,0.1,0.298,17.3
+Kaduna,North West,Kagarko,9221,1026,145,8.99,63.59,0.72,0.3,56.8
+Kaduna,North West,Kajuru,23213,316,634,73.46,36.61,0.33,0.39,5.0
+Kaduna,North West,Kaura,25504,462,517,55.2,49.33,0.2,0.277,17.2
+Kaduna,North West,Kauru,40425,883,962,45.78,42.02,0.32,0.341,31.6
+Kaduna,North West,Kubau,37758,844,795,44.74,47.49,0.05,0.325,40.6
+Kaduna,North West,Kudan,53197,370,860,143.78,61.86,0.36,0.418,5.0
+Kaduna,North West,Lere,30812,788,506,39.1,60.89,0.32,0.353,45.9
+Kaduna,North West,Makarfi,12824,609,226,21.06,56.74,0.63,0.267,51.3
+Kaduna,North West,Sabon Gari,7897,953,182,8.29,43.39,0.44,0.338,63.5
+Kaduna,North West,Sanga,14445,578,401,24.99,36.02,0.14,0.349,40.2
+Kaduna,North West,Soba,38289,600,1087,63.81,35.22,0.26,0.306,5.0
+Kaduna,North West,Zangon Kataf,44910,690,978,65.09,45.92,0.47,0.338,36.9
+Kaduna,North West,Zaria,30094,1064,498,28.28,60.43,0.31,0.423,39.8
+Kano,North West,Ajingi,12269,617,243,19.88,50.49,0.2,0.224,32.0
+Kano,North West,Albasu,17820,731,302,24.38,59.01,0.53,0.267,21.9
+Kano,North West,Bagwai,32062,1147,500,27.95,64.12,0.35,0.433,44.3
+Kano,North West,Bebeji,43860,1257,755,34.89,58.09,0.77,0.323,50.9
+Kano,North West,Bichi,6114,696,135,8.78,45.29,0.8,0.303,38.3
+Kano,North West,Bunkure,17271,135,328,127.93,52.66,0.24,0.238,5.0
+Kano,North West,Dala,23056,1318,486,17.49,47.44,0.43,0.266,54.0
+Kano,North West,Dambatta,7823,308,129,25.4,60.64,0.05,0.33,15.1
+Kano,North West,Dawakin Kudu,20308,231,542,87.91,37.47,0.33,0.36,26.0
+Kano,North West,Dawakin Tofa,35922,1067,859,33.67,41.82,0.4,0.276,49.4
+Kano,North West,Doguwa,50553,889,979,56.87,51.64,0.52,0.357,12.8
+Kano,North West,Fagge,32079,1292,559,24.83,57.39,0.25,0.297,60.1
+Kano,North West,Gabasawa,43096,617,1203,69.85,35.82,0.26,0.397,38.3
+Kano,North West,Garko,35559,1075,971,33.08,36.62,0.62,0.305,37.4
+Kano,North West,Garun Mallam,42469,978,853,43.42,49.79,0.41,0.324,8.4
+Kano,North West,Gaya,57517,1476,1228,38.97,46.84,0.43,0.286,38.9
+Kano,North West,Gezawa,42434,222,885,191.14,47.95,0.52,0.293,5.0
+Kano,North West,Gwale,52623,972,1094,54.14,48.1,0.25,0.284,32.0
+Kano,North West,Gwarzo,42691,950,805,44.94,53.03,0.43,0.291,32.3
+Kano,North West,Kabo,55670,974,1310,57.16,42.5,0.65,0.295,44.8
+Kano,North West,Kano Municipal,44833,539,893,83.18,50.2,0.25,0.322,17.1
+Kano,North West,Karaye,45429,457,1244,99.41,36.52,0.42,0.269,7.3
+Kano,North West,Kibiya,51570,1121,1384,46.0,37.26,0.27,0.28,46.1
+Kano,North West,Kiru,26777,675,552,39.67,48.51,0.65,0.263,20.5
+Kano,North West,Kumbotso,52290,273,815,191.54,64.16,0.23,0.499,9.8
+Kano,North West,Kunchi,37695,136,733,277.17,51.43,0.31,0.313,20.4
+Kano,North West,Kura,26121,668,429,39.1,60.89,0.6,0.318,30.4
+Kano,North West,Madobi,24672,445,557,55.44,44.29,0.12,0.315,15.3
+Kano,North West,Makoda,25538,105,403,243.22,63.37,0.29,0.398,5.0
+Kano,North West,Minjibir,16161,379,334,42.64,48.39,0.3,0.309,56.3
+Kano,North West,Nassarawa,22049,1468,398,15.02,55.4,0.51,0.326,58.8
+Kano,North West,Rano,23786,601,538,39.58,44.21,0.35,0.393,31.7
+Kano,North West,Rimin Gado,52724,1412,1304,37.34,40.43,0.73,0.258,33.7
+Kano,North West,Rogo,21799,330,593,66.06,36.76,0.07,0.326,37.7
+Kano,North West,Shanono,52398,461,1449,113.66,36.16,0.37,0.399,17.3
+Kano,North West,Sumaila,49015,557,1052,88.0,46.59,0.48,0.284,15.9
+Kano,North West,Takai,15126,1147,367,13.19,41.22,0.14,0.327,51.2
+Kano,North West,Tarauni,18155,98,369,185.26,49.2,0.33,0.29,5.0
+Kano,North West,Tofa,4381,1231,120,3.56,36.51,0.43,0.302,59.2
+Kano,North West,Tsanyawa,51780,1095,837,47.29,61.86,0.59,0.346,37.7
+Kano,North West,Tudun Wada,12174,1475,250,8.25,48.7,0.55,0.242,62.9
+Kano,North West,Ungogo,33828,1287,528,26.28,64.07,0.78,0.314,85.5
+Kano,North West,Warawa,54962,1184,894,46.42,61.48,0.24,0.288,10.6
+Kano,North West,Wudil,31362,1382,673,22.69,46.6,0.48,0.362,50.9
+Katsina,North West,Bakori,4070,458,115,8.89,35.39,0.23,0.332,68.8
+Katsina,North West,Batagarawa,42422,472,695,89.88,61.04,0.5,0.326,21.5
+Katsina,North West,Batsari,45133,1262,1044,35.76,43.23,0.27,0.314,22.9
+Katsina,North West,Baure,48641,542,930,89.74,52.3,0.05,0.323,8.5
+Katsina,North West,Bindawa,15601,1282,377,12.17,41.38,0.16,0.253,48.7
+Katsina,North West,Charanchi,52476,1071,935,49.0,56.12,0.75,0.212,30.1
+Katsina,North West,Dan Musa,14559,540,239,26.96,60.92,0.17,0.3,36.1
+Katsina,North West,Dandume,12582,1210,212,10.4,59.35,0.14,0.385,66.4
+Katsina,North West,Danja,6407,719,148,8.91,43.29,0.14,0.382,35.7
+Katsina,North West,Daura,6880,526,137,13.08,50.22,0.28,0.284,48.6
+Katsina,North West,Dutsi,59920,1438,1103,41.67,54.32,0.22,0.322,22.3
+Katsina,North West,Dutsin-Ma,13889,761,289,18.25,48.06,0.4,0.466,31.1
+Katsina,North West,Faskari,25340,1478,527,17.14,48.08,0.42,0.314,61.2
+Katsina,North West,Funtua,28563,817,445,34.96,64.19,0.26,0.246,50.8
+Katsina,North West,Ingawa,4893,1306,86,3.75,56.9,0.24,0.312,57.6
+Katsina,North West,Jibia,32163,1039,538,30.96,59.78,0.16,0.228,45.8
+Katsina,North West,Kafur,50321,1084,898,46.42,56.04,0.43,0.306,48.0
+Katsina,North West,Kaita,30370,228,497,133.2,61.11,0.16,0.402,11.6
+Katsina,North West,Kankara,26380,327,723,80.67,36.49,0.5,0.342,7.9
+Katsina,North West,Kankia,44508,1445,701,30.8,63.49,0.09,0.34,10.2
+Katsina,North West,Katsina,28820,1492,466,19.32,61.85,0.11,0.358,54.1
+Katsina,North West,Kurfi,16436,146,309,112.58,53.19,0.65,0.391,5.0
+Katsina,North West,Kusada,33836,707,531,47.86,63.72,0.29,0.29,5.0
+Katsina,North West,Mai'Adua,53711,619,1289,86.77,41.67,0.47,0.386,22.4
+Katsina,North West,Malumfashi,20482,1057,317,19.38,64.61,0.78,0.309,37.3
+Katsina,North West,Mani,28251,1131,558,24.98,50.63,0.22,0.482,24.8
+Katsina,North West,Mashi,34076,260,663,131.06,51.4,0.4,0.254,5.0
+Katsina,North West,Matazu,4308,901,107,4.78,40.26,0.82,0.248,56.6
+Katsina,North West,Musawa,18282,834,438,21.92,41.74,0.38,0.267,71.8
+Katsina,North West,Rimi,23104,1008,469,22.92,49.26,0.13,0.255,34.3
+Katsina,North West,Sabuwa,3074,1373,47,2.24,65.4,0.41,0.271,43.4
+Katsina,North West,Safana,10265,315,190,32.59,54.03,0.33,0.357,35.5
+Katsina,North West,Sandamu,24059,1244,386,19.34,62.33,0.19,0.279,26.3
+Katsina,North West,Zango,6895,762,150,9.05,45.97,0.22,0.342,31.7
+Kebbi,North West,Aleiro,13762,1457,289,9.45,47.62,0.12,0.267,80.6
+Kebbi,North West,Arewa Dandi,23760,1378,503,17.24,47.24,0.13,0.456,34.7
+Kebbi,North West,Argungu,50058,446,776,112.24,64.51,0.34,0.378,5.0
+Kebbi,North West,Augie,47443,752,925,63.09,51.29,0.39,0.484,9.9
+Kebbi,North West,Bagudo,17385,757,496,22.97,35.05,0.29,0.278,34.9
+Kebbi,North West,Birnin Kebbi,12867,1202,237,10.7,54.29,0.15,0.31,58.4
+Kebbi,North West,Bunza,7898,821,169,9.62,46.73,0.41,0.247,95.1
+Kebbi,North West,Dandi,35888,685,726,52.39,49.43,0.12,0.292,25.2
+Kebbi,North West,Fakai,50599,1093,1395,46.29,36.27,0.39,0.257,51.2
+Kebbi,North West,Gwandu,32505,245,535,132.67,60.76,0.43,0.346,7.3
+Kebbi,North West,Jega,23858,277,471,86.13,50.65,0.33,0.301,5.0
+Kebbi,North West,Kalgo,38030,1261,964,30.16,39.45,0.48,0.178,47.4
+Kebbi,North West,Koko/Besse,5786,1105,105,5.24,55.1,0.05,0.44,26.1
+Kebbi,North West,Maiyama,15171,1000,404,15.17,37.55,0.6,0.317,55.6
+Kebbi,North West,Ngaski,51288,279,1013,183.83,50.63,0.44,0.341,5.0
+Kebbi,North West,Sakaba,17842,1071,304,16.66,58.69,0.38,0.336,61.3
+Kebbi,North West,Shanga,12215,553,218,22.09,56.03,0.23,0.364,37.6
+Kebbi,North West,Suru,42500,545,854,77.98,49.77,0.55,0.495,14.8
+Kebbi,North West,Wasagu/Danko,11804,625,262,18.89,45.05,0.32,0.244,57.6
+Kebbi,North West,Yauri,31400,100,490,314.0,64.08,0.05,0.326,5.0
+Kebbi,North West,Zuru,9085,182,201,49.92,45.2,0.07,0.345,19.4
+Kogi,North Central,Adavi,57238,697,1330,82.12,43.04,0.69,0.324,11.3
+Kogi,North Central,Ajaokuta,30684,216,560,142.06,54.79,0.41,0.319,6.3
+Kogi,North Central,Ankpa,38278,620,747,61.74,51.24,0.31,0.261,29.5
+Kogi,North Central,Bassa,14492,1377,361,10.52,40.14,0.15,0.179,57.0
+Kogi,North Central,Dekina,20558,1244,333,16.53,61.74,0.55,0.241,18.5
+Kogi,North Central,Ibaji,5765,146,93,39.49,61.99,0.23,0.16,29.3
+Kogi,North Central,Idah,35069,450,930,77.93,37.71,0.42,0.252,39.8
+Kogi,North Central,Igalamela-Odolu,24225,754,417,32.13,58.09,0.88,0.222,52.6
+Kogi,North Central,Ijumu,10642,179,182,59.45,58.47,0.38,0.243,21.4
+Kogi,North Central,Kabba/Bunu,5523,132,142,41.84,38.89,0.75,0.187,46.6
+Kogi,North Central,Kogi,25419,1343,557,18.93,45.64,0.41,0.127,16.3
+Kogi,North Central,Lokoja,49669,872,1015,56.96,48.93,0.23,0.328,18.1
+Kogi,North Central,Mopa-Muro,53946,184,1104,293.18,48.86,0.37,0.345,5.0
+Kogi,North Central,Ofu,19117,523,359,36.55,53.25,0.29,0.21,22.0
+Kogi,North Central,Ogori/Magongo,18111,377,372,48.04,48.69,0.61,0.166,29.9
+Kogi,North Central,Okehi,57279,886,1155,64.65,49.59,0.71,0.256,5.0
+Kogi,North Central,Okene,39526,387,695,102.13,56.87,0.51,0.215,5.3
+Kogi,North Central,Olamaboro,47553,1048,748,45.38,63.57,0.75,0.199,63.6
+Kogi,North Central,Omala,29841,1078,769,27.68,38.8,0.78,0.137,70.3
+Kogi,North Central,Yagba East,37268,922,666,40.42,55.96,0.7,0.119,37.8
+Kogi,North Central,Yagba West,59747,736,1165,81.18,51.28,0.14,0.27,13.0
+Kwara,North Central,Asa,20740,1094,362,18.96,57.29,0.62,0.165,36.6
+Kwara,North Central,Baruten,28708,1222,552,23.49,52.01,0.52,0.179,77.3
+Kwara,North Central,Edu,41931,607,1139,69.08,36.81,0.64,0.286,12.9
+Kwara,North Central,Ekiti,40259,1206,695,33.38,57.93,0.53,0.082,38.1
+Kwara,North Central,Ifelodun,25942,473,422,54.85,61.47,0.66,0.076,16.9
+Kwara,North Central,Ilorin East,5738,1437,108,3.99,53.13,0.63,0.191,67.5
+Kwara,North Central,Ilorin South,14258,1315,313,10.84,45.55,0.41,0.134,60.4
+Kwara,North Central,Ilorin West,29582,346,543,85.5,54.48,0.39,0.21,38.9
+Kwara,North Central,Irepodun,16201,771,348,21.01,46.55,0.41,0.097,42.3
+Kwara,North Central,Isin,28112,718,554,39.15,50.74,0.45,0.164,48.9
+Kwara,North Central,Kaiama,40458,308,1106,131.36,36.58,0.17,0.305,5.0
+Kwara,North Central,Moro,29442,108,500,272.61,58.88,0.32,0.199,5.0
+Kwara,North Central,Offa,56412,877,1131,64.32,49.88,0.77,0.114,24.0
+Kwara,North Central,Oke Ero,53227,545,1487,97.66,35.79,0.87,0.287,5.0
+Kwara,North Central,Oyun,25164,796,460,31.61,54.7,0.76,0.207,53.2
+Kwara,North Central,Patigi,48687,1443,1051,33.74,46.32,0.38,0.285,19.2
+Lagos,South West,Agege,32401,668,551,48.5,58.8,0.77,0.029,48.4
+Lagos,South West,Ajeromi-Ifelodun,48532,1018,925,47.67,52.47,0.77,0.084,57.3
+Lagos,South West,Alimosho,19406,234,335,82.93,57.93,0.84,0.237,25.1
+Lagos,South West,Amuwo-Odofin,51373,818,1002,62.8,51.27,0.71,0.16,17.5
+Lagos,South West,Apapa,7409,263,164,28.17,45.18,0.87,0.125,74.7
+Lagos,South West,Badagry,16932,707,298,23.95,56.82,0.73,0.02,41.5
+Lagos,South West,Epe,45048,369,984,122.08,45.78,0.51,0.208,6.3
+Lagos,South West,Eti-Osa,22747,103,379,220.84,60.02,0.75,0.161,5.0
+Lagos,South West,Ibeju-Lekki,45907,1388,894,33.07,51.35,0.86,0.097,67.2
+Lagos,South West,Ifako-Ijaiye,47402,464,1038,102.16,45.67,0.42,0.075,27.8
+Lagos,South West,Ikeja,58651,247,1298,237.45,45.19,0.93,0.069,5.2
+Lagos,South West,Ikorodu,3370,566,56,5.95,60.18,0.97,0.162,60.6
+Lagos,South West,Kosofe,52146,785,1327,66.43,39.3,0.65,0.163,34.2
+Lagos,South West,Lagos Island,50074,520,882,96.3,56.77,0.88,0.127,56.5
+Lagos,South West,Lagos Mainland,53617,93,1059,576.53,50.63,0.9,0.205,5.0
+Lagos,South West,Mushin,41409,1209,1057,34.25,39.18,0.99,0.051,29.2
+Lagos,South West,Ojo,13067,1168,342,11.19,38.21,0.99,0.15,71.6
+Lagos,South West,Oshodi-Isolo,50560,601,846,84.13,59.76,0.34,0.129,34.3
+Lagos,South West,Somolu,44941,1318,761,34.1,59.06,0.53,0.053,41.1
+Lagos,South West,Surulere,57437,1482,1042,38.76,55.12,0.39,0.126,63.3
+Nasarawa,North Central,Akwanga,14934,838,308,17.82,48.49,0.35,0.229,37.1
+Nasarawa,North Central,Awe,34385,647,552,53.15,62.29,0.57,0.109,34.4
+Nasarawa,North Central,Doma,11859,760,316,15.6,37.53,0.1,0.189,39.6
+Nasarawa,North Central,Karu,13082,461,206,28.38,63.5,0.66,0.02,78.2
+Nasarawa,North Central,Keana,38233,1413,996,27.06,38.39,0.61,0.205,69.1
+Nasarawa,North Central,Keffi,23707,992,401,23.9,59.12,0.88,0.202,77.8
+Nasarawa,North Central,Kokona,48615,292,803,166.49,60.54,0.42,0.172,5.0
+Nasarawa,North Central,Lafia,59176,1180,1622,50.15,36.48,0.41,0.237,49.6
+Nasarawa,North Central,Nasarawa,40408,992,657,40.73,61.5,0.72,0.168,59.3
+Nasarawa,North Central,Nasarawa Eggon,42994,1092,981,39.37,43.83,0.31,0.282,46.9
+Nasarawa,North Central,Obi,24966,1302,650,19.18,38.41,0.35,0.17,46.8
+Nasarawa,North Central,Toto,34831,1416,631,24.6,55.2,0.78,0.175,67.8
+Nasarawa,North Central,Wamba,24605,389,391,63.25,62.93,0.35,0.245,28.4
+Niger,North Central,Agaie,37898,136,812,278.66,46.67,0.74,0.162,6.1
+Niger,North Central,Agwara,3652,700,97,5.22,37.65,0.18,0.195,29.5
+Niger,North Central,Bida,18870,1192,339,15.83,55.66,0.48,0.233,46.4
+Niger,North Central,Borgu,19365,336,410,57.63,47.23,0.17,0.204,22.7
+Niger,North Central,Bosso,55551,1067,1561,52.06,35.59,0.37,0.198,38.2
+Niger,North Central,Chanchaga,50829,1118,1406,45.46,36.15,0.22,0.215,30.4
+Niger,North Central,Edati,43366,1397,1002,31.04,43.28,0.6,0.182,25.3
+Niger,North Central,Gbako,25228,180,405,140.16,62.29,0.56,0.292,5.5
+Niger,North Central,Gurara,49607,357,1144,138.96,43.36,0.54,0.259,15.9
+Niger,North Central,Katcha,8958,984,230,9.1,38.95,0.4,0.189,52.8
+Niger,North Central,Kontagora,3352,879,57,3.81,58.81,0.26,0.196,68.6
+Niger,North Central,Lapai,8192,1412,134,5.8,61.13,0.7,0.164,63.1
+Niger,North Central,Lavun,12371,1341,212,9.23,58.35,0.81,0.223,39.3
+Niger,North Central,Magama,5586,680,96,8.21,58.19,0.67,0.169,40.9
+Niger,North Central,Mariga,18321,438,362,41.83,50.61,0.52,0.265,34.2
+Niger,North Central,Mashegu,38365,760,719,50.48,53.36,0.33,0.196,47.2
+Niger,North Central,Mokwa,50176,1149,1107,43.67,45.33,0.33,0.271,30.8
+Niger,North Central,Munya,16313,911,457,17.91,35.7,0.27,0.386,23.8
+Niger,North Central,Paikoro,18082,385,287,46.97,63.0,0.41,0.077,29.8
+Niger,North Central,Rafi,16092,938,345,17.16,46.64,0.12,0.223,58.4
+Niger,North Central,Rijau,50342,117,1378,430.27,36.53,0.51,0.235,20.5
+Niger,North Central,Shiroro,59768,872,1101,68.54,54.29,0.53,0.284,32.8
+Niger,North Central,Suleja,35305,1043,750,33.85,47.07,0.13,0.225,41.2
+Niger,North Central,Tafa,52864,1307,1037,40.45,50.98,0.8,0.13,36.8
+Niger,North Central,Wushishi,7332,1284,195,5.71,37.6,0.67,0.168,66.4
+Ogun,South West,Abeokuta North,49874,893,1375,55.85,36.27,0.9,0.148,39.0
+Ogun,South West,Abeokuta South,21880,947,468,23.1,46.75,0.87,0.082,60.0
+Ogun,South West,Ado-Odo/Ota,59524,416,1593,143.09,37.37,0.61,0.055,5.0
+Ogun,South West,Ewekoro,59497,321,1329,185.35,44.77,0.96,0.212,23.3
+Ogun,South West,Ifo,39656,920,1072,43.1,36.99,0.99,0.12,45.3
+Ogun,South West,Ijebu East,44616,1014,934,44.0,47.77,0.51,0.105,32.3
+Ogun,South West,Ijebu North,49585,107,1044,463.41,47.5,0.9,0.205,6.3
+Ogun,South West,Ijebu North East,52652,265,1274,198.69,41.33,0.79,0.142,6.0
+Ogun,South West,Ijebu Ode,28428,1336,666,21.28,42.68,0.57,0.12,54.4
+Ogun,South West,Ikenne,55672,1164,1247,47.83,44.64,0.68,0.086,49.9
+Ogun,South West,Imeko Afon,42236,159,1186,265.64,35.61,0.73,0.117,5.0
+Ogun,South West,Ipokia,23946,678,423,35.32,56.61,0.87,0.128,31.7
+Ogun,South West,Obafemi Owode,18456,1044,302,17.68,61.11,0.49,0.133,45.9
+Ogun,South West,Odeda,34285,591,644,58.01,53.24,0.94,0.089,39.9
+Ogun,South West,Odogbolu,3690,607,64,6.08,57.66,0.52,0.02,62.8
+Ogun,South West,Ogun Waterside,56664,495,1138,114.47,49.79,0.7,0.216,5.0
+Ogun,South West,Remo North,46094,386,883,119.41,52.2,0.77,0.159,34.3
+Ogun,South West,Sagamu,13207,1213,240,10.89,55.03,0.91,0.02,57.2
+Ogun,South West,Yewa North,9780,506,156,19.33,62.69,0.95,0.086,48.2
+Ogun,South West,Yewa South,54089,1226,1015,44.12,53.29,0.8,0.15,53.9
+Ondo,South West,Akoko North-East,6409,769,122,8.33,52.53,0.35,0.03,72.5
+Ondo,South West,Akoko North-West,37622,1471,606,25.58,62.08,0.75,0.069,42.4
+Ondo,South West,Akoko South-East,12777,472,265,27.07,48.22,0.87,0.061,57.9
+Ondo,South West,Akoko South-West,59214,1241,1220,47.71,48.54,0.98,0.198,36.9
+Ondo,South West,Akure North,43823,1281,1111,34.21,39.44,0.53,0.137,61.5
+Ondo,South West,Akure South,25394,333,702,76.26,36.17,0.82,0.049,39.9
+Ondo,South West,Ese Odo,4004,126,65,31.78,61.6,0.4,0.219,51.1
+Ondo,South West,Idanre,28117,438,651,64.19,43.19,0.9,0.156,37.8
+Ondo,South West,Ifedore,20772,169,335,122.91,62.01,0.92,0.239,12.1
+Ondo,South West,Ilaje,45549,979,922,46.53,49.4,0.93,0.106,40.1
+Ondo,South West,Ile Oluji/Okeigbo,49336,1399,1288,35.27,38.3,0.44,0.05,65.8
+Ondo,South West,Irele,10041,415,163,24.2,61.6,0.42,0.024,59.2
+Ondo,South West,Odigbo,37241,872,1023,42.71,36.4,0.46,0.243,50.5
+Ondo,South West,Okitipupa,13584,524,255,25.92,53.27,0.72,0.102,61.9
+Ondo,South West,Ondo East,36205,620,596,58.4,60.75,0.74,0.174,36.3
+Ondo,South West,Ondo West,52379,360,967,145.5,54.17,0.95,0.13,5.0
+Ondo,South West,Ose,31506,1411,766,22.33,41.13,0.62,0.13,47.7
+Ondo,South West,Owo,36966,404,967,91.5,38.23,0.74,0.075,43.8
+Osun,South West,Aiyedaade,16418,1294,359,12.69,45.73,0.21,0.163,25.4
+Osun,South West,Aiyedire,48955,581,798,84.26,61.35,0.97,0.112,7.6
+Osun,South West,Atakunmosa East,51750,796,968,65.01,53.46,0.96,0.195,17.4
+Osun,South West,Atakunmosa West,14498,756,304,19.18,47.69,0.64,0.02,87.1
+Osun,South West,Boluwaduro,26555,323,559,82.21,47.5,0.83,0.235,37.3
+Osun,South West,Boripe,7925,1344,158,5.9,50.16,0.46,0.193,57.7
+Osun,South West,Ede North,11524,206,317,55.94,36.35,0.64,0.193,38.1
+Osun,South West,Ede South,15482,726,441,21.33,35.11,0.99,0.02,61.4
+Osun,South West,Egbedore,50985,836,876,60.99,58.2,0.75,0.056,26.3
+Osun,South West,Ejigbo,46036,524,1005,87.85,45.81,0.47,0.064,35.1
+Osun,South West,Ife Central,5723,738,155,7.75,36.92,0.29,0.098,60.1
+Osun,South West,Ife East,48188,134,1114,359.61,43.26,0.77,0.155,24.2
+Osun,South West,Ife North,5409,668,96,8.1,56.34,0.68,0.167,57.8
+Osun,South West,Ife South,20671,876,528,23.6,39.15,0.77,0.104,47.5
+Osun,South West,Ifedayo,54049,300,834,180.16,64.81,0.76,0.146,7.7
+Osun,South West,Ifelodun,20648,819,495,25.21,41.71,0.79,0.074,73.3
+Osun,South West,Ila,56555,241,945,234.67,59.85,0.51,0.053,7.3
+Osun,South West,Ilesa East,3493,978,80,3.57,43.66,0.5,0.188,62.3
+Osun,South West,Ilesa West,50994,840,1328,60.71,38.4,0.67,0.064,27.4
+Osun,South West,Irepodun,53982,1427,1263,37.83,42.74,0.38,0.03,56.7
+Osun,South West,Irewole,23437,777,439,30.16,53.39,0.76,0.058,34.4
+Osun,South West,Isokan,31207,176,657,177.31,47.5,0.61,0.04,5.0
+Osun,South West,Iwo,19059,333,496,57.23,38.43,0.56,0.125,33.1
+Osun,South West,Obokun,22249,1097,503,20.28,44.23,0.7,0.02,68.3
+Osun,South West,Odo Otin,10960,1071,286,10.23,38.32,0.2,0.208,46.7
+Osun,South West,Ola Oluwa,15380,217,251,70.88,61.27,0.85,0.151,30.3
+Osun,South West,Olorunda,54331,951,878,57.13,61.88,0.76,0.152,29.2
+Osun,South West,Oriade,15306,1329,307,11.52,49.86,0.75,0.086,47.2
+Osun,South West,Orolu,59248,720,1407,82.29,42.11,0.88,0.132,35.8
+Osun,South West,Osogbo,8392,1409,186,5.96,45.12,0.94,0.02,74.8
+Oyo,South West,Afijio,28965,398,590,72.78,49.09,0.94,0.149,22.5
+Oyo,South West,Akinyele,36038,818,687,44.06,52.46,0.91,0.058,61.9
+Oyo,South West,Atiba,17901,478,324,37.45,55.25,0.42,0.144,25.7
+Oyo,South West,Atisbo,15807,1231,382,12.84,41.38,0.46,0.161,54.4
+Oyo,South West,Egbeda,17026,1132,323,15.04,52.71,0.84,0.076,57.2
+Oyo,South West,Ibadan North,26243,841,475,31.2,55.25,0.99,0.085,19.1
+Oyo,South West,Ibadan North-East,9333,421,225,22.17,41.48,0.86,0.097,26.5
+Oyo,South West,Ibadan North-West,50756,225,800,225.58,63.45,0.58,0.067,6.7
+Oyo,South West,Ibadan South-East,24143,119,493,202.88,48.97,0.6,0.118,5.0
+Oyo,South West,Ibadan South-West,17193,420,293,40.94,58.68,0.66,0.052,40.0
+Oyo,South West,Ibarapa Central,38050,632,747,60.21,50.94,0.77,0.114,15.2
+Oyo,South West,Ibarapa East,27741,1016,472,27.3,58.77,0.66,0.043,20.7
+Oyo,South West,Ibarapa North,34815,322,690,108.12,50.46,0.75,0.157,14.5
+Oyo,South West,Ido,7274,317,136,22.95,53.49,0.78,0.071,59.2
+Oyo,South West,Irepo,38801,93,797,417.22,48.68,0.99,0.065,7.7
+Oyo,South West,Iseyin,22199,954,383,23.27,57.96,0.9,0.059,27.7
+Oyo,South West,Itesiwaju,58255,619,1373,94.11,42.43,0.7,0.079,11.7
+Oyo,South West,Iwajowa,12916,1147,231,11.26,55.91,0.78,0.1,45.3
+Oyo,South West,Kajola,32090,167,503,192.16,63.8,0.75,0.106,5.0
+Oyo,South West,Lagelu,28989,390,696,74.33,41.65,0.81,0.152,18.4
+Oyo,South West,Ogbomosho North,24518,755,433,32.47,56.62,0.71,0.051,59.3
+Oyo,South West,Ogbomosho South,53931,753,831,71.62,64.9,0.68,0.063,5.0
+Oyo,South West,Ogo Oluwa,3784,1476,82,2.56,46.15,0.54,0.02,33.5
+Oyo,South West,Olorunsogo,23598,628,493,37.58,47.87,0.73,0.144,72.4
+Oyo,South West,Oluyole,46952,634,800,74.06,58.69,0.4,0.125,43.1
+Oyo,South West,Ona Ara,10971,629,184,17.44,59.62,0.89,0.081,61.6
+Oyo,South West,Orelope,16782,172,305,97.57,55.02,0.79,0.117,20.1
+Oyo,South West,Ori Ire,49045,979,1197,50.1,40.97,0.45,0.048,36.2
+Oyo,South West,Oyo East,22043,335,619,65.8,35.61,0.56,0.153,34.1
+Oyo,South West,Oyo West,12004,410,235,29.28,51.08,0.31,0.163,52.3
+Oyo,South West,Saki East,3319,478,88,6.94,37.72,0.68,0.02,64.1
+Oyo,South West,Saki West,30676,350,564,87.65,54.39,0.84,0.193,25.1
+Oyo,South West,Surulere,58193,310,1214,187.72,47.93,0.6,0.135,5.9
+Plateau,North Central,Barkin Ladi,43159,1204,839,35.85,51.44,0.6,0.116,34.7
+Plateau,North Central,Bassa,56379,553,1421,101.95,39.68,0.78,0.409,10.2
+Plateau,North Central,Bokkos,32454,1190,762,27.27,42.59,0.66,0.155,28.4
+Plateau,North Central,Jos East,8002,1023,150,7.82,53.35,0.97,0.142,57.0
+Plateau,North Central,Jos North,55107,1233,1558,44.69,35.37,0.68,0.135,44.8
+Plateau,North Central,Jos South,9229,813,222,11.35,41.57,0.08,0.26,38.6
+Plateau,North Central,Kanke,24795,928,446,26.72,55.59,0.59,0.247,44.7
+Plateau,North Central,Kanam,39295,527,610,74.56,64.42,0.84,0.129,22.8
+Plateau,North Central,Langtang North,28102,1218,782,23.07,35.94,0.65,0.231,62.4
+Plateau,North Central,Langtang South,49499,711,865,69.62,57.22,0.49,0.179,5.0
+Plateau,North Central,Mangu,53772,637,1051,84.41,51.16,0.36,0.251,29.2
+Plateau,North Central,Mikang,13355,617,334,21.65,39.99,0.42,0.175,65.7
+Plateau,North Central,Pankshin,36529,303,799,120.56,45.72,0.88,0.326,5.0
+Plateau,North Central,Qua'an Pan,40921,971,744,42.14,55.0,0.3,0.205,29.9
+Plateau,North Central,Riyom,53598,615,827,87.15,64.81,0.44,0.142,11.4
+Plateau,North Central,Shendam,15314,1269,304,12.07,50.38,0.36,0.234,56.7
+Plateau,North Central,Wase,24140,1140,475,21.18,50.82,0.24,0.234,23.7
+Rivers,South South,Abua-Odual,33666,605,561,55.65,60.01,0.31,0.154,29.4
+Rivers,South South,Ahoada East,30897,650,779,47.53,39.66,0.8,0.171,42.3
+Rivers,South South,Ahoada West,29943,275,638,108.88,46.93,0.71,0.13,11.0
+Rivers,South South,Akuku-Toru,11120,977,178,11.38,62.47,0.69,0.207,62.5
+Rivers,South South,Andoni,50373,1237,1214,40.72,41.49,0.19,0.283,5.0
+Rivers,South South,Asari-Toru,45255,1269,798,35.66,56.71,0.41,0.139,38.8
+Rivers,South South,Bonny,50879,599,1089,84.94,46.72,0.81,0.145,30.8
+Rivers,South South,Degema,5913,1366,101,4.33,58.54,0.38,0.228,48.7
+Rivers,South South,Eleme,45602,329,716,138.61,63.69,0.72,0.039,15.0
+Rivers,South South,Emohua,14552,571,324,25.49,44.91,0.99,0.197,48.0
+Rivers,South South,Etche,20997,514,331,40.85,63.44,0.49,0.02,31.9
+Rivers,South South,Gokana,34923,1161,958,30.08,36.45,0.16,0.241,60.8
+Rivers,South South,Ikwerre,41501,797,851,52.07,48.77,0.78,0.22,52.4
+Rivers,South South,Khana,20883,1190,409,17.55,51.06,0.54,0.066,51.9
+Rivers,South South,Obio-Akpor,9553,837,184,11.41,51.92,0.8,0.205,37.4
+Rivers,South South,Ogba-Egbema-Ndoni,27373,1129,541,24.25,50.6,0.52,0.151,51.8
+Rivers,South South,Ogu-Bolo,33306,886,525,37.59,63.44,0.59,0.168,42.0
+Rivers,South South,Okrika,8594,492,180,17.47,47.74,0.49,0.167,65.2
+Rivers,South South,Omuma,54807,449,954,122.06,57.45,0.85,0.164,5.0
+Rivers,South South,Opobo-Nkoro,26608,1354,447,19.65,59.53,0.59,0.108,70.0
+Rivers,South South,Oyigbo,8445,660,169,12.8,49.97,0.91,0.094,38.7
+Rivers,South South,Port Harcourt,10470,332,213,31.54,49.15,0.88,0.227,31.4
+Rivers,South South,Tai,14280,147,248,97.14,57.58,0.28,0.279,49.2
+Sokoto,North West,Binji,16463,1205,347,13.66,47.44,0.44,0.268,90.2
+Sokoto,North West,Bodinga,28772,638,541,45.1,53.18,0.05,0.397,23.9
+Sokoto,North West,Dange/Shuni,23102,1127,642,20.5,35.98,0.48,0.298,66.4
+Sokoto,North West,Gada,12630,952,328,13.27,38.51,0.42,0.304,58.7
+Sokoto,North West,Goronyo,23448,665,370,35.26,63.37,0.45,0.28,31.9
+Sokoto,North West,Gudu,28362,818,540,34.67,52.52,0.44,0.285,44.4
+Sokoto,North West,Gwadabawa,24303,1011,392,24.04,62.0,0.11,0.31,54.7
+Sokoto,North West,Illela,25441,551,552,46.17,46.09,0.7,0.343,49.7
+Sokoto,North West,Isa,40997,628,1000,65.28,41.0,0.29,0.432,5.0
+Sokoto,North West,Kebbe,31133,451,640,69.03,48.65,0.63,0.324,17.3
+Sokoto,North West,Kware,17404,470,316,37.03,55.08,0.43,0.255,20.8
+Sokoto,North West,Rabah,50653,436,894,116.18,56.66,0.28,0.278,32.8
+Sokoto,North West,Sabon Birni,45725,146,722,313.18,63.33,0.6,0.43,5.0
+Sokoto,North West,Shagari,3528,342,77,10.32,45.82,0.3,0.328,47.6
+Sokoto,North West,Silame,25161,1194,408,21.07,61.67,0.72,0.234,61.3
+Sokoto,North West,Sokoto North,29926,191,481,156.68,62.22,0.15,0.298,5.0
+Sokoto,North West,Sokoto South,25658,297,603,86.39,42.55,0.64,0.41,6.6
+Sokoto,North West,Tambuwal,41745,1259,743,33.16,56.18,0.66,0.274,50.6
+Sokoto,North West,Tangaza,28009,958,472,29.24,59.34,0.67,0.278,68.1
+Sokoto,North West,Tureta,5010,1313,136,3.82,36.84,0.16,0.396,52.1
+Sokoto,North West,Wamakko,21790,328,376,66.43,57.95,0.14,0.393,5.0
+Sokoto,North West,Wurno,35624,1412,673,25.23,52.93,0.48,0.261,63.4
+Sokoto,North West,Yabo,34876,1415,677,24.65,51.52,0.36,0.367,40.7
+Taraba,North East,Ardo Kola,54921,523,1350,105.01,40.68,0.05,0.456,18.4
+Taraba,North East,Bali,58476,1283,994,45.58,58.83,0.05,0.373,16.8
+Taraba,North East,Donga,13528,577,243,23.45,55.67,0.52,0.374,53.3
+Taraba,North East,Gashaka,49309,1210,829,40.75,59.48,0.2,0.269,34.3
+Taraba,North East,Gassol,50109,1323,920,37.88,54.47,0.1,0.367,39.2
+Taraba,North East,Ibi,29118,157,546,185.46,53.33,0.21,0.423,5.0
+Taraba,North East,Jalingo,8423,1073,165,7.85,51.05,0.05,0.373,59.5
+Taraba,North East,Karim Lamido,14517,1283,316,11.31,45.94,0.37,0.285,58.0
+Taraba,North East,Kurmi,25187,1357,559,18.56,45.06,0.4,0.399,72.8
+Taraba,North East,Lau,29119,1088,522,26.76,55.78,0.46,0.319,60.9
+Taraba,North East,Sardauna,37314,1158,1012,32.22,36.87,0.27,0.306,41.9
+Taraba,North East,Takum,29199,106,618,275.46,47.25,0.36,0.372,6.4
+Taraba,North East,Ussa,58956,909,1608,64.86,36.66,0.57,0.342,26.7
+Taraba,North East,Wukari,22830,1130,354,20.2,64.49,0.23,0.345,23.6
+Taraba,North East,Yorro,18775,242,317,77.58,59.23,0.2,0.396,9.1
+Taraba,North East,Zing,9055,257,154,35.23,58.8,0.52,0.25,47.3
+Yobe,North East,Bade,46083,573,933,80.42,49.39,0.06,0.37,5.0
+Yobe,North East,Bursari,56744,285,1546,199.1,36.7,0.91,0.38,5.0
+Yobe,North East,Damaturu,27346,1174,554,23.29,49.36,0.65,0.178,21.8
+Yobe,North East,Fika,44506,93,812,478.56,54.81,0.53,0.374,6.8
+Yobe,North East,Fune,10543,1498,169,7.04,62.38,0.25,0.397,33.0
+Yobe,North East,Geidam,24509,932,429,26.3,57.13,0.47,0.326,38.6
+Yobe,North East,Gujba,37329,853,958,43.76,38.97,0.11,0.345,40.9
+Yobe,North East,Gulani,46262,1490,854,31.05,54.17,0.23,0.42,23.2
+Yobe,North East,Jakusko,45853,1307,1080,35.08,42.46,0.17,0.436,41.6
+Yobe,North East,Karasuwa,54333,995,1263,54.61,43.02,0.54,0.438,5.0
+Yobe,North East,Machina,34587,1312,556,26.36,62.21,0.36,0.435,42.3
+Yobe,North East,Nangere,29924,1368,593,21.87,50.46,0.37,0.343,57.4
+Yobe,North East,Nguru,59553,1244,921,47.87,64.66,0.45,0.368,54.4
+Yobe,North East,Potiskum,37019,1182,684,31.32,54.12,0.28,0.448,49.4
+Yobe,North East,Tarmuwa,53278,363,1336,146.77,39.88,0.37,0.431,5.0
+Yobe,North East,Yunusari,36268,155,617,233.99,58.78,0.54,0.436,5.6
+Yobe,North East,Yusufari,22455,1080,408,20.79,55.04,0.2,0.318,41.4
+Zamfara,North West,Anka,52366,1384,1101,37.84,47.56,0.37,0.324,48.2
+Zamfara,North West,Bakura,24534,963,607,25.48,40.42,0.2,0.358,46.2
+Zamfara,North West,Birnin Magaji,25043,1464,690,17.11,36.29,0.34,0.365,56.5
+Zamfara,North West,Bukkuyum,18608,777,294,23.95,63.29,0.53,0.376,56.3
+Zamfara,North West,Bungudu,40486,1104,674,36.67,60.07,0.32,0.261,49.7
+Zamfara,North West,Gummi,12552,1383,228,9.08,55.05,0.46,0.109,65.6
+Zamfara,North West,Gusau,48907,953,1223,51.32,39.99,0.69,0.193,33.3
+Zamfara,North West,Kauran Namoda,22995,1041,399,22.09,57.63,0.85,0.195,71.9
+Zamfara,North West,Maradun,16222,992,265,16.35,61.22,0.05,0.399,39.3
+Zamfara,North West,Maru,12111,897,251,13.5,48.25,0.06,0.331,61.7
+Zamfara,North West,Shinkafi,49639,1125,872,44.12,56.93,0.22,0.293,34.0
+Zamfara,North West,Talatan Mafara,38221,832,594,45.94,64.35,0.46,0.283,58.8
+Zamfara,North West,Tsafe,9829,425,183,23.13,53.71,0.2,0.337,35.4
+Zamfara,North West,Zurmi,14573,1009,233,14.44,62.55,0.56,0.255,75.4
