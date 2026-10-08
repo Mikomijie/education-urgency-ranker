@@ -43,7 +43,6 @@ NIGERIA_LGAS = {
     'Zamfara': ['Anka','Bakura','Birnin Magaji','Bukkuyum','Bungudu','Gummi','Gusau','Kauran Namoda','Maradun','Maru','Shinkafi','Talatan Mafara','Tsafe','Zurmi'],
 }
 
-# Geopolitical zones — used for zone-level analysis in the app
 ZONE_MAP = {
     'Kano': 'North West', 'Katsina': 'North West', 'Sokoto': 'North West',
     'Kebbi': 'North West', 'Zamfara': 'North West', 'Kaduna': 'North West', 'Jigawa': 'North West',
@@ -59,7 +58,6 @@ ZONE_MAP = {
     'Abia': 'South East', 'Ebonyi': 'South East',
 }
 
-# North tends to have worse infrastructure and higher dropout
 ZONE_PROFILES = {
     'North West':  {'facility_base': 0.35, 'dropout_base': 0.28},
     'North East':  {'facility_base': 0.30, 'dropout_base': 0.32},
@@ -77,7 +75,10 @@ for state, lga_list in NIGERIA_LGAS.items():
     for lga_name in lga_list:
         enrollment = np.random.randint(3000, 60000)
         teachers = np.random.randint(80, 1500)
-        classrooms = np.random.randint(30, 800)
+
+        # ── Classrooms derived from enrollment so ratios are realistic ──
+        pupils_per_class = np.random.uniform(35, 65)
+        classrooms = max(10, int(enrollment / pupils_per_class))
 
         student_teacher_ratio = round(enrollment / teachers, 2)
         pupil_classroom_ratio = round(enrollment / classrooms, 2)
@@ -108,8 +109,8 @@ for state, lga_list in NIGERIA_LGAS.items():
             60
             - (student_teacher_ratio * 0.4)
             - (pupil_classroom_ratio * 0.05)
-            + (facility_score * 10)        # better facilities → modest boost
-            - (dropout_rate * 20)          # high dropout → lower pass rate
+            + (facility_score * 10)
+            - (dropout_rate * 20)
             + np.random.normal(0, 12)
         )
         base_pass = np.clip(base_pass, 10, 95)
@@ -123,17 +124,16 @@ for state, lga_list in NIGERIA_LGAS.items():
         if facility_score < 0.3:
             base_pass -= np.random.uniform(3, 10)
 
-        # Inject real-world anomalies
         anomaly_type = np.random.choice(
             ['underperform_severe', 'underperform_mild', 'normal', 'overperform'],
             p=[0.08, 0.18, 0.62, 0.12]
         )
         if anomaly_type == 'underperform_severe':
-            base_pass -= np.random.uniform(15, 30)  # ghost teachers, resource diversion
+            base_pass -= np.random.uniform(15, 30)
         elif anomaly_type == 'underperform_mild':
             base_pass -= np.random.uniform(5, 15)
         elif anomaly_type == 'overperform':
-            base_pass += np.random.uniform(8, 20)   # high-efficiency star LGA
+            base_pass += np.random.uniform(8, 20)
 
         actual_pass_rate = round(np.clip(base_pass, 5, 98), 1)
 
@@ -154,5 +154,6 @@ for state, lga_list in NIGERIA_LGAS.items():
 df = pd.DataFrame(rows)
 df.to_csv('education_data.csv', index=False)
 print(f"Generated {len(df)} LGAs across {df['State'].nunique()} states and {df['Zone'].nunique()} zones")
-print(f"New columns: FacilityScore (mean={df['FacilityScore'].mean():.2f}), GradeDropoutRate (mean={df['GradeDropoutRate'].mean():.2f})")
-print(df[['StudentTeacherRatio', 'FacilityScore', 'GradeDropoutRate', 'ActualPassRate']].corr())
+print(f"PupilClassroomRatio range: {df['PupilClassroomRatio'].min():.0f} – {df['PupilClassroomRatio'].max():.0f} (should be 35–65)")
+print(f"FacilityScore mean: {df['FacilityScore'].mean():.2f}, GradeDropoutRate mean: {df['GradeDropoutRate'].mean():.2f}")
+print(df[['StudentTeacherRatio','PupilClassroomRatio','FacilityScore','GradeDropoutRate','ActualPassRate']].corr())

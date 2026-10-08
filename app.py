@@ -127,13 +127,22 @@ if tier_filter:
     filtered_data = filtered_data[filtered_data['UrgencyTier'].isin(tier_filter)]
 
 # ── KPI metrics ──
-col1, col2, col3, col4 = st.columns(4)
+from sklearn.metrics import r2_score, mean_squared_error
+
+col1, col2, col3, col4, col5 = st.columns(5)
 st.caption("📌 National benchmark: 1 teacher per 40 students (Federal Ministry of Education standard)")
 col1.metric("Total LGAs Analysed", len(filtered_data))
 col2.metric("Critical Urgency", len(filtered_data[filtered_data['UrgencyTier'] == 'Critical']))
 col3.metric("Total Teachers Needed", f"{filtered_data['TeachersNeeded'].sum():,}")
 col4.metric("Avg Pass Rate", f"{filtered_data['ActualPassRate'].mean():.1f}%")
 
+r2 = r2_score(data['ActualPassRate'], data['PredictedPassRate'])
+rmse = np.sqrt(mean_squared_error(data['ActualPassRate'], data['PredictedPassRate']))
+col5.metric("Model R²", f"{r2:.2f}", help=f"RMSE: {rmse:.1f} pts — how well XGBoost predicts pass rate from resources")
+critical_df = data[data['UrgencyTier'] == 'Critical']
+teachers_to_deploy = int(critical_df['TeachersNeeded'].sum())
+students_served = int(critical_df[critical_df['TeachersNeeded'] > 0]['Enrollment'].sum())
+st.success(f"🎯 Deploying **{teachers_to_deploy:,} teachers** to Critical-tier LGAs would bring **{students_served:,} students** to Nigeria's 1:40 federal benchmark.")
 color_map = {'Critical': '#d62728', 'High': '#ff7f0e', 'Medium': '#ffdd57', 'Low': '#2ca02c'}
 
 # ── Nigeria State Map ──
