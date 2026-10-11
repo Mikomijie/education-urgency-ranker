@@ -1,9 +1,10 @@
 # EduGaps-AI — Nigeria Education Resource Intelligence
 
-> Ranking all 777 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression, SHAP explainability, and AI-powered policy synthesis.
+> Ranking all 774 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression, SHAP explainability, and AI-powered policy synthesis.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red) ![XGBoost](https://img.shields.io/badge/XGBoost-ML-green) ![Track](https://img.shields.io/badge/Track-Education-orange)
 
+**Live App:** https://mikomijie-education-urgency-ranker-app-n0efbq.streamlit.app/
 ---
 
 ## The Problem
@@ -76,7 +77,7 @@ This matters because deploying teachers to an "Unexplained Underperformance" LGA
 
 ### Synthetic Data (Current Prototype)
 
-This prototype uses synthetically generated data modelled on realistic Nigerian education distributions. LGA names are real (all 777 LGAs across 36 states + FCT). Figures are illustrative.
+This prototype uses synthetically generated data modelled on realistic Nigerian education distributions. LGA names are real (all 774 LGAs across 36 states + FCT). Figures are illustrative.
 
 The synthetic data is calibrated to:
 - **Real NECO 2024 state-level pass rates** for 20 states (Kano, Lagos, Ogun, Rivers, Kaduna, etc.)
@@ -152,7 +153,7 @@ python-dotenv
 | Criterion | How EduGaps-AI addresses it |
 |---|---|
 | **Problem relevance & clarity** | Sharply scoped: "which LGAs are underperforming relative to their resources, and why" — not just "AI for education" |
-| **Technical execution** | XGBoost residual regression + SHAP explainability + anomaly typing; runs on real-labelled synthetic data; handles all 777 LGAs |
+| **Technical execution** | XGBoost residual regression + SHAP explainability + anomaly typing; runs on real-labelled synthetic data; handles all 774 LGAs |
 | **Impact potential** | Anomaly typing means interventions are targeted, not generic; Unexplained Underperformance flag creates a direct path to SUBEB audit referral |
 | **Presentation & clarity** | Non-technical judges can read urgency tiers and the LGA Diagnosis section without knowing what XGBoost is |
 | **Creativity** | Residual-based scoring (not raw ratios) + anomaly typing as a policy routing mechanism is a fresh framing |
@@ -163,7 +164,7 @@ python-dotenv
 
 ### Working now
 - Full pipeline: synthetic data → model → dashboard → AI brief
-- All 777 LGAs scored, tiered, and anomaly-typed
+- All 774 LGAs scored, tiered, and anomaly-typed
 - SHAP explainability per LGA
 - What-If Simulator with tier-shift indicator
 - Zone and state filters
@@ -185,6 +186,7 @@ python-dotenv
 ## Team
 
 Built by **Mikomijie** for the YDP Community Datathon 2026 — Education Track.
+**Project Write-up:** https://drive.google.com/file/d/1iLWkBuM45dR9ygA1Jwdhyjn2hfIiaKrI/view?usp=sharing
 
 ---
 
