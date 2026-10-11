@@ -1,10 +1,38 @@
-# EduGaps-AI — Nigeria Education Resource Intelligence
+# EduGaps-AI
 
-> Ranking all 774 Nigerian LGAs by urgency of teacher deployment using XGBoost residual regression, SHAP explainability, and AI-powered policy synthesis.
+## Nigeria Education Resource Intelligence
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red) ![XGBoost](https://img.shields.io/badge/XGBoost-ML-green) ![Track](https://img.shields.io/badge/Track-Education-orange)
+Ranking all 774 Nigerian LGAs by urgency of teacher deployment using machine learning, explainability, and AI-powered policy recommendations.
 
-**Live App:** https://mikomijie-education-urgency-ranker-app-n0efbq.streamlit.app/
+---
+
+## Quick Links
+
+**Live Dashboard:** https://mikomijie-education-urgency-ranker-app-n0efbq.streamlit.app/
+
+**Project Write-up (1 page):** https://drive.google.com/file/d/1iLWkBuM45dR9ygA1Jwdhyjn2hfIiaKrI/view?usp=sharing
+
+**Demo Video (5 min):** https://drive.google.com/file/d/1H_BaU8zpoVfgz133-9hWY6S4J9G0ryDE/view?usp=sharing
+
+---
+
+## Tech Stack
+
+Python · Streamlit · XGBoost · SHAP · Plotly · OpenRouter API
+
+---
+
+## The Problem
+
+Nigeria needs 194,876 more teachers. But which LGAs should get them? Standard tools rank by student-teacher ratio alone. EduGaps-AI asks smarter: **which LGAs are failing relative to the resources they already have?**
+
+---
+
+## How It Works
+
+We built an XGBoost model that predicts pass rates from resources: teacher ratio, classroom availability, facility quality, and dropout rates. The gap between predicted and actual pass rate reveals true urgency. Some LGAs need teachers. Some need infrastructure. Some have adequate resources but fail due to ghost teachers or absenteeism — they need audits, not deployment.
+
+---
 ---
 
 ## The Problem
