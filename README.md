@@ -33,58 +33,6 @@ Nigeria needs 194,876 more teachers. But which LGAs should get them? Standard to
 We built an XGBoost model that predicts pass rates from resources: teacher ratio, classroom availability, facility quality, and dropout rates. The gap between predicted and actual pass rate reveals true urgency. Some LGAs need teachers. Some need infrastructure. Some have adequate resources but fail due to ghost teachers or absenteeism — they need audits, not deployment.
 
 ---
----
-
-## The Problem
-
-Nigeria publishes education data — enrollment figures, teacher numbers, facility conditions, exam outcomes — but it's scattered across UBEC, state ministries, WAEC/NECO, and NBS. No single tool brings it together to show, at a glance, where the system is actually failing.
-
-Two LGAs can look identical on paper — same enrollment, same reported funding — yet produce wildly different learning outcomes. A policymaker today has no simple way to spot that gap and act on it early.
-
-**EduGaps-AI solves this.** It doesn't just show who has fewer teachers. It shows who is underperforming *relative to the resources they already have* — and that distinction changes everything about how you intervene.
-
----
-
-## How It Works
-
-### The Core Model: Expected vs. Actual
-
-We train an XGBoost regression model on five features per LGA:
-
-| Feature | What it captures |
-|---|---|
-| `StudentTeacherRatio` | Teacher availability |
-| `PupilClassroomRatio` | Physical space per student |
-| `Classrooms` | Raw infrastructure count |
-| `FacilityScore` | Overall school condition (0–1) |
-| `GradeDropoutRate` | Fraction of pupils who drop before JSS3 |
-
-The model predicts what a LGA's **exam pass rate should be** given its resources. We then compute the **residual** (Actual − Predicted). A large negative residual means the LGA is performing far below what its resources would predict — and that's the real signal.
-
-### Urgency Tiers
-
-Each LGA is assigned an urgency tier based on its residual Z-score:
-
-| Tier | Z-score | Meaning |
-|---|---|---|
-| 🔴 Critical | < −1.5 | Severely underperforming vs. resources |
-| 🟠 High | −1.5 to −0.5 | Meaningfully behind predictions |
-| 🟡 Medium | −0.5 to 0 | Slightly below expectations |
-| 🟢 Low | ≥ 0 | Meeting or exceeding predicted outcomes |
-
-### Anomaly Typing
-
-Not all underperformance has the same root cause. EduGaps-AI classifies each flagged LGA into one of five anomaly types:
-
-- **Staffing Gap** — teacher ratio is the dominant problem
-- **Infrastructure Gap** — classrooms and facility score are the bottleneck
-- **Staffing + Infrastructure Gap** — both are failing simultaneously
-- **High Dropout Risk** — dropout rate is the primary driver of underperformance
-- **Unexplained Underperformance** — resources are adequate but results are still poor (governance/accountability issue — flag for SUBEB audit)
-
-This matters because deploying teachers to an "Unexplained Underperformance" LGA won't help. That LGA needs an audit, not a deployment.
-
----
 
 ## Features
 
@@ -152,10 +100,6 @@ python generate_synthetic_data.py
 # Run the app
 streamlit run app.py
 ```
-
-### Environment Variables
-
-Create a `.env` file in the project root:
 OPENROUTER_API_KEY=your_key_here
 
 The AI Policy Brief feature requires an OpenRouter API key. All other features work without it.
@@ -163,6 +107,7 @@ The AI Policy Brief feature requires an OpenRouter API key. All other features w
 ---
 
 ## Requirements
+
 streamlit
 pandas
 numpy
@@ -213,11 +158,13 @@ python-dotenv
 
 ## Team
 
-Built by **Mikomijie** for the YDP Community Datathon 2026 — Education Track.
-**Project Write-up:** https://drive.google.com/file/d/1iLWkBuM45dR9ygA1Jwdhyjn2hfIiaKrI/view?usp=sharing
+Built by Michael Omijie for the YDP Community Datathon 2026 — Education Track.
 
 ---
 
 ## License
 
 MIT
+### Environment Variables
+
+Create a `.env` file in the project root:
